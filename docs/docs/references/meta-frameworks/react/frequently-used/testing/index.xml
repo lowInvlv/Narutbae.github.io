@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/testing/</link>
+    <description>Recent content in Testing on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/testing/testing-environments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/testing/testing-environments/</guid>
+      <description>Testing Environments # This document goes through the factors that can affect your environment and recommendations for some scenarios.
+Test runners # Test runners like Jest, mocha, ava let you write test suites as regular JavaScript, and run them as part of your development process. Additionally, test suites are run as part of continuous integration.
+Jest is widely compatible with React projects, supporting features like mocked modules and timers, and jsdom support.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/testing/testing-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/testing/testing-overview/</guid>
+      <description>Testing Overview # You can test React components similar to testing other JavaScript code.
+There are a few ways to test React components. Broadly, they divide into two categories:
+Rendering component trees in a simplified test environment and asserting on their output. Running a complete app in a realistic browser environment (also known as “end-to-end” tests). This documentation section focuses on testing strategies for the first case. While full end-to-end tests can be very useful to prevent regressions to important workflows, such tests are not concerned with React components in particular, and are out of the scope of this section.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/testing/testing-recipes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/testing/testing-recipes/</guid>
+      <description>⭐ Testing Recipes # Common testing patterns for React components.
+Note:
+This page assumes you’re using Jest as a test runner. If you use a different test runner, you may need to adjust the API, but the overall shape of the solution will likely be the same. Read more details on setting up a testing environment on the Testing Environments page.
+On this page, we will primarily use function components.</description>
+    </item>
+  </channel>
+</rss>

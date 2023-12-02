@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Templates on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/</link>
+    <description>Recent content in Templates on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/global-d-ts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/global-d-ts/</guid>
+      <description>Global .d.ts # Global Libraries # A global library is one that can be accessed from the global scope (i.e. without using any form of import). Many libraries simply expose one or more global variables for use. For example, if you were using jQuery, the $ variable can be used by simply referring to it:
+$(() =&amp;gt; { console.log(&amp;#34;hello!&amp;#34;); }); You&amp;rsquo;ll usually see guidance in the documentation of a global library of how to use the library in an HTML script tag:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/global-modifying-module-d-ts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/global-modifying-module-d-ts/</guid>
+      <description>Global: Modifying Module # Global-modifying Modules # A global-modifying module alters existing values in the global scope when they are imported. For example, there might exist a library which adds new members to String.prototype when imported. This pattern is somewhat dangerous due to the possibility of runtime conflicts, but we can still write a declaration file for it.
+Identifying global-modifying modules # Global-modifying modules are generally easy to identify from their documentation.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/global-plugin-d-ts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/global-plugin-d-ts/</guid>
+      <description>Global: Plugin # UMD # A UMD module is one that can either be used as module (through an import), or as a global (when run in an environment without a module loader). Many popular libraries, such as Moment.js, are written this way. For example, in Node.js or using RequireJS, you would write:
+import moment = require(&amp;#34;moment&amp;#34;); console.log(moment.format()); whereas in a vanilla browser environment you would write:
+console.log(moment.format()); Identifying a UMD library # UMD modules check for the existence of a module loader environment.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/module-class-d-ts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/module-class-d-ts/</guid>
+      <description>Module: Class # For example, when you want to work with JavaScript code which looks like:
+const Greeter = require(&amp;#34;super-greeter&amp;#34;); const greeter = new Greeter(); greeter.greet(); To handle both importing via UMD and modules:
+// Type definitions for [~THE LIBRARY NAME~] [~OPTIONAL VERSION NUMBER~] // Project: [~THE PROJECT NAME~] // Definitions by: [~YOUR NAME~] &amp;lt;[~A URL FOR YOU~]&amp;gt; /*~ This is the module template file for class modules. *~ You should rename it to index.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/module-d-ts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/module-d-ts/</guid>
+      <description>Modules .d.ts # Comparing JavaScript to an example DTS # Common CommonJS Patterns # A module using CommonJS patterns uses module.exports to describe the exported values. For example, here is a module which exports a function and a numerical constant:
+const maxInterval = 12; function getArrayLength(arr) { return arr.length; } module.exports = { getArrayLength, maxInterval, }; This can be described by the following .d.ts:
+export function getArrayLength(arr: any[]): number; export const maxInterval: 12; The TypeScript playground can show you the .</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/module-function-d-ts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/module-function-d-ts/</guid>
+      <description>Module: Function # For example, when you want to work with JavaScript code which looks like:
+import greeter from &amp;#34;super-greeter&amp;#34;; greeter(2); greeter(&amp;#34;Hello world&amp;#34;); To handle both importing via UMD and modules:
+// Type definitions for [~THE LIBRARY NAME~] [~OPTIONAL VERSION NUMBER~] // Project: [~THE PROJECT NAME~] // Definitions by: [~YOUR NAME~] &amp;lt;[~A URL FOR YOU~]&amp;gt; /*~ This is the module template file for function modules. *~ You should rename it to index.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/module-plugin-d-ts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/module-plugin-d-ts/</guid>
+      <description>Module: Plugin # For example, when you want to work with JavaScript code which extends another library.
+import { greeter } from &amp;#34;super-greeter&amp;#34;; // Normal Greeter API greeter(2); greeter(&amp;#34;Hello world&amp;#34;); // Now we extend the object with a new function at runtime import &amp;#34;hyper-super-greeter&amp;#34;; greeter.hyperGreet(); The definition for &amp;ldquo;super-greeter&amp;rdquo;:
+/*~ This example shows how to have multiple overloads for your function */ export interface GreeterFunction { (name: string): void (time: number): void } /*~ This example shows how to export a function specified by an interface */ export const greeter: GreeterFunction; We can extend the existing module like the following:</description>
+    </item>
+  </channel>
+</rss>

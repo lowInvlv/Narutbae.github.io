@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/languages/typescript/</link>
+    <description>Recent content on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/languages/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/asp-net-core/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/asp-net-core/</guid>
+      <description>ASP.NET Core # Install ASP.NET Core and TypeScript # First, install ASP.NET Core if you need it. This quick-start guide requires Visual Studio 2015 or 2017.
+Next, if your version of Visual Studio does not already have the latest TypeScript, you can install it.
+Create a new project # Choose File Choose New Project (Ctrl + Shift + N) Search for .NET Core in the project search bar Select ASP.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/babel-with-typescript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/babel-with-typescript/</guid>
+      <description>Using Babel with TypeScript # Babel vs tsc for TypeScript # When making a modern JavaScript project, you might ask yourself what is the right way to convert files from TypeScript to JavaScript?
+A lot of the time the answer is &amp;ldquo;it depends&amp;rdquo;, or &amp;ldquo;someone may have decided for you&amp;rdquo; depending on the project. If you are building your project with an existing framework like tsdx, Angular, NestJS or any framework mentioned in the Getting Started then this decision is handled for you.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/basic-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/basic-types/</guid>
+      <description>The Basics # Each and every value in JavaScript has a set of behaviors you can observe from running different operations. That sounds abstract, but as a quick example, consider some operations we might run on a variable named message.
+// Accessing the property &amp;#39;toLowerCase&amp;#39; // on &amp;#39;message&amp;#39; and then calling it message.toLowerCase(); // Calling &amp;#39;message&amp;#39; message(); If we break this down, the first runnable line of code accesses a property called toLowerCase and then calls it.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/classes/</guid>
+      <description>Classes # Background Reading:
+Classes (MDN)
+TypeScript offers full support for the class keyword introduced in ES2015.
+As with other JavaScript language features, TypeScript adds type annotations and other syntax to allow you to express relationships between classes and other types.
+Class Members # Here&amp;rsquo;s the most basic class - an empty one:
+class Point {} This class isn&amp;rsquo;t very useful yet, so let&amp;rsquo;s start adding some members.
+Fields # A field declaration creates a public writeable property on a class:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/compiler-options-in-msbuild/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/compiler-options-in-msbuild/</guid>
+      <description>Compiler Options in MSBuild # Overview # When you have an MSBuild based project which utilizes TypeScript such as an ASP.NET Core project, you can configure TypeScript in two ways. Either via a tsconfig.json or via the project settings.
+Using a tsconfig.json # We recommend using a tsconfig.json for your project when possible. To add one to an existing project, add a new item to your project which is called a &amp;ldquo;TypeScript JSON Configuration File&amp;rdquo; in modern versions of Visual Studio.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/compiler-options/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/compiler-options/</guid>
+      <description>tsc CLI Options # Using the CLI # Running tsc locally will compile the closest project defined by a tsconfig.json, or you can compile a set of TypeScript files by passing in a glob of files you want. When input files are specified on the command line, tsconfig.json files are ignored.
+# Run a compile based on a backwards look through the fs for a tsconfig.json tsc # Emit JS for just the index.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/conditional-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/conditional-types/</guid>
+      <description>Conditional Types # At the heart of most useful programs, we have to make decisions based on input. JavaScript programs are no different, but given the fact that values can be easily introspected, those decisions are also based on the types of the inputs. Conditional types help describe the relation between the types of inputs and outputs.
+interface Animal { live(): void; } interface Dog extends Animal { woof(): void; } type Example1 = Dog extends Animal ?</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/configuring-watch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/configuring-watch/</guid>
+      <description>Configuring Watch # As of TypeScript 3.8 and onward, the Typescript compiler exposes configuration which controls how it watches files and directories. Prior to this version, configuration required the use of environment variables which are still available.
+Background # The --watch implementation of the compiler relies on Node&amp;rsquo;s fs.watch and fs.watchFile. Each of these methods has pros and cons.
+fs.watch relies on file system events to broadcast changes in the watched files and directories.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-merging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-merging/</guid>
+      <description>Declaration Merging # Introduction # Some of the unique concepts in TypeScript describe the shape of JavaScript objects at the type level. One example that is especially unique to TypeScript is the concept of &amp;lsquo;declaration merging&amp;rsquo;. Understanding this concept will give you an advantage when working with existing JavaScript. It also opens the door to more advanced abstraction concepts.
+For the purposes of this article, &amp;ldquo;declaration merging&amp;rdquo; means that the compiler merges two separate declarations declared with the same name into a single definition.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/decorators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/decorators/</guid>
+      <description>Decorators # Introduction # Further Reading:
+A Complete Guide to TypeScript Decorators
+With the introduction of Classes in TypeScript and ES6, there now exist certain scenarios that require additional features to support annotating or modifying classes and class members. Decorators provide a way to add both annotations and a meta-programming syntax for class declarations and members. Decorators are a stage 2 proposal for JavaScript and are available as an experimental feature of TypeScript.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/dom-manipulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/dom-manipulation/</guid>
+      <description>DOM Manipulation # DOM Manipulation # An exploration into the HTMLElement type # In the 20+ years since its standardization, JavaScript has come a very long way. While in 2020, JavaScript can be used on servers, in data science, and even on IoT devices, it is important to remember its most popular use case: web browsers.
+Websites are made up of HTML and/or XML documents. These documents are static, they do not change.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/enums/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/enums/</guid>
+      <description>Enums # Enums are one of the few features TypeScript has which is not a type-level extension of JavaScript.
+Enums allow a developer to define a set of named constants. Using enums can make it easier to document intent, or create a set of distinct cases. TypeScript provides both numeric and string-based enums.
+Numeric enums # We&amp;rsquo;ll first start off with numeric enums, which are probably more familiar if you&amp;rsquo;re coming from other languages.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/esm-node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/esm-node/</guid>
+      <description>ECMAScript Modules in Node.js # For the last few years, Node.js has been working to support running ECMAScript modules (ESM). This has been a very difficult feature to support, since the foundation of the Node.js ecosystem is built on a different module system called CommonJS (CJS).
+Interoperating between the two module systems brings large challenges, with many new features to juggle; however, support for ESM in Node.js is now implemented in Node.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/everyday-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/everyday-types/</guid>
+      <description>Everyday Types # In this chapter, we&amp;rsquo;ll cover some of the most common types of values you&amp;rsquo;ll find in JavaScript code, and explain the corresponding ways to describe those types in TypeScript. This isn&amp;rsquo;t an exhaustive list, and future chapters will describe more ways to name and use other types.
+Types can also appear in many more places than just type annotations. As we learn about the types themselves, we&amp;rsquo;ll also learn about the places where we can refer to these types to form new constructs.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/functions/</guid>
+      <description>More on Functions # Functions are the basic building block of any application, whether they&amp;rsquo;re local functions, imported from another module, or methods on a class. They&amp;rsquo;re also values, and just like other values, TypeScript has many ways to describe how functions can be called. Let&amp;rsquo;s learn about how to write types that describe functions.
+Function Type Expressions # The simplest way to describe a function is with a function type expression.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/generics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/generics/</guid>
+      <description>Generics # A major part of software engineering is building components that not only have well-defined and consistent APIs, but are also reusable. Components that are capable of working on the data of today as well as the data of tomorrow will give you the most flexible capabilities for building up large software systems.
+In languages like C# and Java, one of the main tools in the toolbox for creating reusable components is generics, that is, being able to create a component that can work over a variety of types rather than a single one.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/gulp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/gulp/</guid>
+      <description>Gulp # This quick start guide will teach you how to build TypeScript with gulp and then add Browserify, terser, or Watchify to the gulp pipeline. This guide also shows how to add Babel functionality using Babelify.
+We assume that you&amp;rsquo;re already using Node.js with npm.
+Minimal project # Let&amp;rsquo;s start out with a new directory. We&amp;rsquo;ll name it proj for now, but you can change it to whatever you want.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/indexed-access-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/indexed-access-types/</guid>
+      <description>Indexed Access Types # We can use an indexed access type to look up a specific property on another type:
+type Person = { age: number; name: string; alive: boolean }; type Age = Person[&amp;#34;age&amp;#34;]; The indexing type is itself a type, so we can use unions, keyof, or other types entirely:
+type I1 = Person[&amp;#34;age&amp;#34; | &amp;#34;name&amp;#34;]; type I2 = Person[keyof Person]; type AliveOrName = &amp;#34;alive&amp;#34; | &amp;#34;name&amp;#34;; type I3 = Person[AliveOrName]; You&amp;rsquo;ll even see an error if you try to index a property that doesn&amp;rsquo;t exist:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/integrating-with-build-tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/integrating-with-build-tools/</guid>
+      <description>Integrating with Build Tools # Babel # Install # npm install @babel/cli @babel/core @babel/preset-typescript --save-dev .babelrc # { &amp;#34;presets&amp;#34;: [&amp;#34;@babel/preset-typescript&amp;#34;] } Using Command Line Interface # ./node_modules/.bin/babel --out-file bundle.js src/index.ts package.json # { &amp;#34;scripts&amp;#34;: { &amp;#34;build&amp;#34;: &amp;#34;babel --out-file bundle.js main.ts&amp;#34; }, } Execute Babel from the command line # npm run build Browserify # Install # npm install tsify Using Command Line Interface # browserify main.ts -p [ tsify --noImplicitAny ] &amp;gt; bundle.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/interfaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/interfaces/</guid>
+      <description>Interfaces # ::: {#deprecated-content .deprecated}
+This handbook page has been replaced, go to the new page{.deprecation-redirect-link}
+::: One of TypeScript&amp;rsquo;s core principles is that type checking focuses on the shape that values have. This is sometimes called &amp;ldquo;duck typing&amp;rdquo; or &amp;ldquo;structural subtyping&amp;rdquo;. In TypeScript, interfaces fill the role of naming these types, and are a powerful way of defining contracts within your code as well as contracts with code outside of your project.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/intro-to-js-ts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/intro-to-js-ts/</guid>
+      <description>JS Projects Utilizing TypeScript # The type system in TypeScript has different levels of strictness when working with a codebase:
+A type-system based only on inference with JavaScript code Incremental typing in JavaScript via JSDoc Using // @ts-check in a JavaScript file TypeScript code TypeScript with strict enabled Each step represents a move towards a safer type-system, but not every project needs that level of verification.
+TypeScript with JavaScript # This is when you use an editor which uses TypeScript to provide tooling like auto-complete, jump to symbol and refactoring tools like rename.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/intro/</guid>
+      <description>The TypeScript Handbook # About this Handbook # Over 20 years after its introduction to the programming community, JavaScript is now one of the most widespread cross-platform languages ever created. Starting as a small scripting language for adding trivial interactivity to webpages, JavaScript has grown to be a language of choice for both frontend and backend applications of every size. While the size, scope, and complexity of programs written in JavaScript has grown exponentially, the ability of the JavaScript language to express the relationships between different units of code has not.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/iterators-and-generators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/iterators-and-generators/</guid>
+      <description>Iterators and Generators # Iterables # An object is deemed iterable if it has an implementation for the Symbol.iterator property. Some built-in types like Array, Map, Set, String, Int32Array, Uint32Array, etc. have their Symbol.iterator property already implemented. Symbol.iterator function on an object is responsible for returning the list of values to iterate on.
+Iterable interface # Iterable is a type we can use if we want to take in types listed above which are iterable.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/jsdoc-supported-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/jsdoc-supported-types/</guid>
+      <description>JSDoc Reference # The list below outlines which constructs are currently supported when using JSDoc annotations to provide type information in JavaScript files.
+Note any tags which are not explicitly listed below (such as @async) are not yet supported.
+Types # @type @param (or @arg or @argument) @returns (or @return) @typedef @callback @template Classes # Property Modifiers @public, @private, @protected, @readonly @override @extends (or @augments) @implements @class (or @constructor) @this Documentation # Documentation tags work in both TypeScript and JavaScript.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/jsx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/jsx/</guid>
+      <description>JSX # JSX is an embeddable XML-like syntax. It is meant to be transformed into valid JavaScript, though the semantics of that transformation are implementation-specific. JSX rose to popularity with the React framework, but has since seen other implementations as well. TypeScript supports embedding, type checking, and compiling JSX directly to JavaScript.
+Basic usage # In order to use JSX you must do two things.
+Name your files with a .</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/keyof-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/keyof-types/</guid>
+      <description>Keyof Type Operator # The keyof type operator # The keyof operator takes an object type and produces a string or numeric literal union of its keys. The following type P is the same type as type P = &amp;quot;x&amp;quot; | &amp;quot;y&amp;quot;:
+type Point = { x: number; y: number }; type P = keyof Point; If the type has a string or number index signature, keyof will return those types instead:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/mapped-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/mapped-types/</guid>
+      <description>Mapped Types # When you don&amp;rsquo;t want to repeat yourself, sometimes a type needs to be based on another type.
+Mapped types build on the syntax for index signatures, which are used to declare the types of properties which have not been declared ahead of time:
+type OnlyBoolsAndHorses = { [key: string]: boolean | Horse; }; const conforms: OnlyBoolsAndHorses = { del: true, rodney: false, }; A mapped type is a generic type which uses a union of PropertyKeys (frequently created via a keyof) to iterate through keys to create a type:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/migrating-from-javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/migrating-from-javascript/</guid>
+      <description>Migrating from JavaScript # TypeScript doesn&amp;rsquo;t exist in a vacuum. It was built with the JavaScript ecosystem in mind, and a lot of JavaScript exists today. Converting a JavaScript codebase over to TypeScript is, while somewhat tedious, usually not challenging. In this tutorial, we&amp;rsquo;re going to look at how you might start out. We assume you&amp;rsquo;ve read enough of the handbook to write new TypeScript code.
+If you&amp;rsquo;re looking to convert a React project, we recommend looking at the React Conversion Guide first.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/mixins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/mixins/</guid>
+      <description>Mixins # Along with traditional OO hierarchies, another popular way of building up classes from reusable components is to build them by combining simpler partial classes. You may be familiar with the idea of mixins or traits for languages like Scala, and the pattern has also reached some popularity in the JavaScript community.
+How Does A Mixin Work? # The pattern relies on using generics with class inheritance to extend a base class.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/module-resolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/module-resolution/</guid>
+      <description>Module Resolution # This section assumes some basic knowledge about modules. Please see the Modules documentation for more information.
+Module resolution is the process the compiler uses to figure out what an import refers to. Consider an import statement like import { a } from &amp;quot;moduleA&amp;quot;; in order to check any use of a, the compiler needs to know exactly what it represents, and will need to check its definition moduleA.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/modules/</guid>
+      <description>Modules # JavaScript has a long history of different ways to handle modularizing code. Having been around since 2012, TypeScript has implemented support for a lot of these formats, but over time the community and the JavaScript specification has converged on a format called ES Modules (or ES6 modules). You might know it as the import/export syntax.
+ES Modules was added to the JavaScript spec in 2015, and by 2020 had broad support in most web browsers and JavaScript runtimes.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/namespaces-and-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/namespaces-and-modules/</guid>
+      <description>Namespaces and Modules # This post outlines the various ways to organize your code using modules and namespaces in TypeScript. We&amp;rsquo;ll also go over some advanced topics of how to use namespaces and modules, and address some common pitfalls when using them in TypeScript.
+See the Modules documentation for more information about ES Modules. See the Namespaces documentation for more information about TypeScript namespaces.
+Note: In very old versions of TypeScript namespaces were called &amp;lsquo;Internal Modules&amp;rsquo;, these pre-date JavaScript module systems.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/namespaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/namespaces/</guid>
+      <description>Namespaces # A note about terminology: It&amp;rsquo;s important to note that in TypeScript 1.5, the nomenclature has changed. &amp;ldquo;Internal modules&amp;rdquo; are now &amp;ldquo;namespaces&amp;rdquo;. &amp;ldquo;External modules&amp;rdquo; are now simply &amp;ldquo;modules&amp;rdquo;, as to align with ECMAScript 2015&amp;rsquo;s terminology, (namely that module X { is equivalent to the now-preferred namespace X {).
+This post outlines the various ways to organize your code using namespaces (previously &amp;ldquo;internal modules&amp;rdquo;) in TypeScript. As we alluded in our note about terminology, &amp;ldquo;internal modules&amp;rdquo; are now referred to as &amp;ldquo;namespaces&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/narrowing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/narrowing/</guid>
+      <description>Narrowing # Imagine we have a function called padLeft.
+function padLeft(padding: number | string, input: string): string { throw new Error(&amp;#34;Not implemented yet!&amp;#34;); } If padding is a number, it will treat that as the number of spaces we want to prepend to input. If padding is a string, it should just prepend padding to input. Let&amp;rsquo;s try to implement the logic for when padLeft is passed a number for padding.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/nightly-builds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/nightly-builds/</guid>
+      <description>Nightly Builds # A nightly build from the TypeScript&amp;rsquo;s main branch is published by midnight PST to npm. Here is how you can get it and use it with your tools.
+Using npm # npm install -g typescript@next Updating your IDE to use the nightly builds # You can also update your IDE to use the nightly drop. First you will need to install the package through npm. You can either install the npm package globally or to a local node_modules folder.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/objects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/objects/</guid>
+      <description>Object Types # In JavaScript, the fundamental way that we group and pass around data is through objects. In TypeScript, we represent those through object types.
+As we&amp;rsquo;ve seen, they can be anonymous:
+function greet(person: { name: string; age: number }) { return &amp;#34;Hello &amp;#34; + person.name; } or they can be named by using either an interface:
+interface Person { name: string; age: number; } function greet(person: Person) { return &amp;#34;Hello &amp;#34; + person.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/project-references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/project-references/</guid>
+      <description>Project References # Project references are a new feature in TypeScript 3.0 that allow you to structure your TypeScript programs into smaller pieces.
+By doing this, you can greatly improve build times, enforce logical separation between components, and organize your code in new and better ways.
+We&amp;rsquo;re also introducing a new mode for tsc, the --build flag, that works hand in hand with project references to enable faster TypeScript builds.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/symbols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/symbols/</guid>
+      <description>Symbols # Starting with ECMAScript 2015, symbol is a primitive data type, just like number and string.
+symbol values are created by calling the Symbol constructor.
+let sym1 = Symbol(); let sym2 = Symbol(&amp;#34;key&amp;#34;); // optional string key Symbols are immutable, and unique.
+let sym2 = Symbol(&amp;#34;key&amp;#34;); let sym3 = Symbol(&amp;#34;key&amp;#34;); sym2 === sym3; // false, symbols are unique Just like strings, symbols can be used as keys for object properties.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/template-literal-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/template-literal-types/</guid>
+      <description>Template Literal Types # Template literal types build on string literal types, and have the ability to expand into many strings via unions.
+They have the same syntax as template literal strings in JavaScript, but are used in type positions. When used with concrete literal types, a template literal produces a new string literal type by concatenating the contents.
+type World = &amp;#34;world&amp;#34;; type Greeting = `hello ${World}`; When a union is used in the interpolated position, the type is the set of every possible string literal that could be represented by each union member:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/triple-slash-directives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/triple-slash-directives/</guid>
+      <description>Triple-Slash Directives # Triple-slash directives are single-line comments containing a single XML tag. The contents of the comment are used as compiler directives.
+Triple-slash directives are only valid at the top of their containing file. A triple-slash directive can only be preceded by single or multi-line comments, including other triple-slash directives. If they are encountered following a statement or a declaration they are treated as regular single-line comments, and hold no special meaning.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/tsconfig-json/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/tsconfig-json/</guid>
+      <description>What is a tsconfig.json # Overview # The presence of a tsconfig.json file in a directory indicates that the directory is the root of a TypeScript project. The tsconfig.json file specifies the root files and the compiler options required to compile the project.
+JavaScript projects can use a jsconfig.json file instead, which acts almost the same but has some JavaScript-related compiler flags enabled by default.
+A project is compiled in one of the following ways:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/tsconfig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/tsconfig/</guid>
+      <description>TSConfig Reference # {aria-expanded=&amp;ldquo;false&amp;rdquo; role=&amp;ldquo;button&amp;rdquo;}
+Intro to the TSConfig Reference # ::: preview A TSConfig file in a directory indicates that the directory is the root of a TypeScript or JavaScript project... :::
+::: {.tsconfig .main-content-block}
+Compiler Options # ::: tsconfig-quick-nav ::: tsconfig-quick-nav-category
+Top Level {#quick-nav-Top Level} # files, extends, include, excludeand references ::: ::: ::: {.tsconfig-quick-nav .grouped}
+&amp;quot;compilerOptions&amp;quot; # ::: tsconfig-quick-nav-category
+Type Checking # allowUnreachableCode, allowUnusedLabels, alwaysStrict, exactOptionalPropertyTypes, noFallthroughCasesInSwitch, noImplicitAny, noImplicitOverride, noImplicitReturns, noImplicitThis, noPropertyAccessFromIndexSignature, noUncheckedIndexedAccess, noUnusedLocals, noUnusedParameters, strict, strictBindCallApply, strictFunctionTypes, strictNullChecks, strictPropertyInitializationand useUnknownInCatchVariables ::: ::: tsconfig-quick-nav-category</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/type-checking-javascript-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/type-checking-javascript-files/</guid>
+      <description>Type Checking JavaScript Files # Here are some notable differences on how checking works in .js files compared to .ts files.
+Properties are inferred from assignments in class bodies # ES2015 does not have a means for declaring properties on classes. Properties are dynamically assigned, just like object literals.
+In a .js file, the compiler infers properties from property assignments inside the class body. The type of a property is the type given in the constructor, unless it&amp;rsquo;s not defined there, or the type in the constructor is undefined or null.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/type-compatibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/type-compatibility/</guid>
+      <description>Type Compatibility # Type compatibility in TypeScript is based on structural subtyping. Structural typing is a way of relating types based solely on their members. This is in contrast with nominal typing. Consider the following code:
+interface Pet { name: string; } class Dog { name: string; } let pet: Pet; // OK, because of structural typing pet = new Dog(); In nominally-typed languages like C# or Java, the equivalent code would be an error because the Dog class does not explicitly describe itself as being an implementer of the Pet interface.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/type-inference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/type-inference/</guid>
+      <description>Type Inference # In TypeScript, there are several places where type inference is used to provide type information when there is no explicit type annotation. For example, in this code
+let x = 3; The type of the x variable is inferred to be number. This kind of inference takes place when initializing variables and members, setting parameter default values, and determining function return types.
+In most cases, type inference is straightforward.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/typeof-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/typeof-types/</guid>
+      <description>Typeof Type Operator # The typeof type operator # JavaScript already has a typeof operator you can use in an expression context:
+// Prints &amp;#34;string&amp;#34; console.log(typeof &amp;#34;Hello world&amp;#34;); TypeScript adds a typeof operator you can use in a type context to refer to the type of a variable or property:
+let s = &amp;#34;hello&amp;#34;; let n: typeof s; This isn&amp;rsquo;t very useful for basic types, but combined with other type operators, you can use typeof to conveniently express many patterns.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/types-from-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/types-from-types/</guid>
+      <description>Creating Types from Types # TypeScript&amp;rsquo;s type system is very powerful because it allows expressing types in terms of other types.
+The simplest form of this idea is generics. Additionally, we have a wide variety of type operators available to use. It&amp;rsquo;s also possible to express types in terms of values that we already have.
+By combining various type operators, we can express complex operations and values in a succinct, maintainable way.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/typescript-from-scratch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/typescript-from-scratch/</guid>
+      <description>TypeScript for the New Programmer # Congratulations on choosing TypeScript as one of your first languages &amp;mdash; you&amp;rsquo;re already making good decisions!
+You&amp;rsquo;ve probably already heard that TypeScript is a &amp;ldquo;flavor&amp;rdquo; or &amp;ldquo;variant&amp;rdquo; of JavaScript. The relationship between TypeScript (TS) and JavaScript (JS) is rather unique among modern programming languages, so learning more about this relationship will help you understand how TypeScript adds to JavaScript.
+What is JavaScript? A Brief History # JavaScript (also known as ECMAScript) started its life as a simple scripting language for browsers.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/typescript-in-5-minutes-func/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/typescript-in-5-minutes-func/</guid>
+      <description>TypeScript for Functional Programmers # TypeScript began its life as an attempt to bring traditional object-oriented types to JavaScript so that the programmers at Microsoft could bring traditional object-oriented programs to the web. As it has developed, TypeScript&amp;rsquo;s type system has evolved to model code written by native JavaScripters. The resulting system is powerful, interesting and messy.
+This introduction is designed for working Haskell or ML programmers who want to learn TypeScript.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/typescript-in-5-minutes-oop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/typescript-in-5-minutes-oop/</guid>
+      <description>TypeScript for Java/C# Programmers # TypeScript is a popular choice for programmers accustomed to other languages with static typing, such as C# and Java.
+TypeScript&amp;rsquo;s type system offers many of the same benefits, such as better code completion, earlier detection of errors, and clearer communication between parts of your program. While TypeScript provides many familiar features for these developers, it&amp;rsquo;s worth stepping back to see how JavaScript (and therefore TypeScript) differ from traditional OOP languages.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/typescript-in-5-minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/typescript-in-5-minutes/</guid>
+      <description>TypeScript for JavaScript Programmers # TypeScript stands in an unusual relationship to JavaScript. TypeScript offers all of JavaScript&amp;rsquo;s features, and an additional layer on top of these: TypeScript&amp;rsquo;s type system.
+For example, JavaScript provides language primitives like string and number, but it doesn&amp;rsquo;t check that you&amp;rsquo;ve consistently assigned these. TypeScript does.
+This means that your existing working JavaScript code is also TypeScript code. The main benefit of TypeScript is that it can highlight unexpected behavior in your code, lowering the chance of bugs.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/typescript-tooling-in-5-minutes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/typescript-tooling-in-5-minutes/</guid>
+      <description>TypeScript Tooling in 5 minutes # Let&amp;rsquo;s get started by building a simple web application with TypeScript.
+Installing TypeScript # There are two main ways to add TypeScript to your project:
+Via npm (the Node.js package manager) By installing TypeScript&amp;rsquo;s Visual Studio plugins Visual Studio 2017 and Visual Studio 2015 Update 3 include TypeScript language support by default but does not include the TypeScript compiler, tsc. If you didn&amp;rsquo;t install TypeScript with Visual Studio, you can still download it.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/utility-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/utility-types/</guid>
+      <description>Utility Types # TypeScript provides several utility types to facilitate common type transformations. These utilities are available globally.
+Awaited&amp;lt;Type&amp;gt; # Released: 4.5
+This type is meant to model operations like await in async functions, or the .then() method on Promises - specifically, the way that they recursively unwrap Promises.
+Example # type A = Awaited&amp;lt;Promise&amp;lt;string&amp;gt;&amp;gt;; type B = Awaited&amp;lt;Promise&amp;lt;Promise&amp;lt;number&amp;gt;&amp;gt;&amp;gt;; type C = Awaited&amp;lt;boolean | Promise&amp;lt;number&amp;gt;&amp;gt;; Partial&amp;lt;Type&amp;gt; # Released:
+2.1</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/variable-declarations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/variable-declarations/</guid>
+      <description>Variable Declaration # let and const are two relatively new concepts for variable declarations in JavaScript. As we mentioned earlier, let is similar to var in some respects, but allows users to avoid some of the common &amp;ldquo;gotchas&amp;rdquo; that users run into in JavaScript.
+const is an augmentation of let in that it prevents re-assignment to a variable.
+With TypeScript being an extension of JavaScript, the language naturally supports let and const.</description>
+    </item>
+  </channel>
+</rss>

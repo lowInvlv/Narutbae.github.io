@@ -1,0 +1,7588 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Big List of three.js Tips and Tricks!">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="The Big List of three.js Tips and Tricks!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/advanced/dos-and-donts-for-performance/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-12-02T15:34:15+00:00" />
+
+<title>Dos and Donts for Performance | My Ship Logs</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.69bd24b1b8e6c9b90c8945eae28502fc99f6ea8e4c440136c966509a57808751.css" integrity="sha256-ab0ksbjmybkMiUXq4oUC/Jn26o5MRAE2yWZQmleAh1E=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.59b58450ba250350a62298603ee6acc66a10d48557ec7f392478acf2d03b7f70.js" integrity="sha256-WbWEULolA1CmIphgPuasxmoQ1IVX7H85JHis8tA7f3A=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My Ship Logs</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/references/" class="">References</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8b11a258bca7f88da54303c1eb8bf0cd" class="toggle" checked />
+    <label for="section-8b11a258bca7f88da54303c1eb8bf0cd" class="flex justify-between">
+      <a role="button" class="">Libraries and Frameworks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-31c0267133a7ffe5ef28ff54038a703b" class="toggle" checked />
+    <label for="section-31c0267133a7ffe5ef28ff54038a703b" class="flex justify-between">
+      <a role="button" class="">React Three</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-05981571365e3fb388ded4120112dc16" class="toggle" checked />
+    <label for="section-05981571365e3fb388ded4120112dc16" class="flex justify-between">
+      <a role="button" class="">Advanced</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/advanced/dos-and-donts-for-performance/" class="active">Dos and Donts for Performance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/advanced/performance-pitfalls/" class="">Performance Pitfalls</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/advanced/scaling-performance/" class="">Scaling Performance</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e15c4db188330b110c915c10011d226e" class="toggle"  />
+    <label for="section-e15c4db188330b110c915c10011d226e" class="flex justify-between">
+      <a role="button" class="">Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/fundamentals/backgrounds/" class="">Backgrounds</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/fundamentals/furthermore/" class="">Furthermore</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f4487e23e7fbd6b989bdccb71d51e5ac" class="toggle"  />
+    <label for="section-f4487e23e7fbd6b989bdccb71d51e5ac" class="flex justify-between">
+      <a role="button" class="">Getting Started</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/examplesin-progress/" class="">Examples(in Progress)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/installation/" class="">Installation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/introduction/" class="">Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/your-first-scene/" class="">Your First Scene</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-131a70ba0fcca90b682bae11e201c956" class="toggle"  />
+    <label for="section-131a70ba0fcca90b682bae11e201c956" class="flex justify-between">
+      <a role="button" class="">Meta Frameworks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ed81b1bd0ecbe1682bac789b5359c56a" class="toggle"  />
+    <label for="section-ed81b1bd0ecbe1682bac789b5359c56a" class="flex justify-between">
+      <a role="button" class="">React</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-23392f5058817d45344855ad679c60ba" class="toggle"  />
+    <label for="section-23392f5058817d45344855ad679c60ba" class="flex justify-between">
+      <a role="button" class="">Advanced</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/accessibility/" class="">Accessibility</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/error-boundaries/" class="">Error Boundaries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/forwarding-refs/" class="">Forwarding Refs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/fragments/" class="">Fragments</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/higher-order-components/" class="">Higher Order Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/integrating-with-other-libraries/" class="">Integrating With Other Libraries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/jsx-in-depth/" class="">Jsx in Depth</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/optimizing-performance/" class="">Optimizing Performance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/portals/" class="">Portals</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/profiler-api/" class="">Profiler API</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/react-without-es6/" class="">React Without Es6</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/react-without-jsx/" class="">React Without Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/reconciliation/" class="">Reconciliation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/refs-and-the-dom/" class="">Refs and the Dom</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/render-props/" class="">Render Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/static-type-checking/" class="">Static Type Checking</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/strict-mode/" class="">Strict Mode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/typechecking-with-proptypes/" class="">Typechecking With Proptypes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/uncontrolled-components/" class="">Uncontrolled Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/web-components/" class="">Web Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/code-splitting/" class="">Code-Splitting 🌵</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/context/" class="">Context</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0b7e8a169ffc55d32e6791a715bfd989" class="toggle"  />
+    <label for="section-0b7e8a169ffc55d32e6791a715bfd989" class="flex justify-between">
+      <a role="button" class="">Basics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-887fd6173adedab35d6a2b53f097ffa0" class="toggle"  />
+    <label for="section-887fd6173adedab35d6a2b53f097ffa0" class="flex justify-between">
+      <a role="button" class="">Installation</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/add-react-to-a-website/" class="">Add React to a Website</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/cdn-links/" class="">Cdn Links</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/create-a-new-react-app/" class="">Create a New React App</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/getting-started/" class="">Getting Started</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/release-channels/" class="">Release Channels</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dcbb830f4a9a7513563af23a2a7d19e9" class="toggle"  />
+    <label for="section-dcbb830f4a9a7513563af23a2a7d19e9" class="flex justify-between">
+      <a role="button" class="">main-concepts</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/components-and-props/" class="">Components and Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/composition-vs-inheritance/" class="">Composition vs Inheritance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/conditional-rendering/" class="">Conditional Rendering</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/forms/" class="">Forms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/handling-events/" class="">Handling Events</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/introducing-jsx/" class="">Introducing Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/lifting-state-up/" class="">Lifting State Up</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/lists-and-keys/" class="">Lists and Keys</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/rendering-elements/" class="">Rendering Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/state-and-lifecycle/" class="">State and Lifecycle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/thinking-in-react/" class="">Thinking in React</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b619afb3bb0cae8f4a2d8ea2bd39992" class="toggle"  />
+    <label for="section-2b619afb3bb0cae8f4a2d8ea2bd39992" class="flex justify-between">
+      <a role="button" class="">Frequently Used</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d45d10a3bba46bd6df852e724d6a20f9" class="toggle"  />
+    <label for="section-d45d10a3bba46bd6df852e724d6a20f9" class="flex justify-between">
+      <a role="button" class="">API Reference</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/dom-elements/" class="">Dom Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/javascript-environment-requirements/" class="">Javascript Environment Requirements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/legacy-context/" class="">Legacy Context</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/react-top-level-api/" class="">React Top Level API</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/react.component/" class="">React.component</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdom/" class="">Reactdom</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdomclient/" class="">Reactdomclient</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdomserver/" class="">Reactdomserver</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/syntheticevent/" class="">Syntheticevent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/test-renderer/" class="">Test Renderer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/test-utilities/" class="">Test Utilities</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a24e35dfd7a54541e2462bfb9de0d26a" class="toggle"  />
+    <label for="section-a24e35dfd7a54541e2462bfb9de0d26a" class="flex justify-between">
+      <a role="button" class="">Frequently Asked Questions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/ajax-and-apis/" class="">Ajax and Apis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/babel-jsx-and-build-steps/" class="">Babel Jsx and Build Steps</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/component-state/" class="">Component State</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/file-structure/" class="">File Structure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/passing-functions-to-components/" class="">Passing Functions to Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/styling-and-css/" class="">Styling and Css</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/versioning-policy/" class="">Versioning Policy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/virtual-dom-and-internals/" class="">Virtual Dom and Internals</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-78e608137ff08e2f628fff778a1d2503" class="toggle"  />
+    <label for="section-78e608137ff08e2f628fff778a1d2503" class="flex justify-between">
+      <a role="button" class="">Hooks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/building-your-own-hooks/" class="">Building Your Own Hooks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-api-reference/" class="">Hooks API Reference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-at-a-glance/" class="">Hooks at a Glance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/" class="">Hooks Faq</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/introducing-hooks/" class="">Introducing Hooks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/rules-of-hooks/" class="">Rules of Hooks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usecallback/" class="">Usecallback</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usecontext/" class="">Usecontext</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usedebugvalue/" class="">Usedebugvalue</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usedeferredvalue/" class="">Usedeferredvalue</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useeffect/" class="">Useeffect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useid/" class="">Useid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useimperativehandle/" class="">Useimperativehandle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useinsertioneffect/" class="">Useinsertioneffect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/uselayouteffect/" class="">Uselayouteffect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usememo/" class="">Usememo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usereducer/" class="">Usereducer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useref/" class="">Useref</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usestate/" class="">Usestate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usesyncexternalstore/" class="">Usesyncexternalstore</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usetransition/" class="">Usetransition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/using-the-effect-hook/" class="">Using the Effect Hook</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/using-the-state-hook/" class="">Using the State Hook</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f8fec9450ae8cc6e4496fe90ad0fcd90" class="toggle"  />
+    <label for="section-f8fec9450ae8cc6e4496fe90ad0fcd90" class="flex justify-between">
+      <a role="button" class="">Testing</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/testing/testing-environments/" class="">Testing Environments</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/testing/testing-overview/" class="">Testing Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/testing/testing-recipes/" class="">Testing Recipes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1eb6c1d66211d34c780f5446bd73db50" class="toggle"  />
+    <label for="section-1eb6c1d66211d34c780f5446bd73db50" class="flex justify-between">
+      <a role="button" class="">Glossary</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/bundlers/" class="">Bundlers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/cdn/" class="">Cdn</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/compilers/" class="">Compilers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/components/" class="">Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/controlled-vs.-uncontrolled-components/" class="">Controlled vs. Uncontrolled Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/elements/" class="">Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/es6-es2015-es2016-etc/" class="">Es6 Es2015 Es2016 Etc</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/events/" class="">Events</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/jsx/" class="">Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/keys/" class="">Keys</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/lifecycle-methods/" class="">Lifecycle Methods</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/package-managers/" class="">Package Managers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/props.children/" class="">Props.children</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/props/" class="">Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/reconciliation/" class="">Reconciliation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/refs/" class="">Refs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/single-page-application/" class="">Single Page Application</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/state/" class="">State</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8c1d4bd473062cf6040cc8dda49c5e60" class="toggle"  />
+    <label for="section-8c1d4bd473062cf6040cc8dda49c5e60" class="flex justify-between">
+      <a role="button" class="">References</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/top-level-apis/" class="">Top Level Apis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dc60aa7de7b49b15b00c1ce231963a79" class="toggle"  />
+    <label for="section-dc60aa7de7b49b15b00c1ce231963a79" class="flex justify-between">
+      <a role="button" class="">Component</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentdidcatch/" class="">Componentdidcatch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentdidmount/" class="">Componentdidmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentdidupdate/" class="">Componentdidupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentwillunmount/" class="">Componentwillunmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/constructor/" class="">Constructor</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/defaultprop/" class="">Defaultprop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/displayname/" class="">Displayname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/forceupdate/" class="">Forceupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/getsnapshotbeforeupdate/" class="">Getsnapshotbeforeupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/props/" class="">Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/render/" class="">Render</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/setstate/" class="">Setstate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/shouldcomponentupdate/" class="">Shouldcomponentupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/state/" class="">State</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/static-getderivedstatefromerror/" class="">Static Getderivedstatefromerror</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/static-getderivedstatefromprops/" class="">Static Getderivedstatefromprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/unsafe_componentwillmount/" class="">Unsafe Componentwillmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/unsafe_componentwillreceiveprops/" class="">Unsafe Componentwillreceiveprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/unsafe_componentwillupdate/" class="">Unsafe Componentwillupdate</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8275c599c5a42b2c8ab68678b3916ca0" class="toggle"  />
+    <label for="section-8275c599c5a42b2c8ab68678b3916ca0" class="flex justify-between">
+      <a role="button" class="">General</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/class.contexttype/" class="">Class.contexttype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/context.consumer/" class="">Context.consumer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/context.displayname/" class="">Context.displayname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/context.provider/" class="">Context.provider</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/createportal/" class="">Createportal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/createroot/" class="">Createroot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/finddomnode/" class="">Finddomnode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/flushsync/" class="">Flushsync</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/hydrate/" class="">Hydrate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/hydrateroot/" class="">Hydrateroot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/react.createcontext/" class="">React.createcontext</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/render/" class="">Render</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertonodestream-deprecated/" class="">Rendertonodestream Deprecated</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertopipeablestream/" class="">Rendertopipeablestream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertoreadablestream/" class="">Rendertoreadablestream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertostaticmarkup/" class="">Rendertostaticmarkup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertostaticnodestream/" class="">Rendertostaticnodestream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertostring/" class="">Rendertostring</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/requestanimationframe-throttling/" class="">Requestanimationframe Throttling</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.children/" class="">Testinstance.children</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.find/" class="">Testinstance.find</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findall/" class="">Testinstance.findall</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findallbyprops/" class="">Testinstance.findallbyprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findallbytype/" class="">Testinstance.findallbytype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findbyprops/" class="">Testinstance.findbyprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findbytype/" class="">Testinstance.findbytype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.instance/" class="">Testinstance.instance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.parent/" class="">Testinstance.parent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.props/" class="">Testinstance.props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.type/" class="">Testinstance.type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.act/" class="">Testrenderer.act</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.create/" class="">Testrenderer.create</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.getinstance/" class="">Testrenderer.getinstance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.root/" class="">Testrenderer.root</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.tojson/" class="">Testrenderer.tojson</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.totree/" class="">Testrenderer.totree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.unmount/" class="">Testrenderer.unmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.update/" class="">Testrenderer.update</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/unmountcomponentatnode-1/" class="">Unmountcomponentatnode 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/unmountcomponentatnode/" class="">Unmountcomponentatnode</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-89e51c8a10f9a30c154f4b273b5f34d5" class="toggle"  />
+    <label for="section-89e51c8a10f9a30c154f4b273b5f34d5" class="flex justify-between">
+      <a role="button" class="">Test Utilities</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/act/" class="">Act</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findallinrenderedtree/" class="">Findallinrenderedtree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findrenderedcomponentwithtype/" class="">Findrenderedcomponentwithtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findrendereddomcomponentwithclass/" class="">Findrendereddomcomponentwithclass</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findrendereddomcomponentwithtag/" class="">Findrendereddomcomponentwithtag</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iscompositecomponent/" class="">Iscompositecomponent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iscompositecomponentwithtype/" class="">Iscompositecomponentwithtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/isdomcomponent/" class="">Isdomcomponent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iselement/" class="">Iselement</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iselementoftype/" class="">Iselementoftype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/mockcomponent/" class="">Mockcomponent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/renderintodocument/" class="">Renderintodocument</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/scryrenderedcomponentswithtype/" class="">Scryrenderedcomponentswithtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/scryrendereddomcomponentswithclass/" class="">Scryrendereddomcomponentswithclass</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/scryrendereddomcomponentswithtag/" class="">Scryrendereddomcomponentswithtag</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/simulate/" class="">Simulate</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-935e5e8cf9e4d28020a44ae59e6be870" class="toggle"  />
+    <label for="section-935e5e8cf9e4d28020a44ae59e6be870" class="flex justify-between">
+      <a role="button" class="">Programming Languages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-41cda62474deca29f10bdbe5bfa7e565" class="toggle"  />
+    <label for="section-41cda62474deca29f10bdbe5bfa7e565" class="flex justify-between">
+      <a href="/docs/references/languages/html/" class="">HTML</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/" class="">Attributes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/accept/" class="">Accept</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/autocomplete/" class="">Autocomplete</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/capture/" class="">Capture</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/crossorigin/" class="">Crossorigin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/dirname/" class="">Dirname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/disabled/" class="">Disabled</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/elementtiming/" class="">Elementtiming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/for/" class="">For</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/max/" class="">Max</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/maxlength/" class="">Maxlength</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/min/" class="">Min</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/minlength/" class="">Minlength</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/multiple/" class="">Multiple</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/pattern/" class="">Pattern</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/placeholder/" class="">Placeholder</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/readonly/" class="">Readonly</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/" class="">Rel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/dns-prefetch/" class="">DNS Prefetch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/manifest/" class="">Manifest</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/me/" class="">Me</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/modulepreload/" class="">Modulepreload</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/noopener/" class="">Noopener</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/noreferrer/" class="">Noreferrer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/preconnect/" class="">Preconnect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/prefetch/" class="">Prefetch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/preload/" class="">Preload</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/prerender/" class="">Prerender</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/required/" class="">Required</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/size/" class="">Size</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/step/" class="">Step</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/constraint_validation/" class="">Constraint Validation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/content_categories/" class="">Content Categories</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/cors_enabled_image/" class="">Cors Enabled Image</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/date_and_time_formats/" class="">Date and Time Formats</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/" class="">Element</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/a/" class="">A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/abbr/" class="">Abbr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/acronym/" class="">Acronym</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/address/" class="">Address</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/area/" class="">Area</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/article/" class="">Article</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/aside/" class="">Aside</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/audio/" class="">Audio</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/b/" class="">B</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/base/" class="">Base</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/bdi/" class="">Bdi</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/bdo/" class="">Bdo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/big/" class="">Big</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/blockquote/" class="">Blockquote</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/body/" class="">Body</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/br/" class="">Br</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/button/" class="">Button</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/canvas/" class="">Canvas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/caption/" class="">Caption</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/center/" class="">Center</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/cite/" class="">Cite</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/code/" class="">Code</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/col/" class="">Col</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/colgroup/" class="">Colgroup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/data/" class="">Data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/datalist/" class="">Datalist</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dd/" class="">Dd</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/del/" class="">Del</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dfn/" class="">Dfn</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dialog/" class="">Dialog</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dir/" class="">Dir</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/div/" class="">Div</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dl/" class="">Dl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dt/" class="">Dt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/em/" class="">Em</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/embed/" class="">Embed</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/fieldset/" class="">Fieldset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/figcaption/" class="">Figcaption</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/figure/" class="">Figure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/font/" class="">Font</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/footer/" class="">Footer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/form/" class="">Form</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/frame/" class="">Frame</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/frameset/" class="">Frameset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/head/" class="">Head</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/header/" class="">Header</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/heading_elements/" class="">Heading Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/hgroup/" class="">Hgroup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/hr/" class="">Hr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/html/" class="">HTML</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/i/" class="">I</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/iframe/" class="">Iframe</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/image/" class="">Image</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/img/" class="">Img</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/" class="">Input</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/button/" class="">Button</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/checkbox/" class="">Checkbox</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/color/" class="">Color</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/date/" class="">Date</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/datetime-local/" class="">Datetime Local</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/email/" class="">Email</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/file/" class="">File</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/hidden/" class="">Hidden</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/image/" class="">Image</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/month/" class="">Month</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/number/" class="">Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/password/" class="">Password</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/radio/" class="">Radio</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/range/" class="">Range</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/reset/" class="">Reset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/search/" class="">Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/submit/" class="">Submit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/tel/" class="">Tel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/text/" class="">Text</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/time/" class="">Time</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/url/" class="">URL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/week/" class="">Week</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ins/" class="">Ins</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/kbd/" class="">Kbd</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/label/" class="">Label</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/legend/" class="">Legend</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/li/" class="">Li</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/link/" class="">Link</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/main/" class="">Main</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/map/" class="">Map</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/mark/" class="">Mark</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/marquee/" class="">Marquee</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/menu/" class="">Menu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/menuitem/" class="">Menuitem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meta/" class="">Meta</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meta/name/" class="">Name</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meta/name/theme-color/" class="">Theme Color</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meter/" class="">Meter</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/nav/" class="">Nav</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/nobr/" class="">Nobr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/noembed/" class="">Noembed</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/noframes/" class="">Noframes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/noscript/" class="">Noscript</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/object/" class="">Object</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ol/" class="">Ol</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/optgroup/" class="">Optgroup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/option/" class="">Option</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/output/" class="">Output</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/p/" class="">P</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/param/" class="">Param</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/picture/" class="">Picture</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/plaintext/" class="">Plaintext</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/portal/" class="">Portal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/pre/" class="">Pre</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/progress/" class="">Progress</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/q/" class="">Q</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rb/" class="">Rb</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rp/" class="">Rp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rt/" class="">Rt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rtc/" class="">Rtc</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ruby/" class="">Ruby</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/s/" class="">S</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/samp/" class="">Samp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/" class="">Script</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/type/" class="">Type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/type/importmap/" class="">Importmap</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/type/speculationrules/" class="">Speculationrules</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/search/" class="">Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/section/" class="">Section</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/select/" class="">Select</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/slot/" class="">Slot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/small/" class="">Small</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/source/" class="">Source</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/span/" class="">Span</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/strike/" class="">Strike</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/strong/" class="">Strong</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/sub/" class="">Sub</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/summary/" class="">Summary</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/sup/" class="">Sup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/table/" class="">Table</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tbody/" class="">Tbody</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/td/" class="">Td</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/template/" class="">Template</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/textarea/" class="">Textarea</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tfoot/" class="">Tfoot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/th/" class="">Th</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/thead/" class="">Thead</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/time/" class="">Time</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/title/" class="">Title</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tr/" class="">Tr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/track/" class="">Track</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tt/" class="">Tt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/u/" class="">U</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ul/" class="">Ul</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/var/" class="">Var</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/video/" class="">Video</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/wbr/" class="">Wbr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/xmp/" class="">Xmp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/" class="">Global Attributes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/accesskey/" class="">Accesskey</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/autocapitalize/" class="">Autocapitalize</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/autofocus/" class="">Autofocus</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/class/" class="">Class</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/contenteditable/" class="">Contenteditable</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/contextmenu/" class="">Contextmenu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/data-/" class="">Data *</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/dir/" class="">Dir</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/draggable/" class="">Draggable</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/enterkeyhint/" class="">Enterkeyhint</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/exportparts/" class="">Exportparts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/hidden/" class="">Hidden</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/id/" class="">ID</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/inert/" class="">Inert</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/inputmode/" class="">Inputmode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/is/" class="">Is</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemid/" class="">Itemid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemprop/" class="">Itemprop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemref/" class="">Itemref</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemscope/" class="">Itemscope</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemtype/" class="">Itemtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/lang/" class="">Lang</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/nonce/" class="">Nonce</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/part/" class="">Part</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/popover/" class="">Popover</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/slot/" class="">Slot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/spellcheck/" class="">Spellcheck</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/tabindex/" class="">Tabindex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/title/" class="">Title</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/translate/" class="">Translate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/virtualkeyboardpolicy/" class="">Virtualkeyboardpolicy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/microdata/" class="">Microdata</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/quirks_mode_and_standards_mode/" class="">Quirks Mode and Standards Mode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/reference/" class="">Reference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/viewport_meta_tag/" class="">Viewport Meta Tag</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c00ae0eadbc29a0424d33001616a209" class="toggle"  />
+    <label for="section-5c00ae0eadbc29a0424d33001616a209" class="flex justify-between">
+      <a href="/docs/references/languages/typescript/" class="">Typescript</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/asp-net-core/" class="">Asp Net Core</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/babel-with-typescript/" class="">Babel With Typescript</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/basic-types/" class="">Basic Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/classes/" class="">Classes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/compiler-options-in-msbuild/" class="">Compiler Options in Msbuild</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/compiler-options/" class="">Compiler Options</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/conditional-types/" class="">Conditional Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/configuring-watch/" class="">Configuring Watch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-merging/" class="">Declaration Merging</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/decorators/" class="">Decorators</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/dom-manipulation/" class="">Dom Manipulation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/enums/" class="">Enums</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/esm-node/" class="">Esm Node</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/everyday-types/" class="">Everyday Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/functions/" class="">Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/generics/" class="">Generics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/gulp/" class="">Gulp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/indexed-access-types/" class="">Indexed Access Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/integrating-with-build-tools/" class="">Integrating With Build Tools</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/interfaces/" class="">Interfaces</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/intro-to-js-ts/" class="">Intro to Js Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/intro/" class="">Intro</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/iterators-and-generators/" class="">Iterators and Generators</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/jsdoc-supported-types/" class="">Jsdoc Supported Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/jsx/" class="">Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/keyof-types/" class="">Keyof Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/mapped-types/" class="">Mapped Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/migrating-from-javascript/" class="">Migrating From Javascript</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/mixins/" class="">Mixins</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/module-resolution/" class="">Module Resolution</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/modules/" class="">Modules</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/namespaces-and-modules/" class="">Namespaces and Modules</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/namespaces/" class="">Namespaces</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/narrowing/" class="">Narrowing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/nightly-builds/" class="">Nightly Builds</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/objects/" class="">Objects</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/project-references/" class="">Project References</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/symbols/" class="">Symbols</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/template-literal-types/" class="">Template Literal Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/triple-slash-directives/" class="">Triple Slash Directives</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/tsconfig-json/" class="">Tsconfig JSON</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/tsconfig/" class="">Tsconfig</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/type-checking-javascript-files/" class="">Type Checking Javascript Files</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/type-compatibility/" class="">Type Compatibility</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/type-inference/" class="">Type Inference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typeof-types/" class="">Typeof Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/types-from-types/" class="">Types From Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-from-scratch/" class="">Typescript From Scratch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-in-5-minutes-func/" class="">Typescript in 5 Minutes Func</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-in-5-minutes-oop/" class="">Typescript in 5 Minutes Oop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-in-5-minutes/" class="">Typescript in 5 Minutes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-tooling-in-5-minutes/" class="">Typescript Tooling in 5 Minutes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/utility-types/" class="">Utility Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/variable-declarations/" class="">Variable Declarations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c8e4733f646290e9e3427eea53bbdb88" class="toggle"  />
+    <label for="section-c8e4733f646290e9e3427eea53bbdb88" class="flex justify-between">
+      <a role="button" class="">Declration Files</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/by-example/" class="">By Example</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/consumption/" class="">Consumption</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/deep-dive/" class="">Deep Dive</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/do-s-and-don-ts/" class="">Do S and Don Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/dts-from-js/" class="">Dts From Js</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/introduction/" class="">Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/library-structures/" class="">Library Structures</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/publishing/" class="">Publishing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/" class="">Templates</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a55b3033e7645c7f4d14eb880a34f5a8" class="toggle"  />
+    <label for="section-a55b3033e7645c7f4d14eb880a34f5a8" class="flex justify-between">
+      <a role="button" class="">Templates</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/global-d-ts/" class="">Global D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/global-modifying-module-d-ts/" class="">Global Modifying Module D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/global-plugin-d-ts/" class="">Global Plugin D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-class-d-ts/" class="">Module Class D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-d-ts/" class="">Module D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-function-d-ts/" class="">Module Function D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-plugin-d-ts/" class="">Module Plugin D Ts</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/expriments/" class="">Expriments</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/fundamental/" class="">Fundamental</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/fundamental/fund1/" class="">Fund1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/fundamental/fund2/" class="">Fund2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Dos and Donts for Performance</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#dos-and-donts-for-performance">Do&rsquo;s and don&rsquo;ts for performance</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#beginner-friendly-tips-or-_help-why-cant-i-see-anything_-a-hrefbasic-idbasica">Beginner Friendly Tips, or <em>Help! Why Can’t I See Anything?</em> <a href="#basic" id="basic"></a></a></li>
+            <li><a href="#general-tips-a-hrefgeneral-tips-idgeneral-tipsa">General Tips <a href="#general-tips" id="general-tips"></a></a></li>
+            <li><a href="#work-in-si-units-a-hrefwork-in-si-units-idwork-in-si-unitsa">Work in SI Units <a href="#work-in-si-units" id="work-in-si-units"></a></a></li>
+            <li><a href="#accurate-colors-a-hrefaccurate-colors-idaccurate-colorsa">Accurate Colors <a href="#accurate-colors" id="accurate-colors"></a></a></li>
+            <li><a href="#javascript-a-hrefjavascript-idjavascripta">JavaScript <a href="#javascript" id="javascript"></a></a></li>
+            <li><a href="#models-meshes-and-other-visible-thing-a-hrefmodels-meshes-and-other-visible-thing-idmodels-meshes-and-other-visible-thinga">Models, Meshes and Other Visible Thing <a href="#models-meshes-and-other-visible-thing" id="models-meshes-and-other-visible-thing"></a></a></li>
+            <li><a href="#camera-a-hrefcamera-idcameraa">Camera <a href="#camera" id="camera"></a></a></li>
+            <li><a href="#renderer-a-hrefrenderer-idrenderera">Renderer <a href="#renderer" id="renderer"></a></a></li>
+            <li><a href="#lights-a-hreflights-idlightsa">Lights <a href="#lights" id="lights"></a></a></li>
+            <li><a href="#shadows-a-hrefshadows-idshadowsa">Shadows <a href="#shadows" id="shadows"></a></a></li>
+            <li><a href="#materials-a-hrefmaterials-idmaterialsa">Materials <a href="#materials" id="materials"></a></a></li>
+            <li><a href="#custom-materials-a-hrefcustom-materials-idcustom-materialsa">Custom Materials <a href="#custom-materials" id="custom-materials"></a></a></li>
+            <li><a href="#geometry-a-hrefgeometry-idgeometrya">Geometry <a href="#geometry" id="geometry"></a></a></li>
+            <li><a href="#textures-a-hreftextures-idtexturesa">Textures <a href="#textures" id="textures"></a></a></li>
+            <li><a href="#antialiasing-a-hrefantialiasing-idantialiasinga">Antialiasing <a href="#antialiasing" id="antialiasing"></a></a></li>
+            <li><a href="#post-processing-a-hrefpost-processing-idpost-processinga">Post-Processing <a href="#post-processing" id="post-processing"></a></a></li>
+            <li><a href="#disposing-of-things-a-hrefdisposing-of-things-iddisposing-of-thingsa">Disposing of Things <a href="#disposing-of-things" id="disposing-of-things"></a></a></li>
+            <li><a href="#updating-objects-in-your-scene-a-hrefupdating-objects-in-your-scene-idupdating-objects-in-your-scenea">Updating Objects in Your Scene? <a href="#updating-objects-in-your-scene" id="updating-objects-in-your-scene"></a></a></li>
+            <li><a href="#performance-a-hrefperformance-idperformancea">Performance <a href="#performance" id="performance"></a></a></li>
+            <li><a href="#advanced-tips-a-hrefadvanced-tips-idadvanced-tipsa">Advanced Tips <a href="#advanced-tips" id="advanced-tips"></a></a></li>
+            <li><a href="#read-these-pages-too-a-hrefread-these-pages-too-idread-these-pages-tooa">Read These Pages Too! <a href="#read-these-pages-too" id="read-these-pages-too"></a></a></li>
+            <li><a href="#references-a-hrefreferences-idreferencesa">References <a href="#references" id="references"></a></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown">
+
+
+
+
+
+
+
+
+
+
+<h1 id="dos-and-donts-for-performance">
+  Do&rsquo;s and don&rsquo;ts for performance
+  <a class="anchor" href="#dos-and-donts-for-performance">#</a>
+</h1>
+<p>Hey everyone! While writing the book I’ve been gathering a big list of tips, tricks, caveats, and gotchas. This page contains everything that I’ve found so far.</p>
+<p>Not all the tips here have been experimentally verified, especially the performance tips. There are too many variables involved to blindly follow a list, so always make sure to test your app thoroughly and see what works for you. These are suggestions, not rules (mostly). That said, this page will have lots of useful tips for apps of any size.</p>
+<p>If you have anything to add or notice any mistakes, let me know and I’ll update the page.</p>
+<p>Most of the info here is not specific to three.js, or even WebGL, but will work in any real-time graphics application or framework.</p>
+<p>Happy Coding!</p>
+<h3 id="beginner-friendly-tips-or-_help-why-cant-i-see-anything_-a-hrefbasic-idbasica">
+  Beginner Friendly Tips, or <em>Help! Why Can’t I See Anything?</em> <a href="#basic" id="basic"></a>
+  <a class="anchor" href="#beginner-friendly-tips-or-_help-why-cant-i-see-anything_-a-hrefbasic-idbasica">#</a>
+</h3>
+<p>You’ve followed a couple of basic tutorials and everything worked out fine. Now you’re creating an app of your own and you’ve set everything up <em>exactly</em> as the tutorial says. But you just can’t see anything! WTH??</p>
+<p>Here are some things you can do to help figure out the problem.</p>
+<h4 id="1-check-the-browser-consolehttpsdevelopermozillaorgen-usdocstoolsbrowser_console-for-error-messages-a-hreferror-message-check-iderror-message-checka">
+  1. Check the 
+  <a href="https://developer.mozilla.org/en-US/docs/Tools/Browser%5c_Console">browser console</a> for error messages <a href="#error-message-check" id="error-message-check"></a>
+  <a class="anchor" href="#1-check-the-browser-consolehttpsdevelopermozillaorgen-usdocstoolsbrowser_console-for-error-messages-a-hreferror-message-check-iderror-message-checka">#</a>
+</h4>
+<p>But you already did that, right?</p>
+<h4 id="2-set-the-background-color-to-something-other-than-black-a-hrefbackground-color-check-idbackground-color-checka">
+  2. Set the background color to something other than black <a href="#background-color-check" id="background-color-check"></a>
+  <a class="anchor" href="#2-set-the-background-color-to-something-other-than-black-a-hrefbackground-color-check-idbackground-color-checka">#</a>
+</h4>
+<p>Staring at a black canvas? It’s hard to tell whether something is happening or not if all you can see is black. Try setting the background color to red:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Color</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./vendor/three/build/three.module.js&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">scene</span>.<span style="color:#a6e22e">background</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Color</span>(<span style="color:#e6db74">&#34;red&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><p>If you get a red canvas, then at least your <code>renderer.render</code> calls are working, and you can move on to figuring out what else is wrong.</p>
+<h4 id="3-make-sure-you-have-a-light-in-your-scene-and-that-its-illuminating-your-objects-a-hreflight-check-idlight-checka">
+  3. Make sure you have a light in your scene and that it’s illuminating your objects <a href="#light-check" id="light-check"></a>
+  <a class="anchor" href="#3-make-sure-you-have-a-light-in-your-scene-and-that-its-illuminating-your-objects-a-hreflight-check-idlight-checka">#</a>
+</h4>
+<p>Just as in the real world, most materials in three.js need light to be seen.</p>
+<h4 id="4-overide-all-materials-in-the-scene-with-a-meshbasicmaterial-a-hrefmaterial-check-idmaterial-checka">
+  4. Overide all materials in the scene with a <code>MeshBasicMaterial</code> <a href="#material-check" id="material-check"></a>
+  <a class="anchor" href="#4-overide-all-materials-in-the-scene-with-a-meshbasicmaterial-a-hrefmaterial-check-idmaterial-checka">#</a>
+</h4>
+<p>One material that doesn’t require light to be visible is the 
+  <a href="https://threejs.org/docs/#api/en/materials/MeshBasicMaterial"><code>MeshBasicMaterial</code></a>. If you are having trouble getting objects to show up, you can temporarily override all the materials in your scene with <code>MeshBasicMaterial</code>. If the objects magically appear when you do this, then your problem is a lack of light.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">MeshBasicMaterial</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./vendor/three/build/three.module.js&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">scene</span>.<span style="color:#a6e22e">overrideMaterial</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">MeshBasicMaterial</span>({ <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;green&#34;</span> });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><h4 id="5-is-your-object-within-the-cameras-viewing-frustum-a-hreffrustum-check-idfrustum-checka">
+  5. Is your object within the camera’s viewing frustum? <a href="#frustum-check" id="frustum-check"></a>
+  <a class="anchor" href="#5-is-your-object-within-the-cameras-viewing-frustum-a-hreffrustum-check-idfrustum-checka">#</a>
+</h4>
+<p>If your object is not inside the viewing frustum, it will get clipped. Try making your far clipping plane really big:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">camera</span>.<span style="color:#a6e22e">far</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100000</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">camera</span>.<span style="color:#a6e22e">updateProjectionMatrix</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><p>Remember this is just for testing though! The camera’s frustum is measured in meters, and you should make it as small as possible for best performance. Once your scene is set up and working correctly, reduce the size of your frustum as much as possible.</p>
+<h4 id="6-is-your-camera-inside-the-object-a-hrefcamera-check-idcamera-checka">
+  6. Is your camera inside the object? <a href="#camera-check" id="camera-check"></a>
+  <a class="anchor" href="#6-is-your-camera-inside-the-object-a-hrefcamera-check-idcamera-checka">#</a>
+</h4>
+<p>By default, everything gets created at the point $(0,0,0)$, AKA the <strong>origin</strong>. Make sure you have moved your camera back so that you can see your scene!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">camera</span>.<span style="color:#a6e22e">position</span>.<span style="color:#a6e22e">z</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><h4 id="7-think-carefully-about-the-scale-of-your-scene-a-hrefscale-check-idscale-checka">
+  7. Think carefully about the scale of your scene <a href="#scale-check" id="scale-check"></a>
+  <a class="anchor" href="#7-think-carefully-about-the-scale-of-your-scene-a-hrefscale-check-idscale-checka">#</a>
+</h4>
+<p>Try to visualize your scene and remember that one unit in three.js is one meter. Does everything fit together in a reasonably logical manner? Or perhaps you cannot see anything because the object you just loaded is only 0.00001 meters wide. Wait, what’s that tiny black dot in the middle of the screen?</p>
+<h3 id="general-tips-a-hrefgeneral-tips-idgeneral-tipsa">
+  General Tips <a href="#general-tips" id="general-tips"></a>
+  <a class="anchor" href="#general-tips-a-hrefgeneral-tips-idgeneral-tipsa">#</a>
+</h3>
+<ol>
+<li>Object creation in JavaScript is expensive, so don’t create objects in a loop. Instead, create a single object such as a 
+  <a href="https://threejs.org/docs/#api/en/math/Vector3">Vector3</a> and use 
+  <a href="https://threejs.org/docs/#api/en/math/Vector3.set"><code>vector.set()</code></a> or similar methods to reuse a that inside the loop.</li>
+<li>The same goes for your render loop. To make sure your app runs at a buttery smooth sixty frames per second, do as little work as possible in your render loop. Don’t create new objects every frame.</li>
+<li>Always use 
+  <a href="https://threejs.org/docs/#api/en/core/BufferGeometry"><code>BufferGeometry</code></a> instead of 
+  <a href="https://threejs.org/docs/#api/en/core/Geometry"><code>Geometry</code></a>, it’s faster.</li>
+<li>The same goes for the pre-built objects, always use the buffer geometry version ( 
+  <a href="https://threejs.org/docs/#api/en/geometries/BoxBufferGeometry"><code>BoxBufferGeometry</code></a> rather than 
+  <a href="https://threejs.org/docs/#api/en/geometries/BoxGeometry"><code>BoxGeometry</code></a>).</li>
+<li>Always try to reuse objects such as objects, materials, textures etc. (although updating some things may be slower than creating new ones, see texture tips below).</li>
+</ol>
+<h3 id="work-in-si-units-a-hrefwork-in-si-units-idwork-in-si-unitsa">
+  Work in SI Units <a href="#work-in-si-units" id="work-in-si-units"></a>
+  <a class="anchor" href="#work-in-si-units-a-hrefwork-in-si-units-idwork-in-si-unitsa">#</a>
+</h3>
+<p>three.js is uses SI units everywhere. If you also use SI units, you will find that things work more smoothly. If you do use a different kind of unit for some reason, such as inches (<em>shudder</em>), make sure that you have a good reason for doing so.</p>
+<h4 id="si-units-a-hrefsi-units-idsi-unitsa">
+  SI Units <a href="#si-units" id="si-units"></a>
+  <a class="anchor" href="#si-units-a-hrefsi-units-idsi-unitsa">#</a>
+</h4>
+<ul>
+<li>Distance is measured in <strong>meters</strong> (1 three.js unit = 1 meter).</li>
+<li>Time is measured in seconds.</li>
+<li>Light is measured in SI light units, 
+  <a href="http://www.si-units-explained.info/luminosity/">Candela</a> (cd), Lumen (lm), and Lux (lx) (as long as you turn on <code>renderer.physicallyCorrectLights</code>, at least).</li>
+</ul>
+<p>If you are creating things on a truly epic scale (space simulations and things like that), either use a scaling factor or switch to using a 
+  <a href="http://threejs.org/examples/#webgl%5c_camera%5c_logarithmicdepthbuffer">logarithmic depth buffer</a>.</p>
+<h3 id="accurate-colors-a-hrefaccurate-colors-idaccurate-colorsa">
+  Accurate Colors <a href="#accurate-colors" id="accurate-colors"></a>
+  <a class="anchor" href="#accurate-colors-a-hrefaccurate-colors-idaccurate-colorsa">#</a>
+</h3>
+<p>For (nearly) accurate colors, use these settings for the renderer:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">renderer</span>.<span style="color:#a6e22e">gammaFactor</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.2</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">renderer</span>.<span style="color:#a6e22e">outputEncoding</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">THREE</span>.<span style="color:#a6e22e">sRGBEncoding</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><p>For colors do this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Color</span>(<span style="color:#ae81ff">0x800080</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">color</span>.<span style="color:#a6e22e">convertSRGBToLinear</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><p>Or, in the more common case of using a color in a material:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">material</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">MeshBasicMaterial</span>({ <span style="color:#a6e22e">color</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0x800080</span> });
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">material</span>.<span style="color:#a6e22e">color</span>.<span style="color:#a6e22e">convertSRGBToLinear</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><p>Finally, to get (nearly) correct colors in your textures, <strong>you need to set the texture encoding for the color, environment, and emissive maps _only</strong>_:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">sRGBEncoding</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./vendor/three/build/three.module.js&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">colorMap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">TextureLoader</span>().<span style="color:#a6e22e">load</span>(<span style="color:#e6db74">&#34;colorMap.jpg&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">colorMap</span>.<span style="color:#a6e22e">encoding</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sRGBEncoding</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><p>All other texture types should remain in linear color space. This is the default, so you don’t need to change the encoding for any textures other than color, environment, and emissive maps.</p>
+<p>Note that I’m saying <strong>nearly correct</strong> here since three.js color management is not quite correct at the moment. Hopefully, it will be fixed soon, but in the meantime, any inaccuracy in color will be so minor that it’s very unlikely anybody will notice unless you are doing scientific or medical renderings.</p>
+<h3 id="javascript-a-hrefjavascript-idjavascripta">
+  JavaScript <a href="#javascript" id="javascript"></a>
+  <a class="anchor" href="#javascript-a-hrefjavascript-idjavascripta">#</a>
+</h3>
+<h4 id="dont-assume-you-know-what-will-be-faster-a-hrefdont-assume-you-know-what-will-be-faster-iddont-assume-you-know-what-will-be-fastera">
+  Don’t assume you know what will be faster <a href="#dont-assume-you-know-what-will-be-faster" id="dont-assume-you-know-what-will-be-faster"></a>
+  <a class="anchor" href="#dont-assume-you-know-what-will-be-faster-a-hrefdont-assume-you-know-what-will-be-faster-iddont-assume-you-know-what-will-be-fastera">#</a>
+</h4>
+<p>The JavaScript engines used by web browsers change frequently and do an amazing amount of optimization of your code behind the scenes. Don’t trust your intuition about what will be faster, always test. Don’t listen to articles from a few years ago telling you to avoid certain methods such as <code>array.map</code> or <code>array.forEach</code>. Test these for yourself, or find articles from the last few months with proper tests.</p>
+<h4 id="use-a-style-guide-and-linter-a-hrefuse-a-style-guide-and-linter-iduse-a-style-guide-and-lintera">
+  Use a style guide and linter <a href="#use-a-style-guide-and-linter" id="use-a-style-guide-and-linter"></a>
+  <a class="anchor" href="#use-a-style-guide-and-linter-a-hrefuse-a-style-guide-and-linter-iduse-a-style-guide-and-lintera">#</a>
+</h4>
+<p>Personally, I use a combination of 
+  <a href="https://eslint.org/">Eslint</a>, 
+  <a href="https://prettier.io/">Prettier</a>, and the 
+  <a href="https://github.com/airbnb/javascript">Airbnb style guide</a>. This took me around 30 minutes to set up in VSCode using 
+  <a href="https://www.robinwieruch.de/how-to-use-prettier-vscode">this tutorial</a> ( 
+  <a href="https://www.robinwieruch.de/prettier-eslint">part 2</a>), and now I never have to waste my time with formatting, linting, or wondering whether a particular piece of syntax is a good idea, ever again.</p>
+<p>Many people who work with three.js prefer 
+  <a href="https://github.com/mrdoob/three.js/wiki/Mr.doob%27s-Code-Style%E2%84%A2"><strong>Mr.doob’s Code Style™</strong></a> over Airbnb, so if you prefer to use that just replace 
+  <a href="https://www.npmjs.com/package/eslint-config-airbnb">eslint-config-airbnb</a> plugin with 
+  <a href="https://www.npmjs.com/package/eslint-config-mdcs">eslint-config-mdcs</a>.</p>
+<h3 id="models-meshes-and-other-visible-thing-a-hrefmodels-meshes-and-other-visible-thing-idmodels-meshes-and-other-visible-thinga">
+  Models, Meshes and Other Visible Thing <a href="#models-meshes-and-other-visible-thing" id="models-meshes-and-other-visible-thing"></a>
+  <a class="anchor" href="#models-meshes-and-other-visible-thing-a-hrefmodels-meshes-and-other-visible-thing-idmodels-meshes-and-other-visible-thinga">#</a>
+</h3>
+<ol>
+<li>Avoid using common text-based 3D data formats, such as Wavefront OBJ or COLLADA, for asset delivery. Instead, use formats optimized for the web, such as glTF.</li>
+<li>Use Draco mesh compression with glTF. Sometimes this reduces glTF files to less than 10% of their original size!</li>
+<li>Alternatively, there is a new kid on the block called 
+  <a href="https://github.com/zeux/meshoptimizer#gltfpack">gltfpack</a> which in some cases may give even better results than Draco.</li>
+<li>If you need to make large groups of objects visible and invisible (or add/remove them from your scene), consider using 
+  <a href="https://threejs.org/docs/#api/en/core/Layers">Layers</a> for best performance.</li>
+<li>Objects at the same exact same position cause flickering (Z-fighting). Try offsetting things by a tiny amount like 0.001 to make things look like they are in the same position while keeping your GPU happy.</li>
+<li>Keep your scene centered around the origin to reduce floating-point errors at large coordinates.</li>
+<li>Never move your <code>Scene</code>. It gets created at $(0,0,0)$, and this is the default frame of reference for all the objects inside it.</li>
+</ol>
+<h3 id="camera-a-hrefcamera-idcameraa">
+  Camera <a href="#camera" id="camera"></a>
+  <a class="anchor" href="#camera-a-hrefcamera-idcameraa">#</a>
+</h3>
+<ol>
+<li>Make your frustum as small as possible for better performance. It’s fine to use a large frustum in development, but once you are fine-tuning your app for deployment, make your frustum as small as possible to gain a few vital FPS.</li>
+<li>Don’t put things right on the far clipping plane (especially if your far clipping plane is really big), as this can cause flickering.</li>
+</ol>
+<h3 id="renderer-a-hrefrenderer-idrenderera">
+  Renderer <a href="#renderer" id="renderer"></a>
+  <a class="anchor" href="#renderer-a-hrefrenderer-idrenderera">#</a>
+</h3>
+<ol>
+<li>Don’t enable 
+  <a href="https://threejs.org/docs/#api/en/renderers/WebGLRenderer"><code>preserveDrawingBuffer</code></a> unless you need it.</li>
+<li>Disable the alpha buffer unless you need it.</li>
+<li>Don’t enable the stencil buffer unless you need it.</li>
+<li>Disable the depth buffer unless you need it (but you probably do need it).</li>
+<li>Use <code>powerPreference: &quot;high-performance&quot;</code> when creating the renderer. This <em>may</em> encourage a user’s system to choose the high-performance GPU, in multi-GPU systems.</li>
+<li>Consider only rendering when the camera position changes by epsilon or when an animation happens.</li>
+<li>If your scene is static and uses <code>OrbitControls</code>, you can listen for the control’s <code>change</code> event. This way you can render the scene only when the camera moves:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">OrbitControls</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;change&#34;</span>, () =&gt; <span style="color:#a6e22e">renderer</span>.<span style="color:#a6e22e">render</span>(<span style="color:#a6e22e">scene</span>, <span style="color:#a6e22e">camera</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><p>You won’t get a higher frame rate from the last two, but what you will get is less fans switching on, and less battery drain on mobile devices.</p>
+<p>Note: I’ve seen a few places around the web recommending that you disable anti-aliasing and apply a post-processing AA pass instead. In my testing, this is not true. On modern hardware built-in MSAA seems to be extremely cheap even on low-power mobile devices, while the post-processing FXAA or SMAA passes cause a considerable frame rate drop on every scene I’ve tested them with, and are also lower quality than MSAA.</p>
+<h3 id="lights-a-hreflights-idlightsa">
+  Lights <a href="#lights" id="lights"></a>
+  <a class="anchor" href="#lights-a-hreflights-idlightsa">#</a>
+</h3>
+<ol>
+<li>Direct lights (<code>SpotLight</code>, <code>PointLight</code>, <code>RectAreaLight</code>, and <code>DirectionalLight</code>) are slow. Use as few direct lights as possible in your scenes.</li>
+<li>Avoid adding and removing lights from your scene since this requires the <code>WebGLRenderer</code> to recompile all shader programs (it does cache the programs so subsequent times that you do this it will be faster than the first). Instead, use <code>light.visible = false</code> or <code>light.intensiy = 0</code>.</li>
+<li>Turn on <code>renderer.physicallyCorrectLights</code> for accurate lighting that uses SI units.</li>
+</ol>
+<h3 id="shadows-a-hrefshadows-idshadowsa">
+  Shadows <a href="#shadows" id="shadows"></a>
+  <a class="anchor" href="#shadows-a-hrefshadows-idshadowsa">#</a>
+</h3>
+<ol>
+<li>If your scene is static, only update the shadow map when something changes, rather than every frame.</li>
+<li>Use a 
+  <a href="https://threejs.org/docs/#api/en/helpers/CameraHelper"><code>CameraHelper</code></a> to visualize the shadow camera’s viewing frustum.</li>
+<li>Make the shadow frustum as small as possible.</li>
+<li>Make the shadow texture as low resolution as possible.</li>
+<li>Remember that point light shadows are more expensive than other shadow types since they must render six times (once in each direction), compared with a single time for <code>DirectionalLight</code> and <code>SpotLight</code> shadows.</li>
+<li>While we’re on the topic of <code>PointLight</code> shadows, note that the <code>CameraHelper</code> only visualizes <strong>one out of six</strong> of the shadow directions when used to visualize point light shadows. It’s still useful, but you’ll need to use your imagination for the other five directions.</li>
+</ol>
+<h3 id="materials-a-hrefmaterials-idmaterialsa">
+  Materials <a href="#materials" id="materials"></a>
+  <a class="anchor" href="#materials-a-hrefmaterials-idmaterialsa">#</a>
+</h3>
+<ol>
+<li><code>MeshLambertMaterial</code> doesn’t work for shiny materials, but for matte materials like cloth it will give very similar results to <code>MeshPhongMaterial</code> but is faster.</li>
+<li>If you are using morph targets, make sure you set 
+  <a href="https://threejs.org/docs/#api/en/materials/MeshStandardMaterial.morphTargets"><code>morphTargets = true</code></a> in your material, or they won’t work!</li>
+<li>Same goes for 
+  <a href="https://threejs.org/docs/#api/en/materials/MeshStandardMaterial.morphNormals">morph normals</a>.</li>
+<li>And if you’re using a 
+  <a href="https://threejs.org/docs/#api/en/objects/SkinnedMesh">SkinnedMesh</a> for skeletal animations, make sure that 
+  <a href="https://threejs.org/docs/#api/en/materials/MeshStandardMaterial.skinning"><code>material.skinning = true</code></a>.</li>
+<li>Materials used with morph targets, morph normals, or skinning can’t be shared. You’ll need to create a unique material for each skinned or morphed mesh ( 
+  <a href="https://threejs.org/docs/#api/en/materials/Material.clone"><code>material.clone()</code></a> is your friend here).</li>
+</ol>
+<h3 id="custom-materials-a-hrefcustom-materials-idcustom-materialsa">
+  Custom Materials <a href="#custom-materials" id="custom-materials"></a>
+  <a class="anchor" href="#custom-materials-a-hrefcustom-materials-idcustom-materialsa">#</a>
+</h3>
+<ol>
+<li>Only update your uniforms when they change, not every frame.</li>
+</ol>
+<h3 id="geometry-a-hrefgeometry-idgeometrya">
+  Geometry <a href="#geometry" id="geometry"></a>
+  <a class="anchor" href="#geometry-a-hrefgeometry-idgeometrya">#</a>
+</h3>
+<ol>
+<li>Avoid using 
+  <a href="https://threejs.org/docs/#api/en/objects/LineLoop"><code>LineLoop</code></a> since it must be emulated by line strip.</li>
+</ol>
+<h3 id="textures-a-hreftextures-idtexturesa">
+  Textures <a href="#textures" id="textures"></a>
+  <a class="anchor" href="#textures-a-hreftextures-idtexturesa">#</a>
+</h3>
+<ol>
+<li>All of your textures need to be power of two (POT) size: $1, 2, 4, 8, 16, \dots, 512, 2048, \dots$.</li>
+<li>Don’t change the dimensions of your textures. Create new ones instead, 
+  <a href="http://webglinsights.github.io/tips.html">it’s faster</a></li>
+<li>Use the smallest texture sizes possible (can you get away with a 256x256 tiled texture? You might be surprised!).</li>
+<li>Non-power-of-two (NPOT) textures require linear or nearest filtering, and clamp-to-border or clamp-to-edge wrapping. Mipmap filtering and repeat wrapping are not supported. But seriously, just don’t use NPOT textures.</li>
+<li>All textures with the same dimensions are the same size in memory, so JPG may have a smaller file size than PNG, but it will take up the same amount of memory on your GPU.</li>
+</ol>
+<h3 id="antialiasing-a-hrefantialiasing-idantialiasinga">
+  Antialiasing <a href="#antialiasing" id="antialiasing"></a>
+  <a class="anchor" href="#antialiasing-a-hrefantialiasing-idantialiasinga">#</a>
+</h3>
+<ol>
+<li>The worst-case scenario for antialiasing is geometry made up of lots of thin straight pieces aligned parallel with one another. Think metal window blinds or a lattice fence. If it’s at all possible, <strong>don’t include geometry like this in your scenes.</strong> If you have no choice, consider replacing the lattice with a texture instead, as that may give better results.</li>
+</ol>
+<h3 id="post-processing-a-hrefpost-processing-idpost-processinga">
+  Post-Processing <a href="#post-processing" id="post-processing"></a>
+  <a class="anchor" href="#post-processing-a-hrefpost-processing-idpost-processinga">#</a>
+</h3>
+<ol>
+<li>The built-in antialiasing doesn’t work with post-processing (at least in WebGL 1). You will need to do this manually, using 
+  <a href="https://threejs.org/examples/#webgl%5c_postprocessing%5c_fxaa">FXAA</a> or 
+  <a href="https://threejs.org/examples/#webgl%5c_postprocessing%5c_smaa">SMAA</a> (probably faster, better)</li>
+<li>Since you are not using the built-in AA, be sure to disable it!</li>
+<li>three.js has loads of post-processing shaders, and that’s just great! But remember that each pass requires rendering your entire scene. Once you’re done testing, consider whether you can combine your passes into one single custom pass. It’s a little more work to do this, but can come with a considerable performance increase.</li>
+</ol>
+<h3 id="disposing-of-things-a-hrefdisposing-of-things-iddisposing-of-thingsa">
+  Disposing of Things <a href="#disposing-of-things" id="disposing-of-things"></a>
+  <a class="anchor" href="#disposing-of-things-a-hrefdisposing-of-things-iddisposing-of-thingsa">#</a>
+</h3>
+<p>Removing something from your scene?</p>
+<p>First of all, <strong>consider not doing that</strong>, especially if you will add it back again later. You can hide objects temporarily using <code>object.visible = false</code> (works for lights too), or <code>material.opacity = 0</code>. You can set <code>light.intensity = 0</code> to disable a light without causing shaders to recompile.</p>
+<p>If you do need to remove things from your scene <em>permanently</em>, read this article first: 
+  <a href="https://threejs.org/docs/#manual/en/introduction/How-to-dispose-of-objects">How to dispose of objects</a>.</p>
+<h3 id="updating-objects-in-your-scene-a-hrefupdating-objects-in-your-scene-idupdating-objects-in-your-scenea">
+  Updating Objects in Your Scene? <a href="#updating-objects-in-your-scene" id="updating-objects-in-your-scene"></a>
+  <a class="anchor" href="#updating-objects-in-your-scene-a-hrefupdating-objects-in-your-scene-idupdating-objects-in-your-scenea">#</a>
+</h3>
+<p>Read this article: 
+  <a href="https://threejs.org/docs/#manual/en/introduction/How-to-update-things">How to update things</a>.</p>
+<h3 id="performance-a-hrefperformance-idperformancea">
+  Performance <a href="#performance" id="performance"></a>
+  <a class="anchor" href="#performance-a-hrefperformance-idperformancea">#</a>
+</h3>
+<ol>
+<li>Set <code>object.matrixAutoUpdate = false</code> for static or rarely moving objects and manually call <code>object.updateMatrix()</code> whenever their position/rotation/quaternion/scale are updated.</li>
+<li><strong>Transparent objects are slow.</strong> Use as few transparent objects as possible in your scenes.</li>
+<li>use 
+  <a href="https://threejs.org/docs/#api/en/materials/Material.alphaTest"><code>alphatest</code></a> instead of standard transparency if possible, it’s faster.</li>
+<li>When testing the performance of your apps, one of the first things you’ll need to do is check whether it is CPU bound, or GPU bound. Replace all materials with basic material using <code>scene.overrideMaterial</code> (see beginners tips and the start of the page). If performance increases, then your app is GPU bound. If performance doesn’t increase, your app is CPU bound.</li>
+<li>When performance testing on a fast machine, you’ll probably be getting the maximum frame rate of 60FPS. Run chrome using <code>open -a &quot;Google Chrome&quot; --args --disable-gpu-vsync</code> for an unlimited frame rate.</li>
+<li>Modern mobile devices have high pixel ratios as high as 5 - consider limiting the max pixel ratio to 2 or 3 on these devices. At the expense of some very slight blurring of your scene you will gain a considerable performance increase.</li>
+<li>Bake lighting and shadow maps to reduce the number of lights in your scene.</li>
+<li>Keep an eye on the number of drawcalls in your scene. A good rule of thumb is fewer draw calls = better performance.</li>
+<li>Far away objects don’t need the same level of detail as objects close to the camera. There are many tricks used to increase performance by reducing the quality of distant objects. Consider using a 
+  <a href="https://threejs.org/docs/#api/en/objects/LOD">LOD</a> (Level Of Detail) object. You may also get away with only updating position / animation every 2nd or 3rd frame for distant objects, or replacing them with a billboard - that is, a drawing of the object.</li>
+</ol>
+<h3 id="advanced-tips-a-hrefadvanced-tips-idadvanced-tipsa">
+  Advanced Tips <a href="#advanced-tips" id="advanced-tips"></a>
+  <a class="anchor" href="#advanced-tips-a-hrefadvanced-tips-idadvanced-tipsa">#</a>
+</h3>
+<ol>
+<li>Don’t use <code>TriangleFanDrawMode</code>, it’s slow.</li>
+<li>Use geometry instancing when you have hundreds or thousands of similar geometries.</li>
+<li>Animate on the GPU instead of the CPU, especially when animating vertices or particles (see 
+  <a href="https://github.com/zadvorsky/three.bas">THREE.Bas</a> for one approach to doing this).</li>
+</ol>
+<h3 id="read-these-pages-too-a-hrefread-these-pages-too-idread-these-pages-tooa">
+  Read These Pages Too! <a href="#read-these-pages-too" id="read-these-pages-too"></a>
+  <a class="anchor" href="#read-these-pages-too-a-hrefread-these-pages-too-idread-these-pages-tooa">#</a>
+</h3>
+<p>The Unity and Unreal docs also have pages with lots of performance suggestions, most of which are equally relevant for three.js. Read over these as well:</p>
+<ul>
+<li>
+  <a href="https://docs.unity3d.com/Manual/OptimizingGraphicsPerformance.html">Optimizing graphics performance (Unity)</a></li>
+<li>
+  <a href="https://docs.unrealengine.com/en-us/Engine/Performance/Guidelines">Performance Guidelines for Artists and Designers (Unreal)</a></li>
+</ul>
+<p>WebGL Insights has lots of tips collected from throughout the book. It’s more technical, but worth reading too, especially if you are writing your own shaders.</p>
+<ul>
+<li>
+  <a href="http://webglinsights.github.io/tips.html">WebGL Insights Tips</a></li>
+</ul>
+<h3 id="references-a-hrefreferences-idreferencesa">
+  References <a href="#references" id="references"></a>
+  <a class="anchor" href="#references-a-hrefreferences-idreferencesa">#</a>
+</h3>
+<ul>
+<li>
+  <a href="https://mobile.twitter.com/jackrugile/status/966440290885156864">@jackrugile and @mrdoob on Twitter</a></li>
+<li>
+  <a href="https://blog.mozvr.com/a-painter-performance-optimizations">A-Painter performance optimizations</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/Narutabe/Narutab.github.io/commit/7ac2743c38a8f2aaee89f7609d2ddafdcb58738d" title='Last modified by mindulle | December 3, 2023' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>December 3, 2023</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/Narutabe/Narutab.github.io/commit/content/docs/references/libs-and-fwks/react-three/advanced/dos-and-donts-for-performance.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#dos-and-donts-for-performance">Do&rsquo;s and don&rsquo;ts for performance</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#beginner-friendly-tips-or-_help-why-cant-i-see-anything_-a-hrefbasic-idbasica">Beginner Friendly Tips, or <em>Help! Why Can’t I See Anything?</em> <a href="#basic" id="basic"></a></a></li>
+            <li><a href="#general-tips-a-hrefgeneral-tips-idgeneral-tipsa">General Tips <a href="#general-tips" id="general-tips"></a></a></li>
+            <li><a href="#work-in-si-units-a-hrefwork-in-si-units-idwork-in-si-unitsa">Work in SI Units <a href="#work-in-si-units" id="work-in-si-units"></a></a></li>
+            <li><a href="#accurate-colors-a-hrefaccurate-colors-idaccurate-colorsa">Accurate Colors <a href="#accurate-colors" id="accurate-colors"></a></a></li>
+            <li><a href="#javascript-a-hrefjavascript-idjavascripta">JavaScript <a href="#javascript" id="javascript"></a></a></li>
+            <li><a href="#models-meshes-and-other-visible-thing-a-hrefmodels-meshes-and-other-visible-thing-idmodels-meshes-and-other-visible-thinga">Models, Meshes and Other Visible Thing <a href="#models-meshes-and-other-visible-thing" id="models-meshes-and-other-visible-thing"></a></a></li>
+            <li><a href="#camera-a-hrefcamera-idcameraa">Camera <a href="#camera" id="camera"></a></a></li>
+            <li><a href="#renderer-a-hrefrenderer-idrenderera">Renderer <a href="#renderer" id="renderer"></a></a></li>
+            <li><a href="#lights-a-hreflights-idlightsa">Lights <a href="#lights" id="lights"></a></a></li>
+            <li><a href="#shadows-a-hrefshadows-idshadowsa">Shadows <a href="#shadows" id="shadows"></a></a></li>
+            <li><a href="#materials-a-hrefmaterials-idmaterialsa">Materials <a href="#materials" id="materials"></a></a></li>
+            <li><a href="#custom-materials-a-hrefcustom-materials-idcustom-materialsa">Custom Materials <a href="#custom-materials" id="custom-materials"></a></a></li>
+            <li><a href="#geometry-a-hrefgeometry-idgeometrya">Geometry <a href="#geometry" id="geometry"></a></a></li>
+            <li><a href="#textures-a-hreftextures-idtexturesa">Textures <a href="#textures" id="textures"></a></a></li>
+            <li><a href="#antialiasing-a-hrefantialiasing-idantialiasinga">Antialiasing <a href="#antialiasing" id="antialiasing"></a></a></li>
+            <li><a href="#post-processing-a-hrefpost-processing-idpost-processinga">Post-Processing <a href="#post-processing" id="post-processing"></a></a></li>
+            <li><a href="#disposing-of-things-a-hrefdisposing-of-things-iddisposing-of-thingsa">Disposing of Things <a href="#disposing-of-things" id="disposing-of-things"></a></a></li>
+            <li><a href="#updating-objects-in-your-scene-a-hrefupdating-objects-in-your-scene-idupdating-objects-in-your-scenea">Updating Objects in Your Scene? <a href="#updating-objects-in-your-scene" id="updating-objects-in-your-scene"></a></a></li>
+            <li><a href="#performance-a-hrefperformance-idperformancea">Performance <a href="#performance" id="performance"></a></a></li>
+            <li><a href="#advanced-tips-a-hrefadvanced-tips-idadvanced-tipsa">Advanced Tips <a href="#advanced-tips" id="advanced-tips"></a></a></li>
+            <li><a href="#read-these-pages-too-a-hrefread-these-pages-too-idread-these-pages-tooa">Read These Pages Too! <a href="#read-these-pages-too" id="read-these-pages-too"></a></a></li>
+            <li><a href="#references-a-hrefreferences-idreferencesa">References <a href="#references" id="references"></a></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

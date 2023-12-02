@@ -1,0 +1,8020 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="🌵 Hooks FAQ # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+The new documentation pages teaches React with Hooks.
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+This page answers some of the frequently asked questions about Hooks.
+Adoption Strategy Which versions of React include Hooks? Do I need to rewrite all my class components?">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="🌵 Hooks FAQ # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+The new documentation pages teaches React with Hooks.
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+This page answers some of the frequently asked questions about Hooks.
+Adoption Strategy Which versions of React include Hooks? Do I need to rewrite all my class components?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-12-02T15:34:15+00:00" />
+
+<title>Hooks Faq | My Ship Logs</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.69bd24b1b8e6c9b90c8945eae28502fc99f6ea8e4c440136c966509a57808751.css" integrity="sha256-ab0ksbjmybkMiUXq4oUC/Jn26o5MRAE2yWZQmleAh1E=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.59b58450ba250350a62298603ee6acc66a10d48557ec7f392478acf2d03b7f70.js" integrity="sha256-WbWEULolA1CmIphgPuasxmoQ1IVX7H85JHis8tA7f3A=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My Ship Logs</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/references/" class="">References</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8b11a258bca7f88da54303c1eb8bf0cd" class="toggle"  />
+    <label for="section-8b11a258bca7f88da54303c1eb8bf0cd" class="flex justify-between">
+      <a role="button" class="">Libraries and Frameworks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-31c0267133a7ffe5ef28ff54038a703b" class="toggle"  />
+    <label for="section-31c0267133a7ffe5ef28ff54038a703b" class="flex justify-between">
+      <a role="button" class="">React Three</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-05981571365e3fb388ded4120112dc16" class="toggle"  />
+    <label for="section-05981571365e3fb388ded4120112dc16" class="flex justify-between">
+      <a role="button" class="">Advanced</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/advanced/dos-and-donts-for-performance/" class="">Dos and Donts for Performance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/advanced/performance-pitfalls/" class="">Performance Pitfalls</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/advanced/scaling-performance/" class="">Scaling Performance</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e15c4db188330b110c915c10011d226e" class="toggle"  />
+    <label for="section-e15c4db188330b110c915c10011d226e" class="flex justify-between">
+      <a role="button" class="">Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/fundamentals/backgrounds/" class="">Backgrounds</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/fundamentals/furthermore/" class="">Furthermore</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f4487e23e7fbd6b989bdccb71d51e5ac" class="toggle"  />
+    <label for="section-f4487e23e7fbd6b989bdccb71d51e5ac" class="flex justify-between">
+      <a role="button" class="">Getting Started</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/examplesin-progress/" class="">Examples(in Progress)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/installation/" class="">Installation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/introduction/" class="">Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/your-first-scene/" class="">Your First Scene</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-131a70ba0fcca90b682bae11e201c956" class="toggle" checked />
+    <label for="section-131a70ba0fcca90b682bae11e201c956" class="flex justify-between">
+      <a role="button" class="">Meta Frameworks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ed81b1bd0ecbe1682bac789b5359c56a" class="toggle" checked />
+    <label for="section-ed81b1bd0ecbe1682bac789b5359c56a" class="flex justify-between">
+      <a role="button" class="">React</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-23392f5058817d45344855ad679c60ba" class="toggle"  />
+    <label for="section-23392f5058817d45344855ad679c60ba" class="flex justify-between">
+      <a role="button" class="">Advanced</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/accessibility/" class="">Accessibility</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/error-boundaries/" class="">Error Boundaries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/forwarding-refs/" class="">Forwarding Refs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/fragments/" class="">Fragments</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/higher-order-components/" class="">Higher Order Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/integrating-with-other-libraries/" class="">Integrating With Other Libraries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/jsx-in-depth/" class="">Jsx in Depth</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/optimizing-performance/" class="">Optimizing Performance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/portals/" class="">Portals</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/profiler-api/" class="">Profiler API</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/react-without-es6/" class="">React Without Es6</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/react-without-jsx/" class="">React Without Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/reconciliation/" class="">Reconciliation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/refs-and-the-dom/" class="">Refs and the Dom</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/render-props/" class="">Render Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/static-type-checking/" class="">Static Type Checking</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/strict-mode/" class="">Strict Mode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/typechecking-with-proptypes/" class="">Typechecking With Proptypes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/uncontrolled-components/" class="">Uncontrolled Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/web-components/" class="">Web Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/code-splitting/" class="">Code-Splitting 🌵</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/context/" class="">Context</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0b7e8a169ffc55d32e6791a715bfd989" class="toggle"  />
+    <label for="section-0b7e8a169ffc55d32e6791a715bfd989" class="flex justify-between">
+      <a role="button" class="">Basics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-887fd6173adedab35d6a2b53f097ffa0" class="toggle"  />
+    <label for="section-887fd6173adedab35d6a2b53f097ffa0" class="flex justify-between">
+      <a role="button" class="">Installation</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/add-react-to-a-website/" class="">Add React to a Website</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/cdn-links/" class="">Cdn Links</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/create-a-new-react-app/" class="">Create a New React App</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/getting-started/" class="">Getting Started</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/release-channels/" class="">Release Channels</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dcbb830f4a9a7513563af23a2a7d19e9" class="toggle"  />
+    <label for="section-dcbb830f4a9a7513563af23a2a7d19e9" class="flex justify-between">
+      <a role="button" class="">main-concepts</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/components-and-props/" class="">Components and Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/composition-vs-inheritance/" class="">Composition vs Inheritance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/conditional-rendering/" class="">Conditional Rendering</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/forms/" class="">Forms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/handling-events/" class="">Handling Events</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/introducing-jsx/" class="">Introducing Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/lifting-state-up/" class="">Lifting State Up</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/lists-and-keys/" class="">Lists and Keys</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/rendering-elements/" class="">Rendering Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/state-and-lifecycle/" class="">State and Lifecycle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/thinking-in-react/" class="">Thinking in React</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b619afb3bb0cae8f4a2d8ea2bd39992" class="toggle" checked />
+    <label for="section-2b619afb3bb0cae8f4a2d8ea2bd39992" class="flex justify-between">
+      <a role="button" class="">Frequently Used</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d45d10a3bba46bd6df852e724d6a20f9" class="toggle"  />
+    <label for="section-d45d10a3bba46bd6df852e724d6a20f9" class="flex justify-between">
+      <a role="button" class="">API Reference</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/dom-elements/" class="">Dom Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/javascript-environment-requirements/" class="">Javascript Environment Requirements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/legacy-context/" class="">Legacy Context</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/react-top-level-api/" class="">React Top Level API</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/react.component/" class="">React.component</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdom/" class="">Reactdom</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdomclient/" class="">Reactdomclient</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdomserver/" class="">Reactdomserver</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/syntheticevent/" class="">Syntheticevent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/test-renderer/" class="">Test Renderer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/test-utilities/" class="">Test Utilities</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a24e35dfd7a54541e2462bfb9de0d26a" class="toggle"  />
+    <label for="section-a24e35dfd7a54541e2462bfb9de0d26a" class="flex justify-between">
+      <a role="button" class="">Frequently Asked Questions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/ajax-and-apis/" class="">Ajax and Apis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/babel-jsx-and-build-steps/" class="">Babel Jsx and Build Steps</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/component-state/" class="">Component State</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/file-structure/" class="">File Structure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/passing-functions-to-components/" class="">Passing Functions to Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/styling-and-css/" class="">Styling and Css</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/versioning-policy/" class="">Versioning Policy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/virtual-dom-and-internals/" class="">Virtual Dom and Internals</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-78e608137ff08e2f628fff778a1d2503" class="toggle" checked />
+    <label for="section-78e608137ff08e2f628fff778a1d2503" class="flex justify-between">
+      <a role="button" class="">Hooks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/building-your-own-hooks/" class="">Building Your Own Hooks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-api-reference/" class="">Hooks API Reference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-at-a-glance/" class="">Hooks at a Glance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/" class="active">Hooks Faq</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/introducing-hooks/" class="">Introducing Hooks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/rules-of-hooks/" class="">Rules of Hooks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usecallback/" class="">Usecallback</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usecontext/" class="">Usecontext</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usedebugvalue/" class="">Usedebugvalue</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usedeferredvalue/" class="">Usedeferredvalue</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useeffect/" class="">Useeffect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useid/" class="">Useid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useimperativehandle/" class="">Useimperativehandle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useinsertioneffect/" class="">Useinsertioneffect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/uselayouteffect/" class="">Uselayouteffect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usememo/" class="">Usememo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usereducer/" class="">Usereducer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useref/" class="">Useref</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usestate/" class="">Usestate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usesyncexternalstore/" class="">Usesyncexternalstore</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usetransition/" class="">Usetransition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/using-the-effect-hook/" class="">Using the Effect Hook</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/using-the-state-hook/" class="">Using the State Hook</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f8fec9450ae8cc6e4496fe90ad0fcd90" class="toggle"  />
+    <label for="section-f8fec9450ae8cc6e4496fe90ad0fcd90" class="flex justify-between">
+      <a role="button" class="">Testing</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/testing/testing-environments/" class="">Testing Environments</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/testing/testing-overview/" class="">Testing Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/testing/testing-recipes/" class="">Testing Recipes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1eb6c1d66211d34c780f5446bd73db50" class="toggle"  />
+    <label for="section-1eb6c1d66211d34c780f5446bd73db50" class="flex justify-between">
+      <a role="button" class="">Glossary</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/bundlers/" class="">Bundlers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/cdn/" class="">Cdn</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/compilers/" class="">Compilers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/components/" class="">Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/controlled-vs.-uncontrolled-components/" class="">Controlled vs. Uncontrolled Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/elements/" class="">Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/es6-es2015-es2016-etc/" class="">Es6 Es2015 Es2016 Etc</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/events/" class="">Events</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/jsx/" class="">Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/keys/" class="">Keys</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/lifecycle-methods/" class="">Lifecycle Methods</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/package-managers/" class="">Package Managers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/props.children/" class="">Props.children</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/props/" class="">Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/reconciliation/" class="">Reconciliation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/refs/" class="">Refs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/single-page-application/" class="">Single Page Application</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/state/" class="">State</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8c1d4bd473062cf6040cc8dda49c5e60" class="toggle"  />
+    <label for="section-8c1d4bd473062cf6040cc8dda49c5e60" class="flex justify-between">
+      <a role="button" class="">References</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/top-level-apis/" class="">Top Level Apis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dc60aa7de7b49b15b00c1ce231963a79" class="toggle"  />
+    <label for="section-dc60aa7de7b49b15b00c1ce231963a79" class="flex justify-between">
+      <a role="button" class="">Component</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentdidcatch/" class="">Componentdidcatch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentdidmount/" class="">Componentdidmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentdidupdate/" class="">Componentdidupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentwillunmount/" class="">Componentwillunmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/constructor/" class="">Constructor</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/defaultprop/" class="">Defaultprop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/displayname/" class="">Displayname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/forceupdate/" class="">Forceupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/getsnapshotbeforeupdate/" class="">Getsnapshotbeforeupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/props/" class="">Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/render/" class="">Render</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/setstate/" class="">Setstate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/shouldcomponentupdate/" class="">Shouldcomponentupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/state/" class="">State</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/static-getderivedstatefromerror/" class="">Static Getderivedstatefromerror</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/static-getderivedstatefromprops/" class="">Static Getderivedstatefromprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/unsafe_componentwillmount/" class="">Unsafe Componentwillmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/unsafe_componentwillreceiveprops/" class="">Unsafe Componentwillreceiveprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/unsafe_componentwillupdate/" class="">Unsafe Componentwillupdate</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8275c599c5a42b2c8ab68678b3916ca0" class="toggle"  />
+    <label for="section-8275c599c5a42b2c8ab68678b3916ca0" class="flex justify-between">
+      <a role="button" class="">General</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/class.contexttype/" class="">Class.contexttype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/context.consumer/" class="">Context.consumer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/context.displayname/" class="">Context.displayname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/context.provider/" class="">Context.provider</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/createportal/" class="">Createportal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/createroot/" class="">Createroot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/finddomnode/" class="">Finddomnode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/flushsync/" class="">Flushsync</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/hydrate/" class="">Hydrate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/hydrateroot/" class="">Hydrateroot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/react.createcontext/" class="">React.createcontext</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/render/" class="">Render</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertonodestream-deprecated/" class="">Rendertonodestream Deprecated</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertopipeablestream/" class="">Rendertopipeablestream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertoreadablestream/" class="">Rendertoreadablestream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertostaticmarkup/" class="">Rendertostaticmarkup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertostaticnodestream/" class="">Rendertostaticnodestream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertostring/" class="">Rendertostring</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/requestanimationframe-throttling/" class="">Requestanimationframe Throttling</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.children/" class="">Testinstance.children</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.find/" class="">Testinstance.find</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findall/" class="">Testinstance.findall</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findallbyprops/" class="">Testinstance.findallbyprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findallbytype/" class="">Testinstance.findallbytype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findbyprops/" class="">Testinstance.findbyprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findbytype/" class="">Testinstance.findbytype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.instance/" class="">Testinstance.instance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.parent/" class="">Testinstance.parent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.props/" class="">Testinstance.props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.type/" class="">Testinstance.type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.act/" class="">Testrenderer.act</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.create/" class="">Testrenderer.create</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.getinstance/" class="">Testrenderer.getinstance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.root/" class="">Testrenderer.root</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.tojson/" class="">Testrenderer.tojson</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.totree/" class="">Testrenderer.totree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.unmount/" class="">Testrenderer.unmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.update/" class="">Testrenderer.update</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/unmountcomponentatnode-1/" class="">Unmountcomponentatnode 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/unmountcomponentatnode/" class="">Unmountcomponentatnode</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-89e51c8a10f9a30c154f4b273b5f34d5" class="toggle"  />
+    <label for="section-89e51c8a10f9a30c154f4b273b5f34d5" class="flex justify-between">
+      <a role="button" class="">Test Utilities</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/act/" class="">Act</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findallinrenderedtree/" class="">Findallinrenderedtree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findrenderedcomponentwithtype/" class="">Findrenderedcomponentwithtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findrendereddomcomponentwithclass/" class="">Findrendereddomcomponentwithclass</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findrendereddomcomponentwithtag/" class="">Findrendereddomcomponentwithtag</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iscompositecomponent/" class="">Iscompositecomponent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iscompositecomponentwithtype/" class="">Iscompositecomponentwithtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/isdomcomponent/" class="">Isdomcomponent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iselement/" class="">Iselement</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iselementoftype/" class="">Iselementoftype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/mockcomponent/" class="">Mockcomponent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/renderintodocument/" class="">Renderintodocument</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/scryrenderedcomponentswithtype/" class="">Scryrenderedcomponentswithtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/scryrendereddomcomponentswithclass/" class="">Scryrendereddomcomponentswithclass</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/scryrendereddomcomponentswithtag/" class="">Scryrendereddomcomponentswithtag</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/simulate/" class="">Simulate</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-935e5e8cf9e4d28020a44ae59e6be870" class="toggle"  />
+    <label for="section-935e5e8cf9e4d28020a44ae59e6be870" class="flex justify-between">
+      <a role="button" class="">Programming Languages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-41cda62474deca29f10bdbe5bfa7e565" class="toggle"  />
+    <label for="section-41cda62474deca29f10bdbe5bfa7e565" class="flex justify-between">
+      <a href="/docs/references/languages/html/" class="">HTML</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/" class="">Attributes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/accept/" class="">Accept</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/autocomplete/" class="">Autocomplete</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/capture/" class="">Capture</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/crossorigin/" class="">Crossorigin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/dirname/" class="">Dirname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/disabled/" class="">Disabled</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/elementtiming/" class="">Elementtiming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/for/" class="">For</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/max/" class="">Max</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/maxlength/" class="">Maxlength</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/min/" class="">Min</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/minlength/" class="">Minlength</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/multiple/" class="">Multiple</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/pattern/" class="">Pattern</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/placeholder/" class="">Placeholder</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/readonly/" class="">Readonly</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/" class="">Rel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/dns-prefetch/" class="">DNS Prefetch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/manifest/" class="">Manifest</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/me/" class="">Me</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/modulepreload/" class="">Modulepreload</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/noopener/" class="">Noopener</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/noreferrer/" class="">Noreferrer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/preconnect/" class="">Preconnect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/prefetch/" class="">Prefetch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/preload/" class="">Preload</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/prerender/" class="">Prerender</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/required/" class="">Required</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/size/" class="">Size</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/step/" class="">Step</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/constraint_validation/" class="">Constraint Validation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/content_categories/" class="">Content Categories</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/cors_enabled_image/" class="">Cors Enabled Image</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/date_and_time_formats/" class="">Date and Time Formats</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/" class="">Element</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/a/" class="">A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/abbr/" class="">Abbr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/acronym/" class="">Acronym</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/address/" class="">Address</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/area/" class="">Area</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/article/" class="">Article</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/aside/" class="">Aside</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/audio/" class="">Audio</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/b/" class="">B</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/base/" class="">Base</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/bdi/" class="">Bdi</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/bdo/" class="">Bdo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/big/" class="">Big</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/blockquote/" class="">Blockquote</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/body/" class="">Body</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/br/" class="">Br</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/button/" class="">Button</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/canvas/" class="">Canvas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/caption/" class="">Caption</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/center/" class="">Center</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/cite/" class="">Cite</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/code/" class="">Code</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/col/" class="">Col</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/colgroup/" class="">Colgroup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/data/" class="">Data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/datalist/" class="">Datalist</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dd/" class="">Dd</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/del/" class="">Del</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dfn/" class="">Dfn</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dialog/" class="">Dialog</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dir/" class="">Dir</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/div/" class="">Div</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dl/" class="">Dl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dt/" class="">Dt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/em/" class="">Em</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/embed/" class="">Embed</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/fieldset/" class="">Fieldset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/figcaption/" class="">Figcaption</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/figure/" class="">Figure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/font/" class="">Font</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/footer/" class="">Footer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/form/" class="">Form</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/frame/" class="">Frame</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/frameset/" class="">Frameset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/head/" class="">Head</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/header/" class="">Header</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/heading_elements/" class="">Heading Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/hgroup/" class="">Hgroup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/hr/" class="">Hr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/html/" class="">HTML</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/i/" class="">I</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/iframe/" class="">Iframe</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/image/" class="">Image</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/img/" class="">Img</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/" class="">Input</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/button/" class="">Button</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/checkbox/" class="">Checkbox</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/color/" class="">Color</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/date/" class="">Date</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/datetime-local/" class="">Datetime Local</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/email/" class="">Email</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/file/" class="">File</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/hidden/" class="">Hidden</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/image/" class="">Image</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/month/" class="">Month</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/number/" class="">Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/password/" class="">Password</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/radio/" class="">Radio</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/range/" class="">Range</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/reset/" class="">Reset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/search/" class="">Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/submit/" class="">Submit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/tel/" class="">Tel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/text/" class="">Text</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/time/" class="">Time</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/url/" class="">URL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/week/" class="">Week</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ins/" class="">Ins</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/kbd/" class="">Kbd</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/label/" class="">Label</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/legend/" class="">Legend</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/li/" class="">Li</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/link/" class="">Link</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/main/" class="">Main</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/map/" class="">Map</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/mark/" class="">Mark</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/marquee/" class="">Marquee</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/menu/" class="">Menu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/menuitem/" class="">Menuitem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meta/" class="">Meta</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meta/name/" class="">Name</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meta/name/theme-color/" class="">Theme Color</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meter/" class="">Meter</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/nav/" class="">Nav</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/nobr/" class="">Nobr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/noembed/" class="">Noembed</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/noframes/" class="">Noframes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/noscript/" class="">Noscript</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/object/" class="">Object</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ol/" class="">Ol</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/optgroup/" class="">Optgroup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/option/" class="">Option</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/output/" class="">Output</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/p/" class="">P</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/param/" class="">Param</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/picture/" class="">Picture</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/plaintext/" class="">Plaintext</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/portal/" class="">Portal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/pre/" class="">Pre</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/progress/" class="">Progress</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/q/" class="">Q</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rb/" class="">Rb</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rp/" class="">Rp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rt/" class="">Rt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rtc/" class="">Rtc</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ruby/" class="">Ruby</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/s/" class="">S</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/samp/" class="">Samp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/" class="">Script</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/type/" class="">Type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/type/importmap/" class="">Importmap</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/type/speculationrules/" class="">Speculationrules</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/search/" class="">Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/section/" class="">Section</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/select/" class="">Select</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/slot/" class="">Slot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/small/" class="">Small</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/source/" class="">Source</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/span/" class="">Span</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/strike/" class="">Strike</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/strong/" class="">Strong</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/sub/" class="">Sub</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/summary/" class="">Summary</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/sup/" class="">Sup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/table/" class="">Table</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tbody/" class="">Tbody</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/td/" class="">Td</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/template/" class="">Template</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/textarea/" class="">Textarea</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tfoot/" class="">Tfoot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/th/" class="">Th</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/thead/" class="">Thead</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/time/" class="">Time</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/title/" class="">Title</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tr/" class="">Tr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/track/" class="">Track</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tt/" class="">Tt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/u/" class="">U</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ul/" class="">Ul</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/var/" class="">Var</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/video/" class="">Video</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/wbr/" class="">Wbr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/xmp/" class="">Xmp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/" class="">Global Attributes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/accesskey/" class="">Accesskey</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/autocapitalize/" class="">Autocapitalize</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/autofocus/" class="">Autofocus</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/class/" class="">Class</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/contenteditable/" class="">Contenteditable</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/contextmenu/" class="">Contextmenu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/data-/" class="">Data *</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/dir/" class="">Dir</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/draggable/" class="">Draggable</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/enterkeyhint/" class="">Enterkeyhint</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/exportparts/" class="">Exportparts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/hidden/" class="">Hidden</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/id/" class="">ID</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/inert/" class="">Inert</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/inputmode/" class="">Inputmode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/is/" class="">Is</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemid/" class="">Itemid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemprop/" class="">Itemprop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemref/" class="">Itemref</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemscope/" class="">Itemscope</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemtype/" class="">Itemtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/lang/" class="">Lang</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/nonce/" class="">Nonce</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/part/" class="">Part</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/popover/" class="">Popover</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/slot/" class="">Slot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/spellcheck/" class="">Spellcheck</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/tabindex/" class="">Tabindex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/title/" class="">Title</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/translate/" class="">Translate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/virtualkeyboardpolicy/" class="">Virtualkeyboardpolicy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/microdata/" class="">Microdata</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/quirks_mode_and_standards_mode/" class="">Quirks Mode and Standards Mode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/reference/" class="">Reference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/viewport_meta_tag/" class="">Viewport Meta Tag</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c00ae0eadbc29a0424d33001616a209" class="toggle"  />
+    <label for="section-5c00ae0eadbc29a0424d33001616a209" class="flex justify-between">
+      <a href="/docs/references/languages/typescript/" class="">Typescript</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/asp-net-core/" class="">Asp Net Core</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/babel-with-typescript/" class="">Babel With Typescript</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/basic-types/" class="">Basic Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/classes/" class="">Classes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/compiler-options-in-msbuild/" class="">Compiler Options in Msbuild</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/compiler-options/" class="">Compiler Options</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/conditional-types/" class="">Conditional Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/configuring-watch/" class="">Configuring Watch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-merging/" class="">Declaration Merging</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/decorators/" class="">Decorators</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/dom-manipulation/" class="">Dom Manipulation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/enums/" class="">Enums</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/esm-node/" class="">Esm Node</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/everyday-types/" class="">Everyday Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/functions/" class="">Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/generics/" class="">Generics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/gulp/" class="">Gulp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/indexed-access-types/" class="">Indexed Access Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/integrating-with-build-tools/" class="">Integrating With Build Tools</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/interfaces/" class="">Interfaces</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/intro-to-js-ts/" class="">Intro to Js Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/intro/" class="">Intro</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/iterators-and-generators/" class="">Iterators and Generators</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/jsdoc-supported-types/" class="">Jsdoc Supported Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/jsx/" class="">Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/keyof-types/" class="">Keyof Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/mapped-types/" class="">Mapped Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/migrating-from-javascript/" class="">Migrating From Javascript</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/mixins/" class="">Mixins</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/module-resolution/" class="">Module Resolution</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/modules/" class="">Modules</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/namespaces-and-modules/" class="">Namespaces and Modules</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/namespaces/" class="">Namespaces</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/narrowing/" class="">Narrowing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/nightly-builds/" class="">Nightly Builds</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/objects/" class="">Objects</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/project-references/" class="">Project References</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/symbols/" class="">Symbols</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/template-literal-types/" class="">Template Literal Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/triple-slash-directives/" class="">Triple Slash Directives</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/tsconfig-json/" class="">Tsconfig JSON</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/tsconfig/" class="">Tsconfig</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/type-checking-javascript-files/" class="">Type Checking Javascript Files</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/type-compatibility/" class="">Type Compatibility</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/type-inference/" class="">Type Inference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typeof-types/" class="">Typeof Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/types-from-types/" class="">Types From Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-from-scratch/" class="">Typescript From Scratch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-in-5-minutes-func/" class="">Typescript in 5 Minutes Func</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-in-5-minutes-oop/" class="">Typescript in 5 Minutes Oop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-in-5-minutes/" class="">Typescript in 5 Minutes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-tooling-in-5-minutes/" class="">Typescript Tooling in 5 Minutes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/utility-types/" class="">Utility Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/variable-declarations/" class="">Variable Declarations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c8e4733f646290e9e3427eea53bbdb88" class="toggle"  />
+    <label for="section-c8e4733f646290e9e3427eea53bbdb88" class="flex justify-between">
+      <a role="button" class="">Declration Files</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/by-example/" class="">By Example</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/consumption/" class="">Consumption</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/deep-dive/" class="">Deep Dive</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/do-s-and-don-ts/" class="">Do S and Don Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/dts-from-js/" class="">Dts From Js</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/introduction/" class="">Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/library-structures/" class="">Library Structures</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/publishing/" class="">Publishing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/" class="">Templates</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a55b3033e7645c7f4d14eb880a34f5a8" class="toggle"  />
+    <label for="section-a55b3033e7645c7f4d14eb880a34f5a8" class="flex justify-between">
+      <a role="button" class="">Templates</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/global-d-ts/" class="">Global D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/global-modifying-module-d-ts/" class="">Global Modifying Module D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/global-plugin-d-ts/" class="">Global Plugin D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-class-d-ts/" class="">Module Class D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-d-ts/" class="">Module D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-function-d-ts/" class="">Module Function D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-plugin-d-ts/" class="">Module Plugin D Ts</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/expriments/" class="">Expriments</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/fundamental/" class="">Fundamental</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/fundamental/fund1/" class="">Fund1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/fundamental/fund2/" class="">Fund2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Hooks Faq</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#-hooks-faq">🌵 Hooks FAQ</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#adoption-strategy">Adoption Strategy</a></li>
+            <li><a href="#from-classes-to-hooks">From Classes to Hooks</a></li>
+            <li><a href="#performance-optimizations">Performance Optimizations</a></li>
+            <li><a href="#under-the-hood">Under the Hood</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown">
+
+
+
+
+
+
+
+
+
+
+<h1 id="-hooks-faq">
+  🌵 Hooks FAQ
+  <a class="anchor" href="#-hooks-faq">#</a>
+</h1>
+<blockquote>
+<p>These docs are old and won’t be updated. Go to 
+  <a href="https://react.dev/">react.dev</a> for the new React docs.</p>
+<p>The new documentation pages teaches React with Hooks.</p>
+</blockquote>
+<p><em>Hooks</em> are a new addition in React 16.8. They let you use state and other React features without writing a class.</p>
+<p>This page answers some of the frequently asked questions about Hooks.</p>
+<ul>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#adoption-strategy"><strong>Adoption Strategy</strong></a>
+<ul>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#which-versions-of-react-include-hooks">Which versions of React include Hooks?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#do-i-need-to-rewrite-all-my-class-components">Do I need to rewrite all my class components?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#what-can-i-do-with-hooks-that-i-couldnt-with-classes">What can I do with Hooks that I couldn’t with classes?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-much-of-my-react-knowledge-stays-relevant">How much of my React knowledge stays relevant?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#should-i-use-hooks-classes-or-a-mix-of-both">Should I use Hooks, classes, or a mix of both?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#do-hooks-cover-all-use-cases-for-classes">Do Hooks cover all use cases for classes?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#do-hooks-replace-render-props-and-higher-order-components">Do Hooks replace render props and higher-order components?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#what-do-hooks-mean-for-popular-apis-like-redux-connect-and-react-router">What do Hooks mean for popular APIs like Redux connect() and React Router?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#do-hooks-work-with-static-typing">Do Hooks work with static typing?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-to-test-components-that-use-hooks">How to test components that use Hooks?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#what-exactly-do-the-lint-rules-enforce">What exactly do the lint rules enforce?</a></li>
+</ul>
+</li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#from-classes-to-hooks"><strong>From Classes to Hooks</strong></a>
+<ul>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-do-lifecycle-methods-correspond-to-hooks">How do lifecycle methods correspond to Hooks?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-can-i-do-data-fetching-with-hooks">How can I do data fetching with Hooks?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#is-there-something-like-instance-variables">Is there something like instance variables?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#should-i-use-one-or-many-state-variables">Should I use one or many state variables?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#can-i-run-an-effect-only-on-updates">Can I run an effect only on updates?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-to-get-the-previous-props-or-state">How to get the previous props or state?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#why-am-i-seeing-stale-props-or-state-inside-my-function">Why am I seeing stale props or state inside my function?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-do-i-implement-getderivedstatefromprops">How do I implement getDerivedStateFromProps?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#is-there-something-like-forceupdate">Is there something like forceUpdate?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#can-i-make-a-ref-to-a-function-component">Can I make a ref to a function component?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-can-i-measure-a-dom-node">How can I measure a DOM node?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#what-does-const-thing-setthing-usestate-mean">What does const [thing, setThing] = useState() mean?</a></li>
+</ul>
+</li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#performance-optimizations"><strong>Performance Optimizations</strong></a>
+<ul>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#can-i-skip-an-effect-on-updates">Can I skip an effect on updates?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#is-it-safe-to-omit-functions-from-the-list-of-dependencies">Is it safe to omit functions from the list of dependencies?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#what-can-i-do-if-my-effect-dependencies-change-too-often">What can I do if my effect dependencies change too often?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-do-i-implement-shouldcomponentupdate">How do I implement shouldComponentUpdate?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-to-memoize-calculations">How to memoize calculations?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-to-create-expensive-objects-lazily">How to create expensive objects lazily?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#are-hooks-slow-because-of-creating-functions-in-render">Are Hooks slow because of creating functions in render?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-to-avoid-passing-callbacks-down">How to avoid passing callbacks down?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-to-read-an-often-changing-value-from-usecallback">How to read an often-changing value from useCallback?</a></li>
+</ul>
+</li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#under-the-hood"><strong>Under the Hood</strong></a>
+<ul>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#how-does-react-associate-hook-calls-with-components">How does React associate Hook calls with components?</a></li>
+<li>
+  <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/#what-is-the-prior-art-for-hooks">What is the prior art for Hooks?</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="adoption-strategy">
+  Adoption Strategy
+  <a class="anchor" href="#adoption-strategy">#</a>
+</h3>
+<h4 id="which-versions-of-react-include-hooks">
+  Which versions of React include Hooks?
+  <a class="anchor" href="#which-versions-of-react-include-hooks">#</a>
+</h4>
+<p>Starting with 16.8.0, React includes a stable implementation of React Hooks for:</p>
+<ul>
+<li>React DOM</li>
+<li>React Native</li>
+<li>React DOM Server</li>
+<li>React Test Renderer</li>
+<li>React Shallow Renderer</li>
+</ul>
+<p>Note that <strong>to enable Hooks, all React packages need to be 16.8.0 or higher</strong>. Hooks won’t work if you forget to update, for example, React DOM.</p>
+<p>
+  <a href="https://reactnative.dev/blog/2019/03/12/releasing-react-native-059">React Native 0.59</a> and above support Hooks.</p>
+<h4 id="do-i-need-to-rewrite-all-my-class-components">
+  Do I need to rewrite all my class components?
+  <a class="anchor" href="#do-i-need-to-rewrite-all-my-class-components">#</a>
+</h4>
+<p>No. There are no plans to remove classes from React — we all need to keep shipping products and can’t afford rewrites. We recommend trying Hooks in new code.</p>
+<h4 id="what-can-i-do-with-hooks-that-i-couldnt-with-classes">
+  What can I do with Hooks that I couldn’t with classes?
+  <a class="anchor" href="#what-can-i-do-with-hooks-that-i-couldnt-with-classes">#</a>
+</h4>
+<p>Hooks offer a powerful and expressive new way to reuse functionality between components. “Building Your Own Hooks” provides a glimpse of what’s possible. 
+  <a href="https://medium.com/@dan%5c_abramov/making-sense-of-react-hooks-fdbde8803889">This article</a> by a React core team member dives deeper into the new capabilities unlocked by Hooks.</p>
+<h4 id="how-much-of-my-react-knowledge-stays-relevant">
+  How much of my React knowledge stays relevant?
+  <a class="anchor" href="#how-much-of-my-react-knowledge-stays-relevant">#</a>
+</h4>
+<p>Hooks are a more direct way to use the React features you already know — such as state, lifecycle, context, and refs. They don’t fundamentally change how React works, and your knowledge of components, props, and top-down data flow is just as relevant.</p>
+<p>Hooks do have a learning curve of their own. If there’s something missing in this documentation, 
+  <a href="https://github.com/reactjs/reactjs.org/issues/new">raise an issue</a> and we’ll try to help.</p>
+<h4 id="should-i-use-hooks-classes-or-a-mix-of-both">
+  Should I use Hooks, classes, or a mix of both?
+  <a class="anchor" href="#should-i-use-hooks-classes-or-a-mix-of-both">#</a>
+</h4>
+<p>When you’re ready, we’d encourage you to start trying Hooks in new components you write. Make sure everyone on your team is on board with using them and familiar with this documentation. We don’t recommend rewriting your existing classes to Hooks unless you planned to rewrite them anyway (e.g. to fix bugs).</p>
+<p>You can’t use Hooks <em>inside</em> a class component, but you can definitely mix classes and function components with Hooks in a single tree. Whether a component is a class or a function that uses Hooks is an implementation detail of that component. In the longer term, we expect Hooks to be the primary way people write React components.</p>
+<h4 id="do-hooks-cover-all-use-cases-for-classes">
+  Do Hooks cover all use cases for classes?
+  <a class="anchor" href="#do-hooks-cover-all-use-cases-for-classes">#</a>
+</h4>
+<p>Our goal is for Hooks to cover all use cases for classes as soon as possible. There are no Hook equivalents to the uncommon <code>getSnapshotBeforeUpdate</code>, <code>getDerivedStateFromError</code> and <code>componentDidCatch</code> lifecycles yet, but we plan to add them soon.</p>
+<h4 id="do-hooks-replace-render-props-and-higher-order-components">
+  Do Hooks replace render props and higher-order components?
+  <a class="anchor" href="#do-hooks-replace-render-props-and-higher-order-components">#</a>
+</h4>
+<p>Often, render props and higher-order components render only a single child. We think Hooks are a simpler way to serve this use case. There is still a place for both patterns (for example, a virtual scroller component might have a <code>renderItem</code> prop, or a visual container component might have its own DOM structure). But in most cases, Hooks will be sufficient and can help reduce nesting in your tree.</p>
+<h4 id="what-do-hooks-mean-for-popular-apis-like-redux-connect-and-react-router">
+  What do Hooks mean for popular APIs like Redux <code>connect()</code> and React Router?
+  <a class="anchor" href="#what-do-hooks-mean-for-popular-apis-like-redux-connect-and-react-router">#</a>
+</h4>
+<p>You can continue to use the exact same APIs as you always have; they’ll continue to work.</p>
+<p>React Redux since v7.1.0 
+  <a href="https://react-redux.js.org/api/hooks">supports Hooks API</a> and exposes hooks like <code>useDispatch</code> or <code>useSelector</code>.</p>
+<p>React Router 
+  <a href="https://reacttraining.com/react-router/web/api/Hooks">supports hooks</a> since v5.1.</p>
+<p>Other libraries might support hooks in the future too.</p>
+<h4 id="do-hooks-work-with-static-typing">
+  Do Hooks work with static typing?
+  <a class="anchor" href="#do-hooks-work-with-static-typing">#</a>
+</h4>
+<p>Hooks were designed with static typing in mind. Because they’re functions, they are easier to type correctly than patterns like higher-order components. The latest Flow and TypeScript React definitions include support for React Hooks.</p>
+<p>Importantly, custom Hooks give you the power to constrain React API if you’d like to type them more strictly in some way. React gives you the primitives, but you can combine them in different ways than what we provide out of the box.</p>
+<h4 id="how-to-test-components-that-use-hooks">
+  How to test components that use Hooks?
+  <a class="anchor" href="#how-to-test-components-that-use-hooks">#</a>
+</h4>
+<p>From React’s point of view, a component using Hooks is just a regular component. If your testing solution doesn’t rely on React internals, testing components with Hooks shouldn’t be different from how you normally test components.</p>
+<blockquote>
+<p>Note</p>
+<p>Testing Recipes include many examples that you can copy and paste.</p>
+</blockquote>
+<p>For example, let’s say we have this counter component:</p>
+<pre tabindex="0"><code>function Example() {
+  const [count, setCount] = useState(0);
+  useEffect(() =&gt; {
+    document.title = `You clicked ${count} times`;
+  });
+  return (
+    &lt;div&gt;
+      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+        Click me
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre><p>We’ll test it using React DOM. To make sure that the behavior matches what happens in the browser, we’ll wrap the code rendering and updating it into <code>ReactTestUtils.act()</code> calls:</p>
+<pre tabindex="0"><code>import React from &#39;react&#39;;
+import ReactDOM from &#39;react-dom/client&#39;;
+import { act } from &#39;react-dom/test-utils&#39;;import Counter from &#39;./Counter&#39;;
+
+let container;
+
+beforeEach(() =&gt; {
+  container = document.createElement(&#39;div&#39;);
+  document.body.appendChild(container);
+});
+
+afterEach(() =&gt; {
+  document.body.removeChild(container);
+  container = null;
+});
+
+it(&#39;can render and update a counter&#39;, () =&gt; {
+  // Test first render and effect
+  act(() =&gt; {    ReactDOM.createRoot(container).render(&lt;Counter /&gt;);  });  const button = container.querySelector(&#39;button&#39;);
+  const label = container.querySelector(&#39;p&#39;);
+  expect(label.textContent).toBe(&#39;You clicked 0 times&#39;);
+  expect(document.title).toBe(&#39;You clicked 0 times&#39;);
+
+  // Test second render and effect
+  act(() =&gt; {    button.dispatchEvent(new MouseEvent(&#39;click&#39;, {bubbles: true}));  });  expect(label.textContent).toBe(&#39;You clicked 1 times&#39;);
+  expect(document.title).toBe(&#39;You clicked 1 times&#39;);
+});
+</code></pre><p>The calls to <code>act()</code> will also flush the effects inside of them.</p>
+<p>If you need to test a custom Hook, you can do so by creating a component in your test, and using your Hook from it. Then you can test the component you wrote.</p>
+<p>To reduce the boilerplate, we recommend using 
+  <a href="https://testing-library.com/react">React Testing Library</a> which is designed to encourage writing tests that use your components as the end users do.</p>
+<p>For more information, check out Testing Recipes.</p>
+<h4 id="what-exactly-do-the-lint-ruleshttpswwwnpmjscompackageeslint-plugin-react-hooks-enforce">
+  What exactly do the 
+  <a href="https://www.npmjs.com/package/eslint-plugin-react-hooks">lint rules</a> enforce?
+  <a class="anchor" href="#what-exactly-do-the-lint-ruleshttpswwwnpmjscompackageeslint-plugin-react-hooks-enforce">#</a>
+</h4>
+<p>We provide an 
+  <a href="https://www.npmjs.com/package/eslint-plugin-react-hooks">ESLint plugin</a> that enforces rules of Hooks to avoid bugs. It assumes that any function starting with ”<code>use</code>” and a capital letter right after it is a Hook. We recognize this heuristic isn’t perfect and there may be some false positives, but without an ecosystem-wide convention there is just no way to make Hooks work well — and longer names will discourage people from either adopting Hooks or following the convention.</p>
+<p>In particular, the rule enforces that:</p>
+<ul>
+<li>Calls to Hooks are either inside a <code>PascalCase</code> function (assumed to be a component) or another <code>useSomething</code> function (assumed to be a custom Hook).</li>
+<li>Hooks are called in the same order on every render.</li>
+</ul>
+<p>There are a few more heuristics, and they might change over time as we fine-tune the rule to balance finding bugs with avoiding false positives.</p>
+<h3 id="from-classes-to-hooks">
+  From Classes to Hooks
+  <a class="anchor" href="#from-classes-to-hooks">#</a>
+</h3>
+<h4 id="how-do-lifecycle-methods-correspond-to-hooks">
+  How do lifecycle methods correspond to Hooks?
+  <a class="anchor" href="#how-do-lifecycle-methods-correspond-to-hooks">#</a>
+</h4>
+<ul>
+<li><code>constructor</code>: Function components don’t need a constructor. You can initialize the state in the <code>useState</code> call. If computing the initial state is expensive, you can pass a function to <code>useState</code>.</li>
+<li><code>getDerivedStateFromProps</code>: Schedule an update 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">while rendering</a> instead.</li>
+<li><code>shouldComponentUpdate</code>: See <code>React.memo</code> 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">below</a>.</li>
+<li><code>render</code>: This is the function component body itself.</li>
+<li><code>componentDidMount</code>, <code>componentDidUpdate</code>, <code>componentWillUnmount</code>: The <code>useEffect</code> Hook can express all combinations of these (including 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">less</a> 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">common</a> cases).</li>
+<li><code>getSnapshotBeforeUpdate</code>, <code>componentDidCatch</code> and <code>getDerivedStateFromError</code>: There are no Hook equivalents for these methods yet, but they will be added soon.</li>
+</ul>
+<h4 id="how-can-i-do-data-fetching-with-hooks">
+  How can I do data fetching with Hooks?
+  <a class="anchor" href="#how-can-i-do-data-fetching-with-hooks">#</a>
+</h4>
+<p>Here is a 
+  <a href="https://codesandbox.io/s/jvvkoo8pq3">small demo</a> to get you started. To learn more, check out 
+  <a href="https://www.robinwieruch.de/react-hooks-fetch-data/">this article</a> about data fetching with Hooks.</p>
+<h4 id="is-there-something-like-instance-variables">
+  Is there something like instance variables?
+  <a class="anchor" href="#is-there-something-like-instance-variables">#</a>
+</h4>
+<p>Yes! The <code>useRef()</code> Hook isn’t just for DOM refs. The “ref” object is a generic container whose <code>current</code> property is mutable and can hold any value, similar to an instance property on a class.</p>
+<p>You can write to it from inside <code>useEffect</code>:</p>
+<pre tabindex="0"><code>function Timer() {
+  const intervalRef = useRef();
+  useEffect(() =&gt; {
+    const id = setInterval(() =&gt; {
+      // ...
+    });
+    intervalRef.current = id;    return () =&gt; {
+      clearInterval(intervalRef.current);
+    };
+  });
+
+  // ...
+}
+</code></pre><p>If we just wanted to set an interval, we wouldn’t need the ref (<code>id</code> could be local to the effect), but it’s useful if we want to clear the interval from an event handler:</p>
+<pre tabindex="0"><code>  // ...
+  function handleCancelClick() {
+    clearInterval(intervalRef.current);  }
+  // ...
+</code></pre><p>Conceptually, you can think of refs as similar to instance variables in a class. Unless you’re doing 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">lazy initialization</a>, avoid setting refs during rendering — this can lead to surprising behavior. Instead, typically you want to modify refs in event handlers and effects.</p>
+<h4 id="should-i-use-one-or-many-state-variables">
+  Should I use one or many state variables?
+  <a class="anchor" href="#should-i-use-one-or-many-state-variables">#</a>
+</h4>
+<p>If you’re coming from classes, you might be tempted to always call <code>useState()</code> once and put all state into a single object. You can do it if you’d like. Here is an example of a component that follows the mouse movement. We keep its position and size in the local state:</p>
+<pre tabindex="0"><code>function Box() {
+  const [state, setState] = useState({ left: 0, top: 0, width: 100, height: 100 });
+  // ...
+}
+</code></pre><p>Now let’s say we want to write some logic that changes <code>left</code> and <code>top</code> when the user moves their mouse. Note how we have to merge these fields into the previous state object manually:</p>
+<pre tabindex="0"><code>  // ...
+  useEffect(() =&gt; {
+    function handleWindowMouseMove(e) {
+      // Spreading &#34;...state&#34; ensures we don&#39;t &#34;lose&#34; width and height      setState(state =&gt; ({ ...state, left: e.pageX, top: e.pageY }));    }
+    // Note: this implementation is a bit simplified
+    window.addEventListener(&#39;mousemove&#39;, handleWindowMouseMove);
+    return () =&gt; window.removeEventListener(&#39;mousemove&#39;, handleWindowMouseMove);
+  }, []);
+  // ...
+</code></pre><p>This is because when we update a state variable, we <em>replace</em> its value. This is different from <code>this.setState</code> in a class, which <em>merges</em> the updated fields into the object.</p>
+<p>If you miss automatic merging, you could write a custom <code>useLegacyState</code> Hook that merges object state updates. However, <strong>we recommend to split state into multiple state variables based on which values tend to change together.</strong></p>
+<p>For example, we could split our component state into <code>position</code> and <code>size</code> objects, and always replace the <code>position</code> with no need for merging:</p>
+<pre tabindex="0"><code>function Box() {
+  const [position, setPosition] = useState({ left: 0, top: 0 });  const [size, setSize] = useState({ width: 100, height: 100 });
+
+  useEffect(() =&gt; {
+    function handleWindowMouseMove(e) {
+      setPosition({ left: e.pageX, top: e.pageY });    }
+    // ...
+</code></pre><p>Separating independent state variables also has another benefit. It makes it easy to later extract some related logic into a custom Hook, for example:</p>
+<pre tabindex="0"><code>function Box() {
+  const position = useWindowPosition();  const [size, setSize] = useState({ width: 100, height: 100 });
+  // ...
+}
+
+function useWindowPosition() {  const [position, setPosition] = useState({ left: 0, top: 0 });
+  useEffect(() =&gt; {
+    // ...
+  }, []);
+  return position;
+}
+</code></pre><p>Note how we were able to move the <code>useState</code> call for the <code>position</code> state variable and the related effect into a custom Hook without changing their code. If all state was in a single object, extracting it would be more difficult.</p>
+<p>Both putting all state in a single <code>useState</code> call, and having a <code>useState</code> call per each field can work. Components tend to be most readable when you find a balance between these two extremes, and group related state into a few independent state variables. If the state logic becomes complex, we recommend managing it with a reducer or a custom Hook.</p>
+<h4 id="can-i-run-an-effect-only-on-updates">
+  Can I run an effect only on updates?
+  <a class="anchor" href="#can-i-run-an-effect-only-on-updates">#</a>
+</h4>
+<p>This is a rare use case. If you need it, you can 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">use a mutable ref</a> to manually store a boolean value corresponding to whether you are on the first or a subsequent render, then check that flag in your effect. (If you find yourself doing this often, you could create a custom Hook for it.)</p>
+<h4 id="how-to-get-the-previous-props-or-state">
+  How to get the previous props or state?
+  <a class="anchor" href="#how-to-get-the-previous-props-or-state">#</a>
+</h4>
+<p>There are two cases in which you might want to get previous props or state.</p>
+<p>Sometimes, you need previous props to <strong>clean up an effect.</strong> For example, you might have an effect that subscribes to a socket based on the <code>userId</code> prop. If the <code>userId</code> prop changes, you want to unsubscribe from the <em>previous</em> <code>userId</code> and subscribe to the <em>next</em> one. You don’t need to do anything special for this to work:</p>
+<pre tabindex="0"><code>useEffect(() =&gt; {
+  ChatAPI.subscribeToSocket(props.userId);
+  return () =&gt; ChatAPI.unsubscribeFromSocket(props.userId);
+}, [props.userId]);
+</code></pre><p>In the above example, if <code>userId</code> changes from <code>3</code> to <code>4</code>, <code>ChatAPI.unsubscribeFromSocket(3)</code> will run first, and then <code>ChatAPI.subscribeToSocket(4)</code> will run. There is no need to get “previous” <code>userId</code> because the cleanup function will capture it in a closure.</p>
+<p>Other times, you might need to <strong>adjust state based on a change in props or other state</strong>. This is rarely needed and is usually a sign you have some duplicate or redundant state. However, in the rare case that you need this pattern, you can 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">store previous state or props in state and update them during rendering</a>.</p>
+<p>We have previously suggested a custom Hook called <code>usePrevious</code> to hold the previous value. However, we’ve found that most use cases fall into the two patterns described above. If your use case is different, you can 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">hold a value in a ref</a> and manually update it when needed. Avoid reading and updating refs during rendering because this makes your component’s behavior difficult to predict and understand.</p>
+<h4 id="why-am-i-seeing-stale-props-or-state-inside-my-function">
+  Why am I seeing stale props or state inside my function?
+  <a class="anchor" href="#why-am-i-seeing-stale-props-or-state-inside-my-function">#</a>
+</h4>
+<p>Any function inside a component, including event handlers and effects, “sees” the props and state from the render it was created in. For example, consider code like this:</p>
+<pre tabindex="0"><code>function Example() {
+  const [count, setCount] = useState(0);
+
+  function handleAlertClick() {
+    setTimeout(() =&gt; {
+      alert(&#39;You clicked on: &#39; + count);
+    }, 3000);
+  }
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+        Click me
+      &lt;/button&gt;
+      &lt;button onClick={handleAlertClick}&gt;
+        Show alert
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre><p>If you first click “Show alert” and then increment the counter, the alert will show the <code>count</code> variable <strong>at the time you clicked the “Show alert” button</strong>. This prevents bugs caused by the code assuming props and state don’t change.</p>
+<p>If you intentionally want to read the <em>latest</em> state from some asynchronous callback, you could keep it in 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">a ref</a>, mutate it, and read from it.</p>
+<p>Finally, another possible reason you’re seeing stale props or state is if you use the “dependency array” optimization but didn’t correctly specify all the dependencies. For example, if an effect specifies <code>[]</code> as the second argument but reads <code>someProp</code> inside, it will keep “seeing” the initial value of <code>someProp</code>. The solution is to either remove the dependency array, or to fix it. Here’s 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">how you can deal with functions</a>, and here’s 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">other common strategies</a> to run effects less often without incorrectly skipping dependencies.</p>
+<blockquote>
+<p>Note</p>
+<p>We provide an 
+  <a href="https://github.com/facebook/react/issues/14920"><code>exhaustive-deps</code></a> ESLint rule as a part of the 
+  <a href="https://www.npmjs.com/package/eslint-plugin-react-hooks#installation"><code>eslint-plugin-react-hooks</code></a> package. It warns when dependencies are specified incorrectly and suggests a fix.</p>
+</blockquote>
+<h4 id="how-do-i-implement-getderivedstatefromprops">
+  How do I implement <code>getDerivedStateFromProps</code>?
+  <a class="anchor" href="#how-do-i-implement-getderivedstatefromprops">#</a>
+</h4>
+<p>While you probably don’t need it, in rare cases that you do (such as implementing a <code>&lt;Transition&gt;</code> component), you can update the state right during rendering. React will re-run the component with updated state immediately after exiting the first render so it wouldn’t be expensive.</p>
+<p>Here, we store the previous value of the <code>row</code> prop in a state variable so that we can compare:</p>
+<pre tabindex="0"><code>function ScrollView({row}) {
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+  const [prevRow, setPrevRow] = useState(null);
+
+  if (row !== prevRow) {
+    // Row changed since last render. Update isScrollingDown.
+    setIsScrollingDown(prevRow !== null &amp;&amp; row &gt; prevRow);
+    setPrevRow(row);
+  }
+
+  return `Scrolling down: ${isScrollingDown}`;
+}
+</code></pre><p>This might look strange at first, but an update during rendering is exactly what <code>getDerivedStateFromProps</code> has always been like conceptually.</p>
+<h4 id="is-there-something-like-forceupdate">
+  Is there something like forceUpdate?
+  <a class="anchor" href="#is-there-something-like-forceupdate">#</a>
+</h4>
+<p>Both <code>useState</code> and <code>useReducer</code> Hooks bail out of updates if the next value is the same as the previous one. Mutating state in place and calling <code>setState</code> will not cause a re-render.</p>
+<p>Normally, you shouldn’t mutate local state in React. However, as an escape hatch, you can use an incrementing counter to force a re-render even if the state has not changed:</p>
+<pre tabindex="0"><code>  const [ignored, forceUpdate] = useReducer(x =&gt; x + 1, 0);
+
+  function handleClick() {
+    forceUpdate();
+  }
+</code></pre><p>Try to avoid this pattern if possible.</p>
+<h4 id="can-i-make-a-ref-to-a-function-component">
+  Can I make a ref to a function component?
+  <a class="anchor" href="#can-i-make-a-ref-to-a-function-component">#</a>
+</h4>
+<p>While you shouldn’t need this often, you may expose some imperative methods to a parent component with the <code>useImperativeHandle</code> Hook.</p>
+<h4 id="how-can-i-measure-a-dom-node">
+  How can I measure a DOM node?
+  <a class="anchor" href="#how-can-i-measure-a-dom-node">#</a>
+</h4>
+<p>One rudimentary way to measure the position or size of a DOM node is to use a callback ref. React will call that callback whenever the ref gets attached to a different node. Here is a 
+  <a href="https://codesandbox.io/s/l7m0v5x4v9">small demo</a>:</p>
+<pre tabindex="0"><code>function MeasureExample() {
+  const [height, setHeight] = useState(0);
+
+  const measuredRef = useCallback(node =&gt; {    if (node !== null) {      setHeight(node.getBoundingClientRect().height);    }  }, []);
+  return (
+    &lt;&gt;
+      &lt;h1 ref={measuredRef}&gt;Hello, world&lt;/h1&gt;      &lt;h2&gt;The above header is {Math.round(height)}px tall&lt;/h2&gt;
+    &lt;/&gt;
+  );
+}
+</code></pre><p>We didn’t choose <code>useRef</code> in this example because an object ref doesn’t notify us about <em>changes</em> to the current ref value. Using a callback ref ensures that 
+  <a href="https://codesandbox.io/s/818zzk8m78">even if a child component displays the measured node later</a> (e.g. in response to a click), we still get notified about it in the parent component and can update the measurements.</p>
+<p>Note that we pass <code>[]</code> as a dependency array to <code>useCallback</code>. This ensures that our ref callback doesn’t change between the re-renders, and so React won’t call it unnecessarily.</p>
+<p>In this example, the callback ref will be called only when the component mounts and unmounts, since the rendered <code>&lt;h1&gt;</code> component stays present throughout any rerenders. If you want to be notified any time a component resizes, you may want to use 
+  <a href="https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver"><code>ResizeObserver</code></a> or a third-party Hook built on it.</p>
+<p>If you want, you can 
+  <a href="https://codesandbox.io/s/m5o42082xy">extract this logic</a> into a reusable Hook:</p>
+<pre tabindex="0"><code>function MeasureExample() {
+  const [rect, ref] = useClientRect();  return (
+    &lt;&gt;
+      &lt;h1 ref={ref}&gt;Hello, world&lt;/h1&gt;
+      {rect !== null &amp;&amp;
+        &lt;h2&gt;The above header is {Math.round(rect.height)}px tall&lt;/h2&gt;
+      }
+    &lt;/&gt;
+  );
+}
+
+function useClientRect() {
+  const [rect, setRect] = useState(null);
+  const ref = useCallback(node =&gt; {
+    if (node !== null) {
+      setRect(node.getBoundingClientRect());
+    }
+  }, []);
+  return [rect, ref];
+}
+</code></pre><h4 id="what-does-const-thing-setthing--usestate-mean">
+  What does <code>const [thing, setThing] = useState()</code> mean?
+  <a class="anchor" href="#what-does-const-thing-setthing--usestate-mean">#</a>
+</h4>
+<p>If you’re not familiar with this syntax, check out the explanation in the State Hook documentation.</p>
+<h3 id="performance-optimizations">
+  Performance Optimizations
+  <a class="anchor" href="#performance-optimizations">#</a>
+</h3>
+<h4 id="can-i-skip-an-effect-on-updates">
+  Can I skip an effect on updates?
+  <a class="anchor" href="#can-i-skip-an-effect-on-updates">#</a>
+</h4>
+<p>Yes. See conditionally firing an effect. Note that forgetting to handle updates often introduces bugs, which is why this isn’t the default behavior.</p>
+<h4 id="is-it-safe-to-omit-functions-from-the-list-of-dependencies">
+  Is it safe to omit functions from the list of dependencies?
+  <a class="anchor" href="#is-it-safe-to-omit-functions-from-the-list-of-dependencies">#</a>
+</h4>
+<p>Generally speaking, no.</p>
+<pre tabindex="0"><code>function Example({ someProp }) {
+  function doSomething() {
+    console.log(someProp);  }
+
+  useEffect(() =&gt; {
+    doSomething();
+  }, []); // 🔴 This is not safe (it calls `doSomething` which uses `someProp`)}
+</code></pre><p>It’s difficult to remember which props or state are used by functions outside of the effect. This is why <strong>usually you’ll want to declare functions needed by an effect _inside</strong>_** of it.** Then it’s easy to see what values from the component scope that effect depends on:</p>
+<pre tabindex="0"><code>function Example({ someProp }) {
+  useEffect(() =&gt; {
+    function doSomething() {
+      console.log(someProp);    }
+
+    doSomething();
+  }, [someProp]); // ✅ OK (our effect only uses `someProp`)}
+</code></pre><p>If after that we still don’t use any values from the component scope, it’s safe to specify <code>[]</code>:</p>
+<pre tabindex="0"><code>useEffect(() =&gt; {
+  function doSomething() {
+    console.log(&#39;hello&#39;);
+  }
+
+  doSomething();
+}, []); // ✅ OK in this example because we don&#39;t use *any* values from component scope
+</code></pre><p>Depending on your use case, there are a few more options described below.</p>
+<blockquote>
+<p>Note</p>
+<p>We provide the 
+  <a href="https://github.com/facebook/react/issues/14920"><code>exhaustive-deps</code></a> ESLint rule as a part of the 
+  <a href="https://www.npmjs.com/package/eslint-plugin-react-hooks#installation"><code>eslint-plugin-react-hooks</code></a> package. It helps you find components that don’t handle updates consistently.</p>
+</blockquote>
+<p>Let’s see why this matters.</p>
+<p>If you specify a list of dependencies as the last argument to <code>useEffect</code>, <code>useLayoutEffect</code>, <code>useMemo</code>, <code>useCallback</code>, or <code>useImperativeHandle</code>, it must include all values that are used inside the callback and participate in the React data flow. That includes props, state, and anything derived from them.</p>
+<p>It is <strong>only</strong> safe to omit a function from the dependency list if nothing in it (or the functions called by it) references props, state, or values derived from them. This example has a bug:</p>
+<pre tabindex="0"><code>function ProductPage({ productId }) {
+  const [product, setProduct] = useState(null);
+
+  async function fetchProduct() {
+    const response = await fetch(&#39;http://myapi/product/&#39; + productId); // Uses productId prop    const json = await response.json();
+    setProduct(json);
+  }
+
+  useEffect(() =&gt; {
+    fetchProduct();
+  }, []); // 🔴 Invalid because `fetchProduct` uses `productId`  // ...
+}
+</code></pre><p><strong>The recommended fix is to move that function _inside</strong>_** of your effect**. That makes it easy to see which props or state your effect uses, and to ensure they’re all declared:</p>
+<pre tabindex="0"><code>function ProductPage({ productId }) {
+  const [product, setProduct] = useState(null);
+
+  useEffect(() =&gt; {
+    // By moving this function inside the effect, we can clearly see the values it uses.    async function fetchProduct() {      const response = await fetch(&#39;http://myapi/product/&#39; + productId);      const json = await response.json();      setProduct(json);    }
+    fetchProduct();
+  }, [productId]); // ✅ Valid because our effect only uses productId  // ...
+}
+</code></pre><p>This also allows you to handle out-of-order responses with a local variable inside the effect:</p>
+<pre tabindex="0"><code>  useEffect(() =&gt; {
+    let ignore = false;    async function fetchProduct() {
+      const response = await fetch(&#39;http://myapi/product/&#39; + productId);
+      const json = await response.json();
+      if (!ignore) setProduct(json);    }
+
+    fetchProduct();
+    return () =&gt; { ignore = true };  }, [productId]);
+</code></pre><p>We moved the function inside the effect so it doesn’t need to be in its dependency list.</p>
+<blockquote>
+<p>Tip</p>
+<p>Check out 
+  <a href="https://codesandbox.io/s/jvvkoo8pq3">this small demo</a> and 
+  <a href="https://www.robinwieruch.de/react-hooks-fetch-data/">this article</a> to learn more about data fetching with Hooks.</p>
+</blockquote>
+<p><strong>If for some reason you _can’t</strong>_** move a function inside an effect, there are a few more options:**</p>
+<ul>
+<li><strong>You can try moving that function outside of your component</strong>. In that case, the function is guaranteed to not reference any props or state, and also doesn’t need to be in the list of dependencies.</li>
+<li>If the function you’re calling is a pure computation and is safe to call while rendering, you may <strong>call it outside of the effect instead,</strong> and make the effect depend on the returned value.</li>
+<li>As a last resort, you can <strong>add a function to effect dependencies but _wrap its definition</strong>_ into the <code>useCallback</code> Hook. This ensures it doesn’t change on every render unless <em>its own</em> dependencies also change:</li>
+</ul>
+<pre tabindex="0"><code>function ProductPage({ productId }) {
+  // ✅ Wrap with useCallback to avoid change on every render  const fetchProduct = useCallback(() =&gt; {    // ... Does something with productId ...  }, [productId]); // ✅ All useCallback dependencies are specified
+  return &lt;ProductDetails fetchProduct={fetchProduct} /&gt;;
+}
+
+function ProductDetails({ fetchProduct }) {
+  useEffect(() =&gt; {
+    fetchProduct();
+  }, [fetchProduct]); // ✅ All useEffect dependencies are specified
+  // ...
+}
+</code></pre><p>Note that in the above example we <strong>need</strong> to keep the function in the dependencies list. This ensures that a change in the <code>productId</code> prop of <code>ProductPage</code> automatically triggers a refetch in the <code>ProductDetails</code> component.</p>
+<h4 id="what-can-i-do-if-my-effect-dependencies-change-too-often">
+  What can I do if my effect dependencies change too often?
+  <a class="anchor" href="#what-can-i-do-if-my-effect-dependencies-change-too-often">#</a>
+</h4>
+<p>Sometimes, your effect may be using state that changes too often. You might be tempted to omit that state from a list of dependencies, but that usually leads to bugs:</p>
+<pre tabindex="0"><code>function Counter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() =&gt; {
+    const id = setInterval(() =&gt; {
+      setCount(count + 1); // This effect depends on the `count` state    }, 1000);
+    return () =&gt; clearInterval(id);
+  }, []); // 🔴 Bug: `count` is not specified as a dependency
+  return &lt;h1&gt;{count}&lt;/h1&gt;;
+}
+</code></pre><p>The empty set of dependencies, <code>[]</code>, means that the effect will only run once when the component mounts, and not on every re-render. The problem is that inside the <code>setInterval</code> callback, the value of <code>count</code> does not change, because we’ve created a closure with the value of <code>count</code> set to <code>0</code> as it was when the effect callback ran. Every second, this callback then calls <code>setCount(0 + 1)</code>, so the count never goes above 1.</p>
+<p>Specifying <code>[count]</code> as a list of dependencies would fix the bug, but would cause the interval to be reset on every change. Effectively, each <code>setInterval</code> would get one chance to execute before being cleared (similar to a <code>setTimeout</code>.) That may not be desirable. To fix this, we can use the functional update form of <code>setState</code>. It lets us specify <em>how</em> the state needs to change without referencing the <em>current</em> state:</p>
+<pre tabindex="0"><code>function Counter() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() =&gt; {
+    const id = setInterval(() =&gt; {
+      setCount(c =&gt; c + 1); // ✅ This doesn&#39;t depend on `count` variable outside    }, 1000);
+    return () =&gt; clearInterval(id);
+  }, []); // ✅ Our effect doesn&#39;t use any variables in the component scope
+  return &lt;h1&gt;{count}&lt;/h1&gt;;
+}
+</code></pre><p>(The identity of the <code>setCount</code> function is guaranteed to be stable so it’s safe to omit.)</p>
+<p>Now, the <code>setInterval</code> callback executes once a second, but each time the inner call to <code>setCount</code> can use an up-to-date value for <code>count</code> (called <code>c</code> in the callback here.)</p>
+<p>In more complex cases (such as if one state depends on another state), try moving the state update logic outside the effect with the <code>useReducer</code> Hook. 
+  <a href="https://adamrackis.dev/state-and-use-reducer/">This article</a> offers an example of how you can do this. <strong>The identity of the <code>dispatch</code> function from <code>useReducer</code> is always stable</strong> — even if the reducer function is declared inside the component and reads its props.</p>
+<p>As a last resort, if you want something like <code>this</code> in a class, you can 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">use a ref</a> to hold a mutable variable. Then you can write and read to it. For example:</p>
+<pre tabindex="0"><code>function Example(props) {
+  // Keep latest props in a ref.  const latestProps = useRef(props);  useEffect(() =&gt; {    latestProps.current = props;  });
+  useEffect(() =&gt; {
+    function tick() {
+      // Read latest props at any time      console.log(latestProps.current);    }
+
+    const id = setInterval(tick, 1000);
+    return () =&gt; clearInterval(id);
+  }, []); // This effect never re-runs}
+</code></pre><p>Only do this if you couldn’t find a better alternative, as relying on mutation makes components less predictable. If there’s a specific pattern that doesn’t translate well, 
+  <a href="https://github.com/facebook/react/issues/new">file an issue</a> with a runnable example code and we can try to help.</p>
+<h4 id="how-do-i-implement-shouldcomponentupdate">
+  How do I implement <code>shouldComponentUpdate</code>?
+  <a class="anchor" href="#how-do-i-implement-shouldcomponentupdate">#</a>
+</h4>
+<p>You can wrap a function component with <code>React.memo</code> to shallowly compare its props:</p>
+<pre tabindex="0"><code>const Button = React.memo((props) =&gt; {
+  // your component
+});
+</code></pre><p>It’s not a Hook because it doesn’t compose like Hooks do. <code>React.memo</code> is equivalent to <code>PureComponent</code>, but it only compares props. (You can also add a second argument to specify a custom comparison function that takes the old and new props. If it returns true, the update is skipped.)</p>
+<p><code>React.memo</code> doesn’t compare state because there is no single state object to compare. But you can make children pure too, or even 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">optimize individual children with <code>useMemo</code></a>.</p>
+<h4 id="how-to-memoize-calculations">
+  How to memoize calculations?
+  <a class="anchor" href="#how-to-memoize-calculations">#</a>
+</h4>
+<p>The <code>useMemo</code> Hook lets you cache calculations between multiple renders by “remembering” the previous computation:</p>
+<pre tabindex="0"><code>const memoizedValue = useMemo(() =&gt; computeExpensiveValue(a, b), [a, b]);
+</code></pre><p>This code calls <code>computeExpensiveValue(a, b)</code>. But if the dependencies <code>[a, b]</code> haven’t changed since the last value, <code>useMemo</code> skips calling it a second time and simply reuses the last value it returned.</p>
+<p>Remember that the function passed to <code>useMemo</code> runs during rendering. Don’t do anything there that you wouldn’t normally do while rendering. For example, side effects belong in <code>useEffect</code>, not <code>useMemo</code>.</p>
+<p><strong>You may rely on <code>useMemo</code> as a performance optimization, not as a semantic guarantee.</strong> In the future, React may choose to “forget” some previously memoized values and recalculate them on next render, e.g. to free memory for offscreen components. Write your code so that it still works without <code>useMemo</code> — and then add it to optimize performance. (For rare cases when a value must <em>never</em> be recomputed, you can 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">lazily initialize</a> a ref.)</p>
+<p>Conveniently, <code>useMemo</code> also lets you skip an expensive re-render of a child:</p>
+<pre tabindex="0"><code>function Parent({ a, b }) {
+  // Only re-rendered if `a` changes:
+  const child1 = useMemo(() =&gt; &lt;Child1 a={a} /&gt;, [a]);
+  // Only re-rendered if `b` changes:
+  const child2 = useMemo(() =&gt; &lt;Child2 b={b} /&gt;, [b]);
+  return (
+    &lt;&gt;
+      {child1}
+      {child2}
+    &lt;/&gt;
+  )
+}
+</code></pre><p>Note that this approach won’t work in a loop because Hook calls can’t be placed inside loops. But you can extract a separate component for the list item, and call <code>useMemo</code> there.</p>
+<h4 id="how-to-create-expensive-objects-lazily">
+  How to create expensive objects lazily?
+  <a class="anchor" href="#how-to-create-expensive-objects-lazily">#</a>
+</h4>
+<p><code>useMemo</code> lets you 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">memoize an expensive calculation</a> if the dependencies are the same. However, it only serves as a hint, and doesn’t <em>guarantee</em> the computation won’t re-run. But sometimes you need to be sure an object is only created once.</p>
+<p><strong>The first common use case is when creating the initial state is expensive:</strong></p>
+<pre tabindex="0"><code>function Table(props) {
+  // ⚠️ createRows() is called on every render
+  const [rows, setRows] = useState(createRows(props.count));
+  // ...
+}
+</code></pre><p>To avoid re-creating the ignored initial state, we can pass a <strong>function</strong> to <code>useState</code>:</p>
+<pre tabindex="0"><code>function Table(props) {
+  // ✅ createRows() is only called once
+  const [rows, setRows] = useState(() =&gt; createRows(props.count));
+  // ...
+}
+</code></pre><p>React will only call this function during the first render. See the <code>useState</code> API reference.</p>
+<p><strong>You might also occasionally want to avoid re-creating the <code>useRef()</code> initial value.</strong> For example, maybe you want to ensure some imperative class instance only gets created once:</p>
+<pre tabindex="0"><code>function Image(props) {
+  // ⚠️ IntersectionObserver is created on every render
+  const ref = useRef(new IntersectionObserver(onIntersect));
+  // ...
+}
+</code></pre><p><code>useRef</code> <strong>does not</strong> accept a special function overload like <code>useState</code>. Instead, you can write your own function that creates and sets it lazily:</p>
+<pre tabindex="0"><code>function Image(props) {
+  const ref = useRef(null);
+
+  // ✅ IntersectionObserver is created lazily once
+  function getObserver() {
+    if (ref.current === null) {
+      ref.current = new IntersectionObserver(onIntersect);
+    }
+    return ref.current;
+  }
+
+  // When you need it, call getObserver()
+  // ...
+}
+</code></pre><p>This avoids creating an expensive object until it’s truly needed for the first time. If you use Flow or TypeScript, you can also give <code>getObserver()</code> a non-nullable type for convenience.</p>
+<h4 id="are-hooks-slow-because-of-creating-functions-in-render">
+  Are Hooks slow because of creating functions in render?
+  <a class="anchor" href="#are-hooks-slow-because-of-creating-functions-in-render">#</a>
+</h4>
+<p>No. In modern browsers, the raw performance of closures compared to classes doesn’t differ significantly except in extreme scenarios.</p>
+<p>In addition, consider that the design of Hooks is more efficient in a couple ways:</p>
+<ul>
+<li>Hooks avoid a lot of the overhead that classes require, like the cost of creating class instances and binding event handlers in the constructor.</li>
+<li><strong>Idiomatic code using Hooks doesn’t need the deep component tree nesting</strong> that is prevalent in codebases that use higher-order components, render props, and context. With smaller component trees, React has less work to do.</li>
+</ul>
+<p>Traditionally, performance concerns around inline functions in React have been related to how passing new callbacks on each render breaks <code>shouldComponentUpdate</code> optimizations in child components. Hooks approach this problem from three sides.</p>
+<ul>
+<li>
+<p>The <code>useCallback</code> Hook lets you keep the same callback reference between re-renders so that <code>shouldComponentUpdate</code> continues to work:</p>
+<pre tabindex="0"><code>// Will not change unless `a` or `b` changes
+const memoizedCallback = useCallback(() =&gt; {  doSomething(a, b);
+}, [a, b]);
+</code></pre></li>
+<li>
+<p>The 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md"><code>useMemo</code></a> Hook makes it easier to control when individual children update, reducing the need for pure components.</p>
+</li>
+<li>
+<p>Finally, the <code>useReducer</code> Hook reduces the need to pass callbacks deeply, as explained below.</p>
+</li>
+</ul>
+<h4 id="how-to-avoid-passing-callbacks-down">
+  How to avoid passing callbacks down?
+  <a class="anchor" href="#how-to-avoid-passing-callbacks-down">#</a>
+</h4>
+<p>We’ve found that most people don’t enjoy manually passing callbacks through every level of a component tree. Even though it is more explicit, it can feel like a lot of “plumbing”.</p>
+<p>In large component trees, an alternative we recommend is to pass down a <code>dispatch</code> function from <code>useReducer</code> via context:</p>
+<pre tabindex="0"><code>const TodosDispatch = React.createContext(null);
+
+function TodosApp() {
+  // Note: `dispatch` won&#39;t change between re-renders  const [todos, dispatch] = useReducer(todosReducer);
+  return (
+    &lt;TodosDispatch.Provider value={dispatch}&gt;
+      &lt;DeepTree todos={todos} /&gt;
+    &lt;/TodosDispatch.Provider&gt;
+  );
+}
+</code></pre><p>Any child in the tree inside <code>TodosApp</code> can use the <code>dispatch</code> function to pass actions up to <code>TodosApp</code>:</p>
+<pre tabindex="0"><code>function DeepChild(props) {
+  // If we want to perform an action, we can get dispatch from context.  const dispatch = useContext(TodosDispatch);
+  function handleClick() {
+    dispatch({ type: &#39;add&#39;, text: &#39;hello&#39; });
+  }
+
+  return (
+    &lt;button onClick={handleClick}&gt;Add todo&lt;/button&gt;
+  );
+}
+</code></pre><p>This is both more convenient from the maintenance perspective (no need to keep forwarding callbacks), and avoids the callback problem altogether. Passing <code>dispatch</code> down like this is the recommended pattern for deep updates.</p>
+<p>Note that you can still choose whether to pass the application <em>state</em> down as props (more explicit) or as context (more convenient for very deep updates). If you use context to pass down the state too, use two different context types — the <code>dispatch</code> context never changes, so components that read it don’t need to rerender unless they also need the application state.</p>
+<h4 id="how-to-read-an-often-changing-value-from-usecallback">
+  How to read an often-changing value from <code>useCallback</code>?
+  <a class="anchor" href="#how-to-read-an-often-changing-value-from-usecallback">#</a>
+</h4>
+<blockquote>
+<p>Note</p>
+<p>We recommend to 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">pass <code>dispatch</code> down in context</a> rather than individual callbacks in props. The approach below is only mentioned here for completeness and as an escape hatch.</p>
+</blockquote>
+<p>In some rare cases you might need to memoize a callback with <code>useCallback</code> but the memoization doesn’t work very well because the inner function has to be re-created too often. If the function you’re memoizing is an event handler and isn’t used during rendering, you can use 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">ref as an instance variable</a>, and save the last committed value into it manually:</p>
+<pre tabindex="0"><code>function Form() {
+  const [text, updateText] = useState(&#39;&#39;);
+  const textRef = useRef();
+
+  useEffect(() =&gt; {
+    textRef.current = text; // Write it to the ref  });
+
+  const handleSubmit = useCallback(() =&gt; {
+    const currentText = textRef.current; // Read it from the ref    alert(currentText);
+  }, [textRef]); // Don&#39;t recreate handleSubmit like [text] would do
+
+  return (
+    &lt;&gt;
+      &lt;input value={text} onChange={e =&gt; updateText(e.target.value)} /&gt;
+      &lt;ExpensiveTree onSubmit={handleSubmit} /&gt;
+    &lt;/&gt;
+  );
+}
+</code></pre><p>This is a rather convoluted pattern but it shows that you can do this escape hatch optimization if you need it. It’s more bearable if you extract it to a custom Hook:</p>
+<pre tabindex="0"><code>function Form() {
+  const [text, updateText] = useState(&#39;&#39;);
+  // Will be memoized even if `text` changes:
+  const handleSubmit = useEventCallback(() =&gt; {    alert(text);
+  }, [text]);
+
+  return (
+    &lt;&gt;
+      &lt;input value={text} onChange={e =&gt; updateText(e.target.value)} /&gt;
+      &lt;ExpensiveTree onSubmit={handleSubmit} /&gt;
+    &lt;/&gt;
+  );
+}
+
+function useEventCallback(fn, dependencies) {  const ref = useRef(() =&gt; {
+    throw new Error(&#39;Cannot call an event handler while rendering.&#39;);
+  });
+
+  useEffect(() =&gt; {
+    ref.current = fn;
+  }, [fn, ...dependencies]);
+
+  return useCallback(() =&gt; {
+    const fn = ref.current;
+    return fn();
+  }, [ref]);
+}
+</code></pre><p>In either case, we <strong>don’t recommend this pattern</strong> and only show it here for completeness. Instead, it is preferable to 
+  <a href="https://github.com/mindulle/Documents/blob/main/Languages/react/frequently-used/hooks/broken-reference/README.md">avoid passing callbacks deep down</a>.</p>
+<h3 id="under-the-hood">
+  Under the Hood
+  <a class="anchor" href="#under-the-hood">#</a>
+</h3>
+<h4 id="how-does-react-associate-hook-calls-with-components">
+  How does React associate Hook calls with components?
+  <a class="anchor" href="#how-does-react-associate-hook-calls-with-components">#</a>
+</h4>
+<p>React keeps track of the currently rendering component. Thanks to the Rules of Hooks, we know that Hooks are only called from React components (or custom Hooks — which are also only called from React components).</p>
+<p>There is an internal list of “memory cells” associated with each component. They’re just JavaScript objects where we can put some data. When you call a Hook like <code>useState()</code>, it reads the current cell (or initializes it during the first render), and then moves the pointer to the next one. This is how multiple <code>useState()</code> calls each get independent local state.</p>
+<h4 id="what-is-the-prior-art-for-hooks">
+  What is the prior art for Hooks?
+  <a class="anchor" href="#what-is-the-prior-art-for-hooks">#</a>
+</h4>
+<p>Hooks synthesize ideas from several different sources:</p>
+<ul>
+<li>Our old experiments with functional APIs in the 
+  <a href="https://github.com/reactjs/react-future/tree/master/07%20-%20Returning%20State">react-future</a> repository.</li>
+<li>React community’s experiments with render prop APIs, including 
+  <a href="https://github.com/ryanflorence">Ryan Florence</a>’s 
+  <a href="https://github.com/reactions/component">Reactions Component</a>.</li>
+<li>
+  <a href="https://github.com/trueadm">Dominic Gannaway</a>’s 
+  <a href="https://gist.github.com/trueadm/17beb64288e30192f3aa29cad0218067"><code>adopt</code> keyword</a> proposal as a sugar syntax for render props.</li>
+<li>State variables and state cells in 
+  <a href="http://displayscript.org/introduction.html">DisplayScript</a>.</li>
+<li>
+  <a href="https://reasonml.github.io/reason-react/docs/en/state-actions-reducer.html">Reducer components</a> in ReasonReact.</li>
+<li>
+  <a href="http://reactivex.io/rxjs/class/es6/Subscription.js%5c~Subscription.html">Subscriptions</a> in Rx.</li>
+<li>
+  <a href="https://github.com/ocamllabs/ocaml-effects-tutorial#2-effectful-computations-in-a-pure-setting">Algebraic effects</a> in Multicore OCaml.</li>
+</ul>
+<p>
+  <a href="https://github.com/sebmarkbage">Sebastian Markbåge</a> came up with the original design for Hooks, later refined by 
+  <a href="https://github.com/acdlite">Andrew Clark</a>, 
+  <a href="https://github.com/sophiebits">Sophie Alpert</a>, 
+  <a href="https://github.com/trueadm">Dominic Gannaway</a>, and other members of the React team.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/Narutabe/Narutab.github.io/commit/7ac2743c38a8f2aaee89f7609d2ddafdcb58738d" title='Last modified by mindulle | December 3, 2023' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>December 3, 2023</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/Narutabe/Narutab.github.io/commit/content/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#-hooks-faq">🌵 Hooks FAQ</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#adoption-strategy">Adoption Strategy</a></li>
+            <li><a href="#from-classes-to-hooks">From Classes to Hooks</a></li>
+            <li><a href="#performance-optimizations">Performance Optimizations</a></li>
+            <li><a href="#under-the-hood">Under the Hood</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

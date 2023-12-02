@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advanced on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/advanced/</link>
+    <description>Recent content in Advanced on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/advanced/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/advanced/dos-and-donts-for-performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/advanced/dos-and-donts-for-performance/</guid>
+      <description>Do&amp;rsquo;s and don&amp;rsquo;ts for performance # Hey everyone! While writing the book I’ve been gathering a big list of tips, tricks, caveats, and gotchas. This page contains everything that I’ve found so far.
+Not all the tips here have been experimentally verified, especially the performance tips. There are too many variables involved to blindly follow a list, so always make sure to test your app thoroughly and see what works for you.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/advanced/performance-pitfalls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/advanced/performance-pitfalls/</guid>
+      <description>Performance pitfalls # Tips and Tricks # This is a good overview: https://discoverthreejs.com/tips-and-tricks
+The most important gotcha in three.js is that creating objects can be expensive, think twice before you mount/unmount things! Every material or light that you put into the scene has to compile, every geometry you create will be processed. Share materials and geometries if you can, either in global scope or locally:
+const geom = useMemo(() =&amp;gt; new BoxGeometry(), []) const mat = useMemo(() =&amp;gt; new MeshBasicMaterial(), []) return items.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/advanced/scaling-performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/advanced/scaling-performance/</guid>
+      <description>Scaling performance # Running WebGL can be quite expensive depending on how powerful your devices are. In order to mitigate this, especially if you want to make your application available to a broad variety of devices, including weaker options, you should look into performance optimizations. This article goes through a couple of them.
+On-demand rendering # three.js apps usually run in a game-loop that executes 60 times a second, React Three Fiber is no different.</description>
+    </item>
+  </channel>
+</rss>

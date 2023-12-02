@@ -1,0 +1,7786 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Variable Declaration # let and const are two relatively new concepts for variable declarations in JavaScript. As we mentioned earlier, let is similar to var in some respects, but allows users to avoid some of the common &ldquo;gotchas&rdquo; that users run into in JavaScript.
+const is an augmentation of let in that it prevents re-assignment to a variable.
+With TypeScript being an extension of JavaScript, the language naturally supports let and const.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="Variable Declaration # let and const are two relatively new concepts for variable declarations in JavaScript. As we mentioned earlier, let is similar to var in some respects, but allows users to avoid some of the common &ldquo;gotchas&rdquo; that users run into in JavaScript.
+const is an augmentation of let in that it prevents re-assignment to a variable.
+With TypeScript being an extension of JavaScript, the language naturally supports let and const." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Narutabe.github.io/docs/references/languages/typescript/variable-declarations/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-12-02T15:34:15+00:00" />
+
+<title>Variable Declarations | My Ship Logs</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="stylesheet" href="/book.min.69bd24b1b8e6c9b90c8945eae28502fc99f6ea8e4c440136c966509a57808751.css" integrity="sha256-ab0ksbjmybkMiUXq4oUC/Jn26o5MRAE2yWZQmleAh1E=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.59b58450ba250350a62298603ee6acc66a10d48557ec7f392478acf2d03b7f70.js" integrity="sha256-WbWEULolA1CmIphgPuasxmoQ1IVX7H85JHis8tA7f3A=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My Ship Logs</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/references/" class="">References</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8b11a258bca7f88da54303c1eb8bf0cd" class="toggle"  />
+    <label for="section-8b11a258bca7f88da54303c1eb8bf0cd" class="flex justify-between">
+      <a role="button" class="">Libraries and Frameworks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-31c0267133a7ffe5ef28ff54038a703b" class="toggle"  />
+    <label for="section-31c0267133a7ffe5ef28ff54038a703b" class="flex justify-between">
+      <a role="button" class="">React Three</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-05981571365e3fb388ded4120112dc16" class="toggle"  />
+    <label for="section-05981571365e3fb388ded4120112dc16" class="flex justify-between">
+      <a role="button" class="">Advanced</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/advanced/dos-and-donts-for-performance/" class="">Dos and Donts for Performance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/advanced/performance-pitfalls/" class="">Performance Pitfalls</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/advanced/scaling-performance/" class="">Scaling Performance</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-e15c4db188330b110c915c10011d226e" class="toggle"  />
+    <label for="section-e15c4db188330b110c915c10011d226e" class="flex justify-between">
+      <a role="button" class="">Fundamentals</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/fundamentals/backgrounds/" class="">Backgrounds</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/fundamentals/furthermore/" class="">Furthermore</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f4487e23e7fbd6b989bdccb71d51e5ac" class="toggle"  />
+    <label for="section-f4487e23e7fbd6b989bdccb71d51e5ac" class="flex justify-between">
+      <a role="button" class="">Getting Started</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/examplesin-progress/" class="">Examples(in Progress)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/installation/" class="">Installation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/introduction/" class="">Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/libs-and-fwks/react-three/getting-started/your-first-scene/" class="">Your First Scene</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-131a70ba0fcca90b682bae11e201c956" class="toggle"  />
+    <label for="section-131a70ba0fcca90b682bae11e201c956" class="flex justify-between">
+      <a role="button" class="">Meta Frameworks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ed81b1bd0ecbe1682bac789b5359c56a" class="toggle"  />
+    <label for="section-ed81b1bd0ecbe1682bac789b5359c56a" class="flex justify-between">
+      <a role="button" class="">React</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-23392f5058817d45344855ad679c60ba" class="toggle"  />
+    <label for="section-23392f5058817d45344855ad679c60ba" class="flex justify-between">
+      <a role="button" class="">Advanced</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/accessibility/" class="">Accessibility</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/error-boundaries/" class="">Error Boundaries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/forwarding-refs/" class="">Forwarding Refs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/fragments/" class="">Fragments</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/higher-order-components/" class="">Higher Order Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/integrating-with-other-libraries/" class="">Integrating With Other Libraries</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/jsx-in-depth/" class="">Jsx in Depth</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/optimizing-performance/" class="">Optimizing Performance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/portals/" class="">Portals</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/profiler-api/" class="">Profiler API</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/react-without-es6/" class="">React Without Es6</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/react-without-jsx/" class="">React Without Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/reconciliation/" class="">Reconciliation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/refs-and-the-dom/" class="">Refs and the Dom</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/render-props/" class="">Render Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/static-type-checking/" class="">Static Type Checking</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/strict-mode/" class="">Strict Mode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/typechecking-with-proptypes/" class="">Typechecking With Proptypes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/uncontrolled-components/" class="">Uncontrolled Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/web-components/" class="">Web Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/code-splitting/" class="">Code-Splitting 🌵</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/advanced/context/" class="">Context</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0b7e8a169ffc55d32e6791a715bfd989" class="toggle"  />
+    <label for="section-0b7e8a169ffc55d32e6791a715bfd989" class="flex justify-between">
+      <a role="button" class="">Basics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-887fd6173adedab35d6a2b53f097ffa0" class="toggle"  />
+    <label for="section-887fd6173adedab35d6a2b53f097ffa0" class="flex justify-between">
+      <a role="button" class="">Installation</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/add-react-to-a-website/" class="">Add React to a Website</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/cdn-links/" class="">Cdn Links</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/create-a-new-react-app/" class="">Create a New React App</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/getting-started/" class="">Getting Started</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/installation/release-channels/" class="">Release Channels</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dcbb830f4a9a7513563af23a2a7d19e9" class="toggle"  />
+    <label for="section-dcbb830f4a9a7513563af23a2a7d19e9" class="flex justify-between">
+      <a role="button" class="">main-concepts</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/components-and-props/" class="">Components and Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/composition-vs-inheritance/" class="">Composition vs Inheritance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/conditional-rendering/" class="">Conditional Rendering</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/forms/" class="">Forms</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/handling-events/" class="">Handling Events</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/introducing-jsx/" class="">Introducing Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/lifting-state-up/" class="">Lifting State Up</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/lists-and-keys/" class="">Lists and Keys</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/rendering-elements/" class="">Rendering Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/state-and-lifecycle/" class="">State and Lifecycle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/basics/main-concepts/thinking-in-react/" class="">Thinking in React</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2b619afb3bb0cae8f4a2d8ea2bd39992" class="toggle"  />
+    <label for="section-2b619afb3bb0cae8f4a2d8ea2bd39992" class="flex justify-between">
+      <a role="button" class="">Frequently Used</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d45d10a3bba46bd6df852e724d6a20f9" class="toggle"  />
+    <label for="section-d45d10a3bba46bd6df852e724d6a20f9" class="flex justify-between">
+      <a role="button" class="">API Reference</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/dom-elements/" class="">Dom Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/javascript-environment-requirements/" class="">Javascript Environment Requirements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/legacy-context/" class="">Legacy Context</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/react-top-level-api/" class="">React Top Level API</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/react.component/" class="">React.component</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdom/" class="">Reactdom</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdomclient/" class="">Reactdomclient</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdomserver/" class="">Reactdomserver</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/syntheticevent/" class="">Syntheticevent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/test-renderer/" class="">Test Renderer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/api-reference/test-utilities/" class="">Test Utilities</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a24e35dfd7a54541e2462bfb9de0d26a" class="toggle"  />
+    <label for="section-a24e35dfd7a54541e2462bfb9de0d26a" class="flex justify-between">
+      <a role="button" class="">Frequently Asked Questions</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/ajax-and-apis/" class="">Ajax and Apis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/babel-jsx-and-build-steps/" class="">Babel Jsx and Build Steps</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/component-state/" class="">Component State</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/file-structure/" class="">File Structure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/passing-functions-to-components/" class="">Passing Functions to Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/styling-and-css/" class="">Styling and Css</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/versioning-policy/" class="">Versioning Policy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/faq/virtual-dom-and-internals/" class="">Virtual Dom and Internals</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-78e608137ff08e2f628fff778a1d2503" class="toggle"  />
+    <label for="section-78e608137ff08e2f628fff778a1d2503" class="flex justify-between">
+      <a role="button" class="">Hooks</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/building-your-own-hooks/" class="">Building Your Own Hooks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-api-reference/" class="">Hooks API Reference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-at-a-glance/" class="">Hooks at a Glance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/" class="">Hooks Faq</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/introducing-hooks/" class="">Introducing Hooks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/rules-of-hooks/" class="">Rules of Hooks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usecallback/" class="">Usecallback</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usecontext/" class="">Usecontext</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usedebugvalue/" class="">Usedebugvalue</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usedeferredvalue/" class="">Usedeferredvalue</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useeffect/" class="">Useeffect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useid/" class="">Useid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useimperativehandle/" class="">Useimperativehandle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useinsertioneffect/" class="">Useinsertioneffect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/uselayouteffect/" class="">Uselayouteffect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usememo/" class="">Usememo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usereducer/" class="">Usereducer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/useref/" class="">Useref</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usestate/" class="">Usestate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usesyncexternalstore/" class="">Usesyncexternalstore</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/usetransition/" class="">Usetransition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/using-the-effect-hook/" class="">Using the Effect Hook</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/hooks/using-the-state-hook/" class="">Using the State Hook</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f8fec9450ae8cc6e4496fe90ad0fcd90" class="toggle"  />
+    <label for="section-f8fec9450ae8cc6e4496fe90ad0fcd90" class="flex justify-between">
+      <a role="button" class="">Testing</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/testing/testing-environments/" class="">Testing Environments</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/testing/testing-overview/" class="">Testing Overview</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/frequently-used/testing/testing-recipes/" class="">Testing Recipes</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1eb6c1d66211d34c780f5446bd73db50" class="toggle"  />
+    <label for="section-1eb6c1d66211d34c780f5446bd73db50" class="flex justify-between">
+      <a role="button" class="">Glossary</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/bundlers/" class="">Bundlers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/cdn/" class="">Cdn</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/compilers/" class="">Compilers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/components/" class="">Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/controlled-vs.-uncontrolled-components/" class="">Controlled vs. Uncontrolled Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/elements/" class="">Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/es6-es2015-es2016-etc/" class="">Es6 Es2015 Es2016 Etc</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/events/" class="">Events</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/jsx/" class="">Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/keys/" class="">Keys</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/lifecycle-methods/" class="">Lifecycle Methods</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/package-managers/" class="">Package Managers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/props.children/" class="">Props.children</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/props/" class="">Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/reconciliation/" class="">Reconciliation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/refs/" class="">Refs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/single-page-application/" class="">Single Page Application</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/glossary/state/" class="">State</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8c1d4bd473062cf6040cc8dda49c5e60" class="toggle"  />
+    <label for="section-8c1d4bd473062cf6040cc8dda49c5e60" class="flex justify-between">
+      <a role="button" class="">References</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/top-level-apis/" class="">Top Level Apis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-dc60aa7de7b49b15b00c1ce231963a79" class="toggle"  />
+    <label for="section-dc60aa7de7b49b15b00c1ce231963a79" class="flex justify-between">
+      <a role="button" class="">Component</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentdidcatch/" class="">Componentdidcatch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentdidmount/" class="">Componentdidmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentdidupdate/" class="">Componentdidupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/componentwillunmount/" class="">Componentwillunmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/constructor/" class="">Constructor</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/defaultprop/" class="">Defaultprop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/displayname/" class="">Displayname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/forceupdate/" class="">Forceupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/getsnapshotbeforeupdate/" class="">Getsnapshotbeforeupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/props/" class="">Props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/render/" class="">Render</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/setstate/" class="">Setstate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/shouldcomponentupdate/" class="">Shouldcomponentupdate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/state/" class="">State</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/static-getderivedstatefromerror/" class="">Static Getderivedstatefromerror</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/static-getderivedstatefromprops/" class="">Static Getderivedstatefromprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/unsafe_componentwillmount/" class="">Unsafe Componentwillmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/unsafe_componentwillreceiveprops/" class="">Unsafe Componentwillreceiveprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/component/unsafe_componentwillupdate/" class="">Unsafe Componentwillupdate</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-8275c599c5a42b2c8ab68678b3916ca0" class="toggle"  />
+    <label for="section-8275c599c5a42b2c8ab68678b3916ca0" class="flex justify-between">
+      <a role="button" class="">General</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/class.contexttype/" class="">Class.contexttype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/context.consumer/" class="">Context.consumer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/context.displayname/" class="">Context.displayname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/context.provider/" class="">Context.provider</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/createportal/" class="">Createportal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/createroot/" class="">Createroot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/finddomnode/" class="">Finddomnode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/flushsync/" class="">Flushsync</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/hydrate/" class="">Hydrate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/hydrateroot/" class="">Hydrateroot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/react.createcontext/" class="">React.createcontext</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/render/" class="">Render</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertonodestream-deprecated/" class="">Rendertonodestream Deprecated</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertopipeablestream/" class="">Rendertopipeablestream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertoreadablestream/" class="">Rendertoreadablestream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertostaticmarkup/" class="">Rendertostaticmarkup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertostaticnodestream/" class="">Rendertostaticnodestream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/rendertostring/" class="">Rendertostring</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/requestanimationframe-throttling/" class="">Requestanimationframe Throttling</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.children/" class="">Testinstance.children</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.find/" class="">Testinstance.find</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findall/" class="">Testinstance.findall</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findallbyprops/" class="">Testinstance.findallbyprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findallbytype/" class="">Testinstance.findallbytype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findbyprops/" class="">Testinstance.findbyprops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.findbytype/" class="">Testinstance.findbytype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.instance/" class="">Testinstance.instance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.parent/" class="">Testinstance.parent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.props/" class="">Testinstance.props</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testinstance.type/" class="">Testinstance.type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.act/" class="">Testrenderer.act</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.create/" class="">Testrenderer.create</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.getinstance/" class="">Testrenderer.getinstance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.root/" class="">Testrenderer.root</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.tojson/" class="">Testrenderer.tojson</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.totree/" class="">Testrenderer.totree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.unmount/" class="">Testrenderer.unmount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/testrenderer.update/" class="">Testrenderer.update</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/unmountcomponentatnode-1/" class="">Unmountcomponentatnode 1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/general/unmountcomponentatnode/" class="">Unmountcomponentatnode</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-89e51c8a10f9a30c154f4b273b5f34d5" class="toggle"  />
+    <label for="section-89e51c8a10f9a30c154f4b273b5f34d5" class="flex justify-between">
+      <a role="button" class="">Test Utilities</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/act/" class="">Act</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findallinrenderedtree/" class="">Findallinrenderedtree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findrenderedcomponentwithtype/" class="">Findrenderedcomponentwithtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findrendereddomcomponentwithclass/" class="">Findrendereddomcomponentwithclass</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/findrendereddomcomponentwithtag/" class="">Findrendereddomcomponentwithtag</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iscompositecomponent/" class="">Iscompositecomponent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iscompositecomponentwithtype/" class="">Iscompositecomponentwithtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/isdomcomponent/" class="">Isdomcomponent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iselement/" class="">Iselement</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/iselementoftype/" class="">Iselementoftype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/mockcomponent/" class="">Mockcomponent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/renderintodocument/" class="">Renderintodocument</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/scryrenderedcomponentswithtype/" class="">Scryrenderedcomponentswithtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/scryrendereddomcomponentswithclass/" class="">Scryrendereddomcomponentswithclass</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/scryrendereddomcomponentswithtag/" class="">Scryrendereddomcomponentswithtag</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/meta-frameworks/react/references/test-utilities/simulate/" class="">Simulate</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-935e5e8cf9e4d28020a44ae59e6be870" class="toggle" checked />
+    <label for="section-935e5e8cf9e4d28020a44ae59e6be870" class="flex justify-between">
+      <a role="button" class="">Programming Languages</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-41cda62474deca29f10bdbe5bfa7e565" class="toggle"  />
+    <label for="section-41cda62474deca29f10bdbe5bfa7e565" class="flex justify-between">
+      <a href="/docs/references/languages/html/" class="">HTML</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/" class="">Attributes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/accept/" class="">Accept</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/autocomplete/" class="">Autocomplete</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/capture/" class="">Capture</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/crossorigin/" class="">Crossorigin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/dirname/" class="">Dirname</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/disabled/" class="">Disabled</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/elementtiming/" class="">Elementtiming</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/for/" class="">For</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/max/" class="">Max</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/maxlength/" class="">Maxlength</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/min/" class="">Min</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/minlength/" class="">Minlength</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/multiple/" class="">Multiple</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/pattern/" class="">Pattern</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/placeholder/" class="">Placeholder</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/readonly/" class="">Readonly</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/" class="">Rel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/dns-prefetch/" class="">DNS Prefetch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/manifest/" class="">Manifest</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/me/" class="">Me</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/modulepreload/" class="">Modulepreload</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/noopener/" class="">Noopener</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/noreferrer/" class="">Noreferrer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/preconnect/" class="">Preconnect</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/prefetch/" class="">Prefetch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/preload/" class="">Preload</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/rel/prerender/" class="">Prerender</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/required/" class="">Required</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/size/" class="">Size</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/attributes/step/" class="">Step</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/constraint_validation/" class="">Constraint Validation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/content_categories/" class="">Content Categories</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/cors_enabled_image/" class="">Cors Enabled Image</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/date_and_time_formats/" class="">Date and Time Formats</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/" class="">Element</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/a/" class="">A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/abbr/" class="">Abbr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/acronym/" class="">Acronym</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/address/" class="">Address</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/area/" class="">Area</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/article/" class="">Article</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/aside/" class="">Aside</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/audio/" class="">Audio</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/b/" class="">B</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/base/" class="">Base</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/bdi/" class="">Bdi</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/bdo/" class="">Bdo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/big/" class="">Big</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/blockquote/" class="">Blockquote</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/body/" class="">Body</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/br/" class="">Br</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/button/" class="">Button</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/canvas/" class="">Canvas</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/caption/" class="">Caption</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/center/" class="">Center</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/cite/" class="">Cite</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/code/" class="">Code</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/col/" class="">Col</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/colgroup/" class="">Colgroup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/data/" class="">Data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/datalist/" class="">Datalist</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dd/" class="">Dd</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/del/" class="">Del</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dfn/" class="">Dfn</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dialog/" class="">Dialog</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dir/" class="">Dir</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/div/" class="">Div</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dl/" class="">Dl</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/dt/" class="">Dt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/em/" class="">Em</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/embed/" class="">Embed</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/fieldset/" class="">Fieldset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/figcaption/" class="">Figcaption</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/figure/" class="">Figure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/font/" class="">Font</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/footer/" class="">Footer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/form/" class="">Form</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/frame/" class="">Frame</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/frameset/" class="">Frameset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/head/" class="">Head</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/header/" class="">Header</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/heading_elements/" class="">Heading Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/hgroup/" class="">Hgroup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/hr/" class="">Hr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/html/" class="">HTML</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/i/" class="">I</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/iframe/" class="">Iframe</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/image/" class="">Image</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/img/" class="">Img</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/" class="">Input</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/button/" class="">Button</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/checkbox/" class="">Checkbox</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/color/" class="">Color</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/date/" class="">Date</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/datetime-local/" class="">Datetime Local</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/email/" class="">Email</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/file/" class="">File</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/hidden/" class="">Hidden</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/image/" class="">Image</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/month/" class="">Month</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/number/" class="">Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/password/" class="">Password</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/radio/" class="">Radio</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/range/" class="">Range</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/reset/" class="">Reset</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/search/" class="">Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/submit/" class="">Submit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/tel/" class="">Tel</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/text/" class="">Text</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/time/" class="">Time</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/url/" class="">URL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/input/week/" class="">Week</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ins/" class="">Ins</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/kbd/" class="">Kbd</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/label/" class="">Label</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/legend/" class="">Legend</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/li/" class="">Li</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/link/" class="">Link</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/main/" class="">Main</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/map/" class="">Map</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/mark/" class="">Mark</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/marquee/" class="">Marquee</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/menu/" class="">Menu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/menuitem/" class="">Menuitem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meta/" class="">Meta</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meta/name/" class="">Name</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meta/name/theme-color/" class="">Theme Color</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/meter/" class="">Meter</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/nav/" class="">Nav</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/nobr/" class="">Nobr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/noembed/" class="">Noembed</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/noframes/" class="">Noframes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/noscript/" class="">Noscript</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/object/" class="">Object</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ol/" class="">Ol</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/optgroup/" class="">Optgroup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/option/" class="">Option</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/output/" class="">Output</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/p/" class="">P</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/param/" class="">Param</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/picture/" class="">Picture</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/plaintext/" class="">Plaintext</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/portal/" class="">Portal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/pre/" class="">Pre</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/progress/" class="">Progress</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/q/" class="">Q</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rb/" class="">Rb</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rp/" class="">Rp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rt/" class="">Rt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/rtc/" class="">Rtc</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ruby/" class="">Ruby</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/s/" class="">S</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/samp/" class="">Samp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/" class="">Script</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/type/" class="">Type</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/type/importmap/" class="">Importmap</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/script/type/speculationrules/" class="">Speculationrules</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/search/" class="">Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/section/" class="">Section</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/select/" class="">Select</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/slot/" class="">Slot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/small/" class="">Small</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/source/" class="">Source</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/span/" class="">Span</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/strike/" class="">Strike</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/strong/" class="">Strong</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/sub/" class="">Sub</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/summary/" class="">Summary</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/sup/" class="">Sup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/table/" class="">Table</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tbody/" class="">Tbody</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/td/" class="">Td</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/template/" class="">Template</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/textarea/" class="">Textarea</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tfoot/" class="">Tfoot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/th/" class="">Th</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/thead/" class="">Thead</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/time/" class="">Time</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/title/" class="">Title</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tr/" class="">Tr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/track/" class="">Track</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/tt/" class="">Tt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/u/" class="">U</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/ul/" class="">Ul</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/var/" class="">Var</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/video/" class="">Video</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/wbr/" class="">Wbr</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/element/xmp/" class="">Xmp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/" class="">Global Attributes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/accesskey/" class="">Accesskey</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/autocapitalize/" class="">Autocapitalize</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/autofocus/" class="">Autofocus</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/class/" class="">Class</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/contenteditable/" class="">Contenteditable</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/contextmenu/" class="">Contextmenu</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/data-/" class="">Data *</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/dir/" class="">Dir</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/draggable/" class="">Draggable</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/enterkeyhint/" class="">Enterkeyhint</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/exportparts/" class="">Exportparts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/hidden/" class="">Hidden</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/id/" class="">ID</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/inert/" class="">Inert</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/inputmode/" class="">Inputmode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/is/" class="">Is</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemid/" class="">Itemid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemprop/" class="">Itemprop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemref/" class="">Itemref</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemscope/" class="">Itemscope</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/itemtype/" class="">Itemtype</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/lang/" class="">Lang</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/nonce/" class="">Nonce</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/part/" class="">Part</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/popover/" class="">Popover</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/slot/" class="">Slot</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/spellcheck/" class="">Spellcheck</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/style/" class="">Style</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/tabindex/" class="">Tabindex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/title/" class="">Title</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/translate/" class="">Translate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/global_attributes/virtualkeyboardpolicy/" class="">Virtualkeyboardpolicy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/microdata/" class="">Microdata</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/quirks_mode_and_standards_mode/" class="">Quirks Mode and Standards Mode</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/reference/" class="">Reference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/html/viewport_meta_tag/" class="">Viewport Meta Tag</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5c00ae0eadbc29a0424d33001616a209" class="toggle" checked />
+    <label for="section-5c00ae0eadbc29a0424d33001616a209" class="flex justify-between">
+      <a href="/docs/references/languages/typescript/" class="">Typescript</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/asp-net-core/" class="">Asp Net Core</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/babel-with-typescript/" class="">Babel With Typescript</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/basic-types/" class="">Basic Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/classes/" class="">Classes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/compiler-options-in-msbuild/" class="">Compiler Options in Msbuild</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/compiler-options/" class="">Compiler Options</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/conditional-types/" class="">Conditional Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/configuring-watch/" class="">Configuring Watch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-merging/" class="">Declaration Merging</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/decorators/" class="">Decorators</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/dom-manipulation/" class="">Dom Manipulation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/enums/" class="">Enums</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/esm-node/" class="">Esm Node</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/everyday-types/" class="">Everyday Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/functions/" class="">Functions</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/generics/" class="">Generics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/gulp/" class="">Gulp</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/indexed-access-types/" class="">Indexed Access Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/integrating-with-build-tools/" class="">Integrating With Build Tools</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/interfaces/" class="">Interfaces</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/intro-to-js-ts/" class="">Intro to Js Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/intro/" class="">Intro</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/iterators-and-generators/" class="">Iterators and Generators</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/jsdoc-supported-types/" class="">Jsdoc Supported Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/jsx/" class="">Jsx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/keyof-types/" class="">Keyof Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/mapped-types/" class="">Mapped Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/migrating-from-javascript/" class="">Migrating From Javascript</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/mixins/" class="">Mixins</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/module-resolution/" class="">Module Resolution</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/modules/" class="">Modules</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/namespaces-and-modules/" class="">Namespaces and Modules</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/namespaces/" class="">Namespaces</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/narrowing/" class="">Narrowing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/nightly-builds/" class="">Nightly Builds</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/objects/" class="">Objects</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/project-references/" class="">Project References</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/symbols/" class="">Symbols</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/template-literal-types/" class="">Template Literal Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/triple-slash-directives/" class="">Triple Slash Directives</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/tsconfig-json/" class="">Tsconfig JSON</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/tsconfig/" class="">Tsconfig</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/type-checking-javascript-files/" class="">Type Checking Javascript Files</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/type-compatibility/" class="">Type Compatibility</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/type-inference/" class="">Type Inference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typeof-types/" class="">Typeof Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/types-from-types/" class="">Types From Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-from-scratch/" class="">Typescript From Scratch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-in-5-minutes-func/" class="">Typescript in 5 Minutes Func</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-in-5-minutes-oop/" class="">Typescript in 5 Minutes Oop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-in-5-minutes/" class="">Typescript in 5 Minutes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/typescript-tooling-in-5-minutes/" class="">Typescript Tooling in 5 Minutes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/utility-types/" class="">Utility Types</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/variable-declarations/" class="active">Variable Declarations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-c8e4733f646290e9e3427eea53bbdb88" class="toggle"  />
+    <label for="section-c8e4733f646290e9e3427eea53bbdb88" class="flex justify-between">
+      <a role="button" class="">Declration Files</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/by-example/" class="">By Example</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/consumption/" class="">Consumption</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/deep-dive/" class="">Deep Dive</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/do-s-and-don-ts/" class="">Do S and Don Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/dts-from-js/" class="">Dts From Js</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/introduction/" class="">Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/library-structures/" class="">Library Structures</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/publishing/" class="">Publishing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/" class="">Templates</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a55b3033e7645c7f4d14eb880a34f5a8" class="toggle"  />
+    <label for="section-a55b3033e7645c7f4d14eb880a34f5a8" class="flex justify-between">
+      <a role="button" class="">Templates</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/global-d-ts/" class="">Global D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/global-modifying-module-d-ts/" class="">Global Modifying Module D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/global-plugin-d-ts/" class="">Global Plugin D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-class-d-ts/" class="">Module Class D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-d-ts/" class="">Module D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-function-d-ts/" class="">Module Function D Ts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/references/languages/typescript/declaration-files/templates/module-plugin-d-ts/" class="">Module Plugin D Ts</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/expriments/" class="">Expriments</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/fundamental/" class="">Fundamental</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/fundamental/fund1/" class="">Fund1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/fundamental/fund2/" class="">Fund2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Variable Declarations</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#variable-declaration">Variable Declaration</a>
+      <ul>
+        <li><a href="#var-declarations"><code>var</code> declarations</a></li>
+        <li><a href="#scoping-rules">Scoping rules</a></li>
+        <li><a href="#variable-capturing-quirks">Variable capturing quirks</a></li>
+        <li><a href="#let-declarations"><code>let</code> declarations</a></li>
+        <li><a href="#block-scoping">Block-scoping</a></li>
+        <li><a href="#re-declarations-and-shadowing">Re-declarations and Shadowing</a></li>
+        <li><a href="#block-scoped-variable-capturing">Block-scoped variable capturing</a></li>
+        <li><a href="#const-declarations"><code>const</code> declarations</a></li>
+        <li><a href="#let-vs-const"><code>let</code> vs. <code>const</code></a></li>
+        <li><a href="#destructuring">Destructuring</a></li>
+        <li><a href="#array-destructuring">Array destructuring</a></li>
+        <li><a href="#tuple-destructuring">Tuple destructuring</a></li>
+        <li><a href="#object-destructuring">Object destructuring</a>
+          <ul>
+            <li><a href="#property-renaming">Property renaming</a></li>
+            <li><a href="#default-values">Default values</a></li>
+          </ul>
+        </li>
+        <li><a href="#function-declarations">Function declarations</a></li>
+        <li><a href="#spread">Spread</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown">
+
+
+
+
+
+
+
+
+
+
+<h1 id="variable-declaration">
+  Variable Declaration
+  <a class="anchor" href="#variable-declaration">#</a>
+</h1>
+<p><code>let</code> and <code>const</code> are two relatively new concepts for variable
+declarations in JavaScript. 
+  <a href="/docs/references/languages/typescript/basic-types/#a-note-about-let">As we mentioned
+earlier</a>, <code>let</code> is similar to <code>var</code> in
+some respects, but allows users to avoid some of the common &ldquo;gotchas&rdquo;
+that users run into in JavaScript.</p>
+<p><code>const</code> is an augmentation of <code>let</code> in that it prevents re-assignment to
+a variable.</p>
+<p>With TypeScript being an extension of JavaScript, the language naturally
+supports <code>let</code> and <code>const</code>. Here we&rsquo;ll elaborate more on these new
+declarations and why they&rsquo;re preferable to <code>var</code>.</p>
+<p>If you&rsquo;ve used JavaScript offhandedly, the next section might be a good
+way to refresh your memory. If you&rsquo;re intimately familiar with all the
+quirks of <code>var</code> declarations in JavaScript, you might find it easier to
+skip ahead.</p>
+<h2 id="var-declarations">
+  <code>var</code> declarations
+  <a class="anchor" href="#var-declarations">#</a>
+</h2>
+<p>Declaring a variable in JavaScript has always traditionally been done
+with the <code>var</code> keyword.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span></code></pre></div><p>As you might&rsquo;ve figured out, we just declared a variable named <code>a</code> with
+the value <code>10</code>.</p>
+<p>We can also declare a variable inside of a function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f() {</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello, world!&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">message</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>and we can also access those same variables within other functions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f() {</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">g() {</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">g</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">f</span>();
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">g</span>(); <span style="color:#75715e">// returns &#39;11&#39;
+</span></span></span></code></pre></div><p>In this above example, <code>g</code> captured the variable <code>a</code> declared in <code>f</code>. At
+any point that <code>g</code> gets called, the value of <code>a</code> will be tied to the
+value of <code>a</code> in <code>f</code>. Even if <code>g</code> is called once <code>f</code> is done running, it
+will be able to access and modify <code>a</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f() {</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">g</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">g() {</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">f</span>(); <span style="color:#75715e">// returns &#39;2&#39;
+</span></span></span></code></pre></div><h2 id="scoping-rules">
+  Scoping rules
+  <a class="anchor" href="#scoping-rules">#</a>
+</h2>
+<p><code>var</code> declarations have some odd scoping rules for those used to other
+languages. Take the following example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>(<span style="color:#a6e22e">shouldInitialize</span>: <span style="color:#66d9ef">boolean</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">shouldInitialize</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">true</span>); <span style="color:#75715e">// returns &#39;10&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">false</span>); <span style="color:#75715e">// returns &#39;undefined&#39;
+</span></span></span></code></pre></div><p>Some readers might do a double-take at this example. The variable <code>x</code>
+was declared <em>within the <code>if</code> block</em>, and yet we were able to access it
+from outside that block. That&rsquo;s because <code>var</code> declarations are
+accessible anywhere within their containing function, module, namespace,
+or global scope - all which we&rsquo;ll go over later on - regardless of the
+containing block. Some people call this <em><code>var</code>-scoping</em> or
+<em>function-scoping</em>. Parameters are also function scoped.</p>
+<p>These scoping rules can cause several types of mistakes. One problem
+they exacerbate is the fact that it is not an error to declare the same
+variable multiple times:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sumMatrix</span>(<span style="color:#a6e22e">matrix</span>: <span style="color:#66d9ef">number</span>[][]) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sum</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">matrix</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">currentRow</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">matrix</span>[<span style="color:#a6e22e">i</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">currentRow</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">sum</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">currentRow</span>[<span style="color:#a6e22e">i</span>];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">sum</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Maybe it was easy to spot out for some experienced JavaScript
+developers, but the inner <code>for</code>-loop will accidentally overwrite the
+variable <code>i</code> because <code>i</code> refers to the same function-scoped variable. As
+experienced developers know by now, similar sorts of bugs slip through
+code reviews and can be an endless source of frustration.</p>
+<h2 id="variable-capturing-quirks">
+  Variable capturing quirks
+  <a class="anchor" href="#variable-capturing-quirks">#</a>
+</h2>
+<p>Take a quick second to guess what the output of the following snippet
+is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>  }, <span style="color:#ae81ff">100</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>For those unfamiliar, <code>setTimeout</code> will try to execute a function after
+a certain number of milliseconds (though waiting for anything else to
+stop running).</p>
+<p>Ready? Take a look:</p>
+<pre tabindex="0"><code>10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+</code></pre><p>Many JavaScript developers are intimately familiar with this behavior,
+but if you&rsquo;re surprised, you&rsquo;re certainly not alone. Most people expect
+the output to be</p>
+<pre tabindex="0"><code>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</code></pre><p>Remember what we mentioned earlier about variable capturing? Every
+function expression we pass to <code>setTimeout</code> actually refers to the same
+<code>i</code> from the same scope.</p>
+<p>Let&rsquo;s take a minute to consider what that means. <code>setTimeout</code> will run a
+function after some number of milliseconds, <em>but only</em> after the <code>for</code>
+loop has stopped executing; By the time the <code>for</code> loop has stopped
+executing, the value of <code>i</code> is <code>10</code>. So each time the given function
+gets called, it will print out <code>10</code>!</p>
+<p>A common work around is to use an IIFE - an Immediately Invoked Function
+Expression - to capture <code>i</code> at each iteration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// capture the current state of &#39;i&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// by invoking a function with its current value
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  (<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>    }, <span style="color:#ae81ff">100</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>  })(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This odd-looking pattern is actually pretty common. The <code>i</code> in the
+parameter list actually shadows the <code>i</code> declared in the <code>for</code> loop, but
+since we named them the same, we didn&rsquo;t have to modify the loop body too
+much.</p>
+<h2 id="let-declarations">
+  <code>let</code> declarations
+  <a class="anchor" href="#let-declarations">#</a>
+</h2>
+<p>By now you&rsquo;ve figured out that <code>var</code> has some problems, which is
+precisely why <code>let</code> statements were introduced. Apart from the keyword
+used, <code>let</code> statements are written the same way <code>var</code> statements are.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hello</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello!&#34;</span>;
+</span></span></code></pre></div><p>The key difference is not in the syntax, but in the semantics, which
+we&rsquo;ll now dive into.</p>
+<h2 id="block-scoping">
+  Block-scoping
+  <a class="anchor" href="#block-scoping">#</a>
+</h2>
+<p>When a variable is declared using <code>let</code>, it uses what some call
+<em>lexical-scoping</em> or <em>block-scoping</em>. Unlike variables declared with
+<code>var</code> whose scopes leak out to their containing function, block-scoped
+variables are not visible outside of their nearest containing block or
+<code>for</code>-loop.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>(<span style="color:#a6e22e">input</span>: <span style="color:#66d9ef">boolean</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">input</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Still okay to reference &#39;a&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Error: &#39;b&#39; doesn&#39;t exist here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here, we have two local variables <code>a</code> and <code>b</code>. <code>a</code>&rsquo;s scope is limited to
+the body of <code>f</code> while <code>b</code>&rsquo;s scope is limited to the containing <code>if</code>
+statement&rsquo;s block.</p>
+<p>Variables declared in a <code>catch</code> clause also have similar scoping rules.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">throw</span> <span style="color:#e6db74">&#34;oh no!&#34;</span>;
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">e</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Oh well.&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Error: &#39;e&#39; doesn&#39;t exist here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">e</span>);
+</span></span></code></pre></div><p>Another property of block-scoped variables is that they can&rsquo;t be read or
+written to before they&rsquo;re actually declared. While these variables are
+&ldquo;present&rdquo; throughout their scope, all points up until their declaration
+are part of their <em>temporal dead zone</em>. This is just a sophisticated way
+of saying you can&rsquo;t access them before the <code>let</code> statement, and luckily
+TypeScript will let you know that.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#a6e22e">a</span><span style="color:#f92672">++</span>; <span style="color:#75715e">// illegal to use &#39;a&#39; before it&#39;s declared;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span>;
+</span></span></code></pre></div><p>Something to note is that you can still <em>capture</em> a block-scoped
+variable before it&rsquo;s declared. The only catch is that it&rsquo;s illegal to
+call that function before the declaration. If targeting ES2015, a modern
+runtime will throw an error; however, right now TypeScript is permissive
+and won&rsquo;t report this as an error.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">foo() {</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// okay to capture &#39;a&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// illegal call &#39;foo&#39; before &#39;a&#39; is declared
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// runtimes should throw an error here
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">foo</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span>;
+</span></span></code></pre></div><p>For more information on temporal dead zones, see relevant content on the
+
+  <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/let#Temporal_dead_zone_and_errors_with_let">Mozilla Developer
+Network</a>.</p>
+<h2 id="re-declarations-and-shadowing">
+  Re-declarations and Shadowing
+  <a class="anchor" href="#re-declarations-and-shadowing">#</a>
+</h2>
+<p>With <code>var</code> declarations, we mentioned that it didn&rsquo;t matter how many
+times you declared your variables; you just got one.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>(<span style="color:#a6e22e">x</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">true</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the above example, all declarations of <code>x</code> actually refer to the
+<em>same</em> <code>x</code>, and this is perfectly valid. This often ends up being a
+source of bugs. Thankfully, <code>let</code> declarations are not as forgiving.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>; <span style="color:#75715e">// error: can&#39;t re-declare &#39;x&#39; in the same scope
+</span></span></span></code></pre></div><p>The variables don&rsquo;t necessarily need to both be block-scoped for
+TypeScript to tell us that there&rsquo;s a problem.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>(<span style="color:#a6e22e">x</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>; <span style="color:#75715e">// error: interferes with parameter declaration
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">g() {</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>; <span style="color:#75715e">// error: can&#39;t have both declarations of &#39;x&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>That&rsquo;s not to say that a block-scoped variable can never be declared
+with a function-scoped variable. The block-scoped variable just needs to
+be declared within a distinctly different block.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>(<span style="color:#a6e22e">condition</span>, <span style="color:#a6e22e">x</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">condition</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">false</span>, <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// returns &#39;0&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">f</span>(<span style="color:#66d9ef">true</span>, <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// returns &#39;100&#39;
+</span></span></span></code></pre></div><p>The act of introducing a new name in a more nested scope is called
+<em>shadowing</em>. It is a bit of a double-edged sword in that it can
+introduce certain bugs on its own in the event of accidental shadowing,
+while also preventing certain bugs. For instance, imagine we had written
+our earlier <code>sumMatrix</code> function using <code>let</code> variables.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sumMatrix</span>(<span style="color:#a6e22e">matrix</span>: <span style="color:#66d9ef">number</span>[][]) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sum</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">matrix</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">currentRow</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">matrix</span>[<span style="color:#a6e22e">i</span>];
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">currentRow</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">sum</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">currentRow</span>[<span style="color:#a6e22e">i</span>];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">sum</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This version of the loop will actually perform the summation correctly
+because the inner loop&rsquo;s <code>i</code> shadows <code>i</code> from the outer loop.</p>
+<p>Shadowing should <em>usually</em> be avoided in the interest of writing clearer
+code. While there are some scenarios where it may be fitting to take
+advantage of it, you should use your best judgement.</p>
+<h2 id="block-scoped-variable-capturing">
+  Block-scoped variable capturing
+  <a class="anchor" href="#block-scoped-variable-capturing">#</a>
+</h2>
+<p>When we first touched on the idea of variable capturing with <code>var</code>
+declaration, we briefly went into how variables act once captured. To
+give a better intuition of this, each time a scope is run, it creates an
+&ldquo;environment&rdquo; of variables. That environment and its captured variables
+can exist even after everything within its scope has finished executing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">theCityThatAlwaysSleeps() {</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">getCity</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">true</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">city</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Seattle&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">getCity</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">city</span>;
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">getCity</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Because we&rsquo;ve captured <code>city</code> from within its environment, we&rsquo;re still
+able to access it despite the fact that the <code>if</code> block finished
+executing.</p>
+<p>Recall that with our earlier <code>setTimeout</code> example, we ended up needing
+to use an IIFE to capture the state of a variable for every iteration of
+the <code>for</code> loop. In effect, what we were doing was creating a new
+variable environment for our captured variables. That was a bit of a
+pain, but luckily, you&rsquo;ll never have to do that again in TypeScript.</p>
+<p><code>let</code> declarations have drastically different behavior when declared as
+part of a loop. Rather than just introducing a new environment to the
+loop itself, these declarations sort of create a new scope <em>per
+iteration</em>. Since this is what we were doing anyway with our IIFE, we
+can change our old <code>setTimeout</code> example to just use a <code>let</code> declaration.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>  }, <span style="color:#ae81ff">100</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">i</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>and as expected, this will print out</p>
+<pre tabindex="0"><code>0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</code></pre><h2 id="const-declarations">
+  <code>const</code> declarations
+  <a class="anchor" href="#const-declarations">#</a>
+</h2>
+<p><code>const</code> declarations are another way of declaring variables.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numLivesForCat</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>;
+</span></span></code></pre></div><p>They are like <code>let</code> declarations but, as their name implies, their value
+cannot be changed once they are bound. In other words, they have the
+same scoping rules as <code>let</code>, but you can&rsquo;t re-assign to them.</p>
+<p>This should not be confused with the idea that the values they refer to
+are <em>immutable</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numLivesForCat</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">kitty</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Aurora&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">numLives</span>: <span style="color:#66d9ef">numLivesForCat</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Error
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">kitty</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Danielle&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">numLives</span>: <span style="color:#66d9ef">numLivesForCat</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// all &#34;okay&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">kitty</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Rory&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">kitty</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Kitty&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">kitty</span>.<span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Cat&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">kitty</span>.<span style="color:#a6e22e">numLives</span><span style="color:#f92672">--</span>;
+</span></span></code></pre></div><p>Unless you take specific measures to avoid it, the internal state of a
+<code>const</code> variable is still modifiable. Fortunately, TypeScript allows you
+to specify that members of an object are <code>readonly</code>. The 
+  <a href="/docs/references/languages/typescript/interfaces/">chapter on
+Interfaces</a> has the details.</p>
+<h2 id="let-vs-const">
+  <code>let</code> vs. <code>const</code>
+  <a class="anchor" href="#let-vs-const">#</a>
+</h2>
+<p>Given that we have two types of declarations with similar scoping
+semantics, it&rsquo;s natural to find ourselves asking which one to use. Like
+most broad questions, the answer is: it depends.</p>
+<p>Applying the 
+  <a href="https://wikipedia.org/wiki/Principle_of_least_privilege">principle of least
+privilege</a>, all
+declarations other than those you plan to modify should use <code>const</code>. The
+rationale is that if a variable didn&rsquo;t need to get written to, others
+working on the same codebase shouldn&rsquo;t automatically be able to write to
+the object, and will need to consider whether they really need to
+reassign to the variable. Using <code>const</code> also makes code more predictable
+when reasoning about flow of data.</p>
+<p>Use your best judgement, and if applicable, consult the matter with the
+rest of your team.</p>
+<p>The majority of this handbook uses <code>let</code> declarations.</p>
+<h2 id="destructuring">
+  Destructuring
+  <a class="anchor" href="#destructuring">#</a>
+</h2>
+<p>Another ECMAScript 2015 feature that TypeScript has is destructuring.
+For a complete reference, see 
+  <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">the article on the Mozilla Developer
+Network</a>.
+In this section, we&rsquo;ll give a short overview.</p>
+<h2 id="array-destructuring">
+  Array destructuring
+  <a class="anchor" href="#array-destructuring">#</a>
+</h2>
+<p>The simplest form of destructuring is array destructuring assignment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">input</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">first</span>, <span style="color:#a6e22e">second</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">input</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">first</span>); <span style="color:#75715e">// outputs 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">second</span>); <span style="color:#75715e">// outputs 2
+</span></span></span></code></pre></div><p>This creates two new variables named <code>first</code> and <code>second</code>. This is
+equivalent to using indexing, but is much more convenient:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#a6e22e">first</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">input</span>[<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">second</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">input</span>[<span style="color:#ae81ff">1</span>];
+</span></span></code></pre></div><p>Destructuring works with already-declared variables as well:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#75715e">// swap variables
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[<span style="color:#a6e22e">first</span>, <span style="color:#a6e22e">second</span>] <span style="color:#f92672">=</span> [<span style="color:#a6e22e">second</span>, <span style="color:#a6e22e">first</span>];
+</span></span></code></pre></div><p>And with parameters to a function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>([<span style="color:#a6e22e">first</span>, <span style="color:#a6e22e">second</span>]<span style="color:#f92672">:</span> [<span style="color:#66d9ef">number</span>, <span style="color:#66d9ef">number</span>]) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">first</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">second</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">f</span>([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]);
+</span></span></code></pre></div><p>You can create a variable for the remaining items in a list using the
+syntax <code>...</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">first</span>, ...<span style="color:#a6e22e">rest</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">first</span>); <span style="color:#75715e">// outputs 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">rest</span>); <span style="color:#75715e">// outputs [ 2, 3, 4 ]
+</span></span></span></code></pre></div><p>Of course, since this is JavaScript, you can just ignore trailing
+elements you don&rsquo;t care about:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">first</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">first</span>); <span style="color:#75715e">// outputs 1
+</span></span></span></code></pre></div><p>Or other elements:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> [, <span style="color:#a6e22e">second</span>, , <span style="color:#a6e22e">fourth</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">second</span>); <span style="color:#75715e">// outputs 2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">fourth</span>); <span style="color:#75715e">// outputs 4
+</span></span></span></code></pre></div><h2 id="tuple-destructuring">
+  Tuple destructuring
+  <a class="anchor" href="#tuple-destructuring">#</a>
+</h2>
+<p>Tuples may be destructured like arrays; the destructuring variables get
+the types of the corresponding tuple elements:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">tuple</span><span style="color:#f92672">:</span> [<span style="color:#66d9ef">number</span>, <span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">boolean</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">7</span>, <span style="color:#e6db74">&#34;hello&#34;</span>, <span style="color:#66d9ef">true</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">c</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">tuple</span>; <span style="color:#75715e">// a: number, b: string, c: boolean
+</span></span></span></code></pre></div><p>It&rsquo;s an error to destructure a tuple beyond the range of its elements:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">c</span>, <span style="color:#a6e22e">d</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">tuple</span>; <span style="color:#75715e">// Error, no element at index 3
+</span></span></span></code></pre></div><p>As with arrays, you can destructure the rest of the tuple with <code>...</code>, to
+get a shorter tuple:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">a</span>, ...<span style="color:#a6e22e">bc</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">tuple</span>; <span style="color:#75715e">// bc: [string, boolean]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">c</span>, ...<span style="color:#a6e22e">d</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">tuple</span>; <span style="color:#75715e">// d: [], the empty tuple
+</span></span></span></code></pre></div><p>Or ignore trailing elements, or other elements:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> [<span style="color:#a6e22e">a</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">tuple</span>; <span style="color:#75715e">// a: number
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> [, <span style="color:#a6e22e">b</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">tuple</span>; <span style="color:#75715e">// b: string
+</span></span></span></code></pre></div><h2 id="object-destructuring">
+  Object destructuring
+  <a class="anchor" href="#object-destructuring">#</a>
+</h2>
+<p>You can also destructure objects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">o</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;foo&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">b</span>: <span style="color:#66d9ef">12</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;bar&#34;</span>,
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> { <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">o</span>;
+</span></span></code></pre></div><p>This creates new variables <code>a</code> and <code>b</code> from <code>o.a</code> and <code>o.b</code>. Notice that
+you can skip <code>c</code> if you don&rsquo;t need it.</p>
+<p>Like array destructuring, you can have assignment without declaration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span>({ <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> } <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;baz&#34;</span>, <span style="color:#a6e22e">b</span>: <span style="color:#66d9ef">101</span> });
+</span></span></code></pre></div><p>Notice that we had to surround this statement with parentheses.
+JavaScript normally parses a <code>{</code> as the start of block.</p>
+<p>You can create a variable for the remaining items in an object using the
+syntax <code>...</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> { <span style="color:#a6e22e">a</span>, ...<span style="color:#a6e22e">passthrough</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">o</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">passthrough</span>.<span style="color:#a6e22e">b</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">passthrough</span>.<span style="color:#a6e22e">c</span>.<span style="color:#a6e22e">length</span>;
+</span></span></code></pre></div><h3 id="property-renaming">
+  Property renaming
+  <a class="anchor" href="#property-renaming">#</a>
+</h3>
+<p>You can also give different names to properties:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> { <span style="color:#a6e22e">a</span>: <span style="color:#66d9ef">newName1</span>, <span style="color:#a6e22e">b</span>: <span style="color:#66d9ef">newName2</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">o</span>;
+</span></span></code></pre></div><p>Here the syntax starts to get confusing. You can read <code>a: newName1</code> as
+&ldquo;<code>a</code> as <code>newName1</code>&rdquo;. The direction is left-to-right, as if you had
+written:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">newName1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">o</span>.<span style="color:#a6e22e">a</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">newName2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">o</span>.<span style="color:#a6e22e">b</span>;
+</span></span></code></pre></div><p>Confusingly, the colon here does <em>not</em> indicate the type. The type, if
+you specify it, still needs to be written after the entire
+destructuring:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> { <span style="color:#a6e22e">a</span>: <span style="color:#66d9ef">newName1</span>, <span style="color:#a6e22e">b</span>: <span style="color:#66d9ef">newName2</span> }<span style="color:#f92672">:</span> { <span style="color:#a6e22e">a</span>: <span style="color:#66d9ef">string</span>; <span style="color:#a6e22e">b</span>: <span style="color:#66d9ef">number</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">o</span>;
+</span></span></code></pre></div><h3 id="default-values">
+  Default values
+  <a class="anchor" href="#default-values">#</a>
+</h3>
+<p>Default values let you specify a default value in case a property is
+undefined:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">keepWholeObject</span>(<span style="color:#a6e22e">wholeObject</span><span style="color:#f92672">:</span> { <span style="color:#a6e22e">a</span>: <span style="color:#66d9ef">string</span>; <span style="color:#a6e22e">b?</span>: <span style="color:#66d9ef">number</span> }) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> { <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1001</span> } <span style="color:#f92672">=</span> <span style="color:#a6e22e">wholeObject</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In this example the <code>b?</code> indicates that <code>b</code> is optional, so it may be
+<code>undefined</code>. <code>keepWholeObject</code> now has a variable for <code>wholeObject</code> as
+well as the properties <code>a</code> and <code>b</code>, even if <code>b</code> is undefined.</p>
+<h2 id="function-declarations">
+  Function declarations
+  <a class="anchor" href="#function-declarations">#</a>
+</h2>
+<p>Destructuring also works in function declarations. For simple cases this
+is straightforward:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">C</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span>: <span style="color:#66d9ef">string</span>; <span style="color:#a6e22e">b?</span>: <span style="color:#66d9ef">number</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>({ <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> }<span style="color:#f92672">:</span> <span style="color:#a6e22e">C</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>But specifying defaults is more common for parameters, and getting
+defaults right with destructuring can be tricky. First of all, you need
+to remember to put the pattern before the default value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>({ <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>, <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> } <span style="color:#f92672">=</span> {})<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">f</span>();
+</span></span></code></pre></div><blockquote>
+<p>The snippet above is an example of type inference, explained earlier
+in the handbook.</p>
+</blockquote>
+<p>Then, you need to remember to give a default for optional properties on
+the destructured property instead of the main initializer. Remember that
+<code>C</code> was defined with <code>b</code> optional:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>({ <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> } <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span> })<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">f</span>({ <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;yes&#34;</span> }); <span style="color:#75715e">// ok, default b = 0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">f</span>(); <span style="color:#75715e">// ok, default to { a: &#34;&#34; }, which then defaults b = 0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">f</span>({}); <span style="color:#75715e">// error, &#39;a&#39; is required if you supply an argument
+</span></span></span></code></pre></div><p>Use destructuring with care. As the previous example demonstrates,
+anything but the simplest destructuring expression is confusing. This is
+especially true with deeply nested destructuring, which gets <em>really</em>
+hard to understand even without piling on renaming, default values, and
+type annotations. Try to keep destructuring expressions small and
+simple. You can always write the assignments that destructuring would
+generate yourself.</p>
+<h2 id="spread">
+  Spread
+  <a class="anchor" href="#spread">#</a>
+</h2>
+<p>The spread operator is the opposite of destructuring. It allows you to
+spread an array into another array, or an object into another object.
+For example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">first</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">second</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">bothPlus</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, ...<span style="color:#a6e22e">first</span>, ...<span style="color:#a6e22e">second</span>, <span style="color:#ae81ff">5</span>];
+</span></span></code></pre></div><p>This gives bothPlus the value <code>[0, 1, 2, 3, 4, 5]</code>. Spreading creates a
+shallow copy of <code>first</code> and <code>second</code>. They are not changed by the
+spread.</p>
+<p>You can also spread objects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">defaults</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">food</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;spicy&#34;</span>, <span style="color:#a6e22e">price</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;$$&#34;</span>, <span style="color:#a6e22e">ambiance</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;noisy&#34;</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">search</span> <span style="color:#f92672">=</span> { ...<span style="color:#a6e22e">defaults</span>, <span style="color:#a6e22e">food</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;rich&#34;</span> };
+</span></span></code></pre></div><p>Now <code>search</code> is <code>{ food: &quot;rich&quot;, price: &quot;$$&quot;, ambiance: &quot;noisy&quot; }</code>.
+Object spreading is more complex than array spreading. Like array
+spreading, it proceeds from left-to-right, but the result is still an
+object. This means that properties that come later in the spread object
+overwrite properties that come earlier. So if we modify the previous
+example to spread at the end:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">defaults</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">food</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;spicy&#34;</span>, <span style="color:#a6e22e">price</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;$$&#34;</span>, <span style="color:#a6e22e">ambiance</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;noisy&#34;</span> };
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">search</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">food</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;rich&#34;</span>, ...<span style="color:#a6e22e">defaults</span> };
+</span></span></code></pre></div><p>Then the <code>food</code> property in <code>defaults</code> overwrites <code>food: &quot;rich&quot;</code>, which
+is not what we want in this case.</p>
+<p>Object spread also has a couple of other surprising limits. First, it
+only includes an objects&rsquo; 
+  <a href="https://developer.mozilla.org/docs/Web/JavaScript/Enumerability_and_ownership_of_properties">own, enumerable
+properties</a>.
+Basically, that means you lose methods when you spread instances of an
+object:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">C</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">m() {</span>}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">C</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">clone</span> <span style="color:#f92672">=</span> { ...<span style="color:#a6e22e">c</span> };
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">clone</span>.<span style="color:#a6e22e">p</span>; <span style="color:#75715e">// ok
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">clone</span>.<span style="color:#a6e22e">m</span>(); <span style="color:#75715e">// error!
+</span></span></span></code></pre></div><p>Second, the TypeScript compiler doesn&rsquo;t allow spreads of type parameters
+from generic functions. That feature is expected in future versions of
+the language.</p>
+<p>::: _attribution
+© 2012-2023 Microsoft<br>
+Licensed under the Apache License, Version 2.0.<br>
+
+  <a href="https://www.typescriptlang.org/docs/handbook/variable-declarations.html">https://www.typescriptlang.org/docs/handbook/variable-declarations.html</a>{._attribution-link}
+:::</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/Narutabe/Narutab.github.io/commit/7ac2743c38a8f2aaee89f7609d2ddafdcb58738d" title='Last modified by mindulle | December 3, 2023' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>December 3, 2023</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/Narutabe/Narutab.github.io/commit/content/docs/references/languages/typescript/variable-declarations.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#variable-declaration">Variable Declaration</a>
+      <ul>
+        <li><a href="#var-declarations"><code>var</code> declarations</a></li>
+        <li><a href="#scoping-rules">Scoping rules</a></li>
+        <li><a href="#variable-capturing-quirks">Variable capturing quirks</a></li>
+        <li><a href="#let-declarations"><code>let</code> declarations</a></li>
+        <li><a href="#block-scoping">Block-scoping</a></li>
+        <li><a href="#re-declarations-and-shadowing">Re-declarations and Shadowing</a></li>
+        <li><a href="#block-scoped-variable-capturing">Block-scoped variable capturing</a></li>
+        <li><a href="#const-declarations"><code>const</code> declarations</a></li>
+        <li><a href="#let-vs-const"><code>let</code> vs. <code>const</code></a></li>
+        <li><a href="#destructuring">Destructuring</a></li>
+        <li><a href="#array-destructuring">Array destructuring</a></li>
+        <li><a href="#tuple-destructuring">Tuple destructuring</a></li>
+        <li><a href="#object-destructuring">Object destructuring</a>
+          <ul>
+            <li><a href="#property-renaming">Property renaming</a></li>
+            <li><a href="#default-values">Default values</a></li>
+          </ul>
+        </li>
+        <li><a href="#function-declarations">Function declarations</a></li>
+        <li><a href="#spread">Spread</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

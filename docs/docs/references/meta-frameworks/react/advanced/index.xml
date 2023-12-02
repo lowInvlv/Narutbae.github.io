@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advanced on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/</link>
+    <description>Recent content in Advanced on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/accessibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/accessibility/</guid>
+      <description>⭐ Accessibility # Why Accessibility? # Web accessibility (also referred to as a11y) is the design and creation of websites that can be used by everyone. Accessibility support is necessary to allow assistive technology to interpret web pages.
+React fully supports building accessible websites, often by using standard HTML techniques.
+Standards and Guidelines # WCAG # The Web Content Accessibility Guidelines provides guidelines for creating accessible web sites.
+The following WCAG checklists provide an overview:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/error-boundaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/error-boundaries/</guid>
+      <description>Error Boundaries # In the past, JavaScript errors inside components used to corrupt React’s internal state and cause it to emit cryptic errors on next renders. These errors were always caused by an earlier error in the application code, but React did not provide a way to handle them gracefully in components, and could not recover from them.
+Introducing Error Boundaries # A JavaScript error in a part of the UI shouldn’t break the whole app.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/forwarding-refs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/forwarding-refs/</guid>
+      <description>⭐ Forwarding Refs # Ref forwarding is a technique for automatically passing a ref through a component to one of its children. This is typically not necessary for most components in the application. However, it can be useful for some kinds of components, especially in reusable component libraries. The most common scenarios are described below.
+Forwarding refs to DOM components # Consider a FancyButton component that renders the native button DOM element:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/fragments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/fragments/</guid>
+      <description>🌵 Fragments # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React:
+&amp;lt;Fragment&amp;gt; A common pattern in React is for a component to return multiple elements. Fragments let you group a list of children without adding extra nodes to the DOM.
+render() { return ( &amp;lt;React.Fragment&amp;gt; &amp;lt;ChildA /&amp;gt; &amp;lt;ChildB /&amp;gt; &amp;lt;ChildC /&amp;gt; &amp;lt;/React.Fragment&amp;gt; ); } There is also a new short syntax for declaring them.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/higher-order-components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/higher-order-components/</guid>
+      <description>Higher-Order Components # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+Higher-order components are not commonly used in modern React code.
+A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React’s compositional nature.
+Concretely, a higher-order component is a function that takes a component and returns a new component.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/integrating-with-other-libraries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/integrating-with-other-libraries/</guid>
+      <description>Integrating with Other Libraries # React can be used in any web application. It can be embedded in other applications and, with a little care, other applications can be embedded in React. This guide will examine some of the more common use cases, focusing on integration with jQuery and Backbone, but the same ideas can be applied to integrating components with any existing code.
+Integrating with DOM Manipulation Plugins # React is unaware of changes made to the DOM outside of React.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/jsx-in-depth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/jsx-in-depth/</guid>
+      <description>JSX In Depth # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+Fundamentally, JSX just provides syntactic sugar for the React.createElement(component, props, ...children) function. The JSX code:
+&amp;lt;MyButton color=&amp;#34;blue&amp;#34; shadowSize={2}&amp;gt; Click Me &amp;lt;/MyButton&amp;gt; compiles into:
+React.createElement( MyButton, {color: &amp;#39;blue&amp;#39;, shadowSize: 2}, &amp;#39;Click Me&amp;#39; ) You can also use the self-closing form of the tag if there are no children. So:
+&amp;lt;div className=&amp;#34;sidebar&amp;#34; /&amp;gt; compiles into:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/optimizing-performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/optimizing-performance/</guid>
+      <description>⭐ Optimizing Performance # Internally, React uses several clever techniques to minimize the number of costly DOM operations required to update the UI. For many applications, using React will lead to a fast user interface without doing much work to specifically optimize for performance. Nevertheless, there are several ways you can speed up your React application.
+Use the Production Build # If you’re benchmarking or experiencing performance problems in your React apps, make sure you’re testing with the minified production build.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/portals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/portals/</guid>
+      <description>Portals # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React and include live examples:
+createPortal Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
+ReactDOM.createPortal(child, container) The first argument (child) is any renderable React child, such as an element, string, or fragment.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/profiler-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/profiler-api/</guid>
+      <description>⭐ Profiler API # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React:
+&amp;lt;Profiler&amp;gt; The Profiler measures how often a React application renders and what the “cost” of rendering is. Its purpose is to help identify parts of an application that are slow and may benefit from optimizations such as memoization.
+Note:
+Profiling adds some additional overhead, so it is disabled in the production build.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/react-without-es6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/react-without-es6/</guid>
+      <description>React Without ES6 # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+Normally you would define a React component as a plain JavaScript class:
+class Greeting extends React.Component { render() { return &amp;lt;h1&amp;gt;Hello, {this.props.name}&amp;lt;/h1&amp;gt;; } } If you don’t use ES6 yet, you may use the create-react-class module instead:
+var createReactClass = require(&amp;#39;create-react-class&amp;#39;); var Greeting = createReactClass({ render: function() { return &amp;lt;h1&amp;gt;Hello, {this.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/react-without-jsx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/react-without-jsx/</guid>
+      <description>React Without JSX # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+JSX is not a requirement for using React. Using React without JSX is especially convenient when you don’t want to set up compilation in your build environment.
+Each JSX element is just syntactic sugar for calling React.createElement(component, props, ...children). So, anything you can do with JSX can also be done with just plain JavaScript.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/reconciliation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/reconciliation/</guid>
+      <description>⭐ Reconciliation # React provides a declarative API so that you don’t have to worry about exactly what changes on every update. This makes writing applications a lot easier, but it might not be obvious how this is implemented within React. This article explains the choices we made in React’s “diffing” algorithm so that component updates are predictable while being fast enough for high-performance apps.
+Motivation # When you use React, at a single point in time you can think of the render() function as creating a tree of React elements.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/refs-and-the-dom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/refs-and-the-dom/</guid>
+      <description>🌵 Refs and the DOM # Refs provide a way to access DOM nodes or React elements created in the render method.
+In the typical React dataflow, props are the only way that parent components interact with their children. To modify a child, you re-render it with new props. However, there are a few cases where you need to imperatively modify a child outside of the typical dataflow. The child to be modified could be an instance of a React component, or it could be a DOM element.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/render-props/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/render-props/</guid>
+      <description>🧀 Render Props # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+Render props are used in modern React, but aren’t very common.
+For many cases, they have been replaced by custom Hooks.
+The term “render prop” refers to a technique for sharing code between React components using a prop whose value is a function.
+A component with a render prop takes a function that returns a React element and calls it instead of implementing its own render logic.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/static-type-checking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/static-type-checking/</guid>
+      <description>Static Type Checking # Static type checkers like Flow and TypeScript identify certain types of problems before you even run your code. They can also improve developer workflow by adding features like auto-completion. For this reason, we recommend using Flow or TypeScript instead of PropTypes for larger code bases.
+Flow # Flow is a static type checker for your JavaScript code. It is developed at Facebook and is often used with React.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/strict-mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/strict-mode/</guid>
+      <description>🐸 Strict Mode # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React and include live examples:
+StrictMode StrictMode is a tool for highlighting potential problems in an application. Like Fragment, StrictMode does not render any visible UI. It activates additional checks and warnings for its descendants.
+Note:
+Strict mode checks are run in development mode only; they do not impact the production build.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/typechecking-with-proptypes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/typechecking-with-proptypes/</guid>
+      <description>Typechecking With PropTypes # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+PropTypes aren’t commonly used in modern React. Use TypeScript for static type checking.
+Note:
+React.PropTypes has moved into a different package since React v15.5. Please use the prop-types library instead.
+We provide a codemod script to automate the conversion.
+As your app grows, you can catch a lot of bugs with typechecking.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/uncontrolled-components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/uncontrolled-components/</guid>
+      <description>Uncontrolled Components # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React and include live examples:
+&amp;lt;input&amp;gt; &amp;lt;select&amp;gt; &amp;lt;textarea&amp;gt; In most cases, we recommend using controlled components to implement forms. In a controlled component, form data is handled by a React component. The alternative is uncontrolled components, where form data is handled by the DOM itself.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/web-components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/web-components/</guid>
+      <description>🐸 Web Components # React and Web Components are built to solve different problems. Web Components provide strong encapsulation for reusable components, while React provides a declarative library that keeps the DOM in sync with your data. The two goals are complementary. As a developer, you are free to use React in your Web Components, or to use Web Components in React, or both.
+Most people who use React don’t use Web Components, but you may want to, especially if you are using third-party UI components that are written using Web Components.</description>
+    </item>
+    <item>
+      <title>Code-Splitting 🌵</title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/code-splitting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/code-splitting/</guid>
+      <description>Code-Splitting 🌵 # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React and include live examples:
+lazy &amp;lt;Suspense&amp;gt; Bundling # Most React apps will have their files “bundled” using tools like Webpack, Rollup or Browserify. Bundling is the process of following imported files and merging them into a single file: a “bundle”. This bundle can then be included on a webpage to load an entire app at once.</description>
+    </item>
+    <item>
+      <title>Context</title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/advanced/context/</guid>
+      <description>Context # Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+In a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme) that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.</description>
+    </item>
+  </channel>
+</rss>

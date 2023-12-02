@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>API Reference on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/</link>
+    <description>Recent content in API Reference on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/dom-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/dom-elements/</guid>
+      <description>🌵 DOM Elements # React implements a browser-independent DOM system for performance and cross-browser compatibility. We took the opportunity to clean up a few rough edges in browser DOM implementations.
+In React, all DOM properties and attributes (including event handlers) should be camelCased. For example, the HTML attribute tabindex corresponds to the attribute tabIndex in React. The exception is aria-* and data-* attributes, which should be lowercased. For example, you can keep aria-label as aria-label.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/javascript-environment-requirements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/javascript-environment-requirements/</guid>
+      <description>JavaScript Environment Requirements # React 18 supports all modern browsers (Edge, Firefox, Chrome, Safari, etc).
+If you support older browsers and devices such as Internet Explorer which do not provide modern browser features natively or have non-compliant implementations, consider including a global polyfill in your bundled application.
+Here is a list of the modern features React 18 uses:
+Promise Symbol Object.assign The correct polyfill for these features depend on your environment.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/legacy-context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/legacy-context/</guid>
+      <description>Legacy Context # Note:
+The legacy context API will be removed in a future major version. Use the new context API introduced with version 16.3. The legacy API will continue working for all 16.x releases.
+How To Use Context # This section documents a legacy API. See the new API.
+Suppose you have a structure like:
+class Button extends React.Component { render() { return ( &amp;lt;button style={{background: this.props.color}}&amp;gt; {this.props.children} &amp;lt;/button&amp;gt; ); } } class Message extends React.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/react-top-level-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/react-top-level-api/</guid>
+      <description>🍕 React Top-Level API # React is the entry point to the React library. If you load React from a &amp;lt;script&amp;gt; tag, these top-level APIs are available on the React global. If you use ES6 with npm, you can write import React from &#39;react&#39;. If you use ES5 with npm, you can write var React = require(&#39;react&#39;).
+Overview # Components # React components let you split the UI into independent, reusable pieces, and think about each piece in isolation.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/react.component/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/react.component/</guid>
+      <description>🍕 React.Component # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React:
+React.Component This page contains a detailed API reference for the React component class definition. It assumes you’re familiar with fundamental React concepts, such as Components and Props, as well as State and Lifecycle. If you’re not, read them first.
+Overview # React lets you define components as classes or functions.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdom/</guid>
+      <description>⭐ ReactDOM # The react-dom package provides DOM-specific methods that can be used at the top level of your app and as an escape hatch to get outside the React model if you need to.
+import * as ReactDOM from &amp;#39;react-dom&amp;#39;; If you use ES5 with npm, you can write:
+var ReactDOM = require(&amp;#39;react-dom&amp;#39;); The react-dom package also provides modules specific to client and server apps:
+react-dom/client react-dom/server Overview # The react-dom package exports these methods:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdomclient/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdomclient/</guid>
+      <description>ReactDOMClient # The react-dom/client package provides client-specific methods used for initializing an app on the client. Most of your components should not need to use this module.
+import * as ReactDOM from &amp;#39;react-dom/client&amp;#39;; If you use ES5 with npm, you can write:
+var ReactDOM = require(&amp;#39;react-dom/client&amp;#39;); Overview # The following methods can be used in client environments:
+createRoot() hydrateRoot() Browser Support # React supports all modern browsers, although some polyfills are required for older versions.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdomserver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/reactdomserver/</guid>
+      <description>ReactDOMServer # The ReactDOMServer object enables you to render components to static markup. Typically, it’s used on a Node server:
+// ES modules import * as ReactDOMServer from &amp;#39;react-dom/server&amp;#39;; // CommonJS var ReactDOMServer = require(&amp;#39;react-dom/server&amp;#39;); Overview # These methods are only available in the environments with Node.js Streams:
+renderToPipeableStream() renderToNodeStream() (Deprecated) renderToStaticNodeStream() These methods are only available in the environments with Web Streams (this includes browsers, Deno, and some modern edge runtimes):</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/syntheticevent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/syntheticevent/</guid>
+      <description>SyntheticEvent # This reference guide documents the SyntheticEvent wrapper that forms part of React’s Event System. See the Handling Events guide to learn more.
+Overview # Your event handlers will be passed instances of SyntheticEvent, a cross-browser wrapper around the browser’s native event. It has the same interface as the browser’s native event, including stopPropagation() and preventDefault(), except the events work identically across all browsers.
+If you find that you need the underlying browser event for some reason, simply use the nativeEvent attribute to get it.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/test-renderer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/test-renderer/</guid>
+      <description>Test Renderer # Importing
+import TestRenderer from &amp;#39;react-test-renderer&amp;#39;; // ES6 const TestRenderer = require(&amp;#39;react-test-renderer&amp;#39;); // ES5 with npm Overview # This package provides a React renderer that can be used to render React components to pure JavaScript objects, without depending on the DOM or a native mobile environment.
+Essentially, this package makes it easy to grab a snapshot of the platform view hierarchy (similar to a DOM tree) rendered by a React DOM or React Native component without using a browser or jsdom.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/test-utilities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/api-reference/test-utilities/</guid>
+      <description>Test Utilities # Importing
+import ReactTestUtils from &amp;#39;react-dom/test-utils&amp;#39;; // ES6 var ReactTestUtils = require(&amp;#39;react-dom/test-utils&amp;#39;); // ES5 with npm Overview # ReactTestUtils makes it easy to test React components in the testing framework of your choice. At Facebook we use Jest for painless JavaScript testing. Learn how to get started with Jest through the Jest website’s React Tutorial.
+Note:
+We recommend using React Testing Library which is designed to enable and encourage writing tests that use your components as the end users do.</description>
+    </item>
+  </channel>
+</rss>

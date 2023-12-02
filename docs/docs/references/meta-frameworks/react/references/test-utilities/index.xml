@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test Utilities on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/</link>
+    <description>Recent content in Test Utilities on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/act/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/act/</guid>
+      <description>act() # act() # To prepare a component for assertions, wrap the code rendering it and performing updates inside an act() call. This makes your test run closer to how React works in the browser.
+Note
+If you use react-test-renderer, it also provides an act export that behaves the same way.
+For example, let’s say we have this Counter component:
+class Counter extends React.Component { constructor(props) { super(props); this.state = {count: 0}; this.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/findallinrenderedtree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/findallinrenderedtree/</guid>
+      <description>🌵 findAllInRenderedTree() # findAllInRenderedTree() # findAllInRenderedTree( tree, test ) Traverse all components in tree and accumulate all components where test(component) is true. This is not that useful on its own, but it’s used as a primitive for other test utils.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/findrenderedcomponentwithtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/findrenderedcomponentwithtype/</guid>
+      <description>findRenderedComponentWithType() # findRenderedComponentWithType() # findRenderedComponentWithType( tree, componentClass ) Same as scryRenderedComponentsWithType() but expects there to be one result and returns that one result, or throws exception if there is any other number of matches besides one.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/findrendereddomcomponentwithclass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/findrendereddomcomponentwithclass/</guid>
+      <description>findRenderedDOMComponentWithClass() # findRenderedDOMComponentWithClass() # findRenderedDOMComponentWithClass( tree, className ) Like scryRenderedDOMComponentsWithClass() but expects there to be one result, and returns that one result, or throws exception if there is any other number of matches besides one.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/findrendereddomcomponentwithtag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/findrendereddomcomponentwithtag/</guid>
+      <description>findRenderedDOMComponentWithTag() # findRenderedDOMComponentWithTag() # findRenderedDOMComponentWithTag( tree, tagName ) Like scryRenderedDOMComponentsWithTag() but expects there to be one result, and returns that one result, or throws exception if there is any other number of matches besides one.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/iscompositecomponent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/iscompositecomponent/</guid>
+      <description>isCompositeComponent() # isCompositeComponent() # isCompositeComponent(instance) Returns true if instance is a user-defined component, such as a class or a function.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/iscompositecomponentwithtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/iscompositecomponentwithtype/</guid>
+      <description>isCompositeComponentWithType() # isCompositeComponentWithType() # isCompositeComponentWithType( instance, componentClass ) Returns true if instance is a component whose type is of a React componentClass.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/isdomcomponent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/isdomcomponent/</guid>
+      <description>🌵 isDOMComponent() # isDOMComponent() # isDOMComponent(instance) Returns true if instance is a DOM component (such as a &amp;lt;div&amp;gt; or &amp;lt;span&amp;gt;).</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/iselement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/iselement/</guid>
+      <description>🌵 isElement() # isElement() # isElement(element) Returns true if element is any React element.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/iselementoftype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/iselementoftype/</guid>
+      <description>isElementOfType() # isElementOfType() # isElementOfType( element, componentClass ) Returns true if element is a React element whose type is of a React componentClass.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/mockcomponent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/mockcomponent/</guid>
+      <description>mockComponent() # mockComponent() # mockComponent( componentClass, [mockTagName] ) Pass a mocked component module to this method to augment it with useful methods that allow it to be used as a dummy React component. Instead of rendering as usual, the component will become a simple &amp;lt;div&amp;gt; (or other tag if mockTagName is provided) containing any provided children.
+Note:
+mockComponent() is a legacy API. We recommend using jest.mock() instead.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/renderintodocument/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/renderintodocument/</guid>
+      <description>renderIntoDocument() # renderIntoDocument() # renderIntoDocument(element) Render a React element into a detached DOM node in the document. This function requires a DOM. It is effectively equivalent to:
+const domContainer = document.createElement(&amp;#39;div&amp;#39;); ReactDOM.createRoot(domContainer).render(element); Note:
+You will need to have window, window.document and window.document.createElement globally available before you import React. Otherwise React will think it can’t access the DOM and methods like setState won’t work.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/scryrenderedcomponentswithtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/scryrenderedcomponentswithtype/</guid>
+      <description>scryRenderedComponentsWithType() # scryRenderedComponentsWithType() # scryRenderedComponentsWithType( tree, componentClass ) Finds all instances of components with type equal to componentClass.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/scryrendereddomcomponentswithclass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/scryrendereddomcomponentswithclass/</guid>
+      <description>scryRenderedDOMComponentsWithClass() # scryRenderedDOMComponentsWithClass() # scryRenderedDOMComponentsWithClass( tree, className ) Finds all DOM elements of components in the rendered tree that are DOM components with the class name matching className.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/scryrendereddomcomponentswithtag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/scryrendereddomcomponentswithtag/</guid>
+      <description>scryRenderedDOMComponentsWithTag() # scryRenderedDOMComponentsWithTag() # scryRenderedDOMComponentsWithTag( tree, tagName ) Finds all DOM elements of components in the rendered tree that are DOM components with the tag name matching tagName.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/simulate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/test-utilities/simulate/</guid>
+      <description>⭐ Simulate # Simulate # Simulate.{eventName}( element, [eventData] ) Simulate an event dispatch on a DOM node with optional eventData event data.
+Simulate has a method for every event that React understands.
+Clicking an element
+// &amp;lt;button ref={(node) =&amp;gt; this.button = node}&amp;gt;...&amp;lt;/button&amp;gt; const node = this.button; ReactTestUtils.Simulate.click(node); Changing the value of an input field and then pressing ENTER.
+// &amp;lt;input ref={(node) =&amp;gt; this.textInput = node} /&amp;gt; const node = this.</description>
+    </item>
+  </channel>
+</rss>

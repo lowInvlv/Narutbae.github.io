@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/getting-started/</link>
+    <description>Recent content in Getting Started on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/getting-started/examplesin-progress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/getting-started/examplesin-progress/</guid>
+      <description>Examples (In progress) # Showcase # MonitorsFlying bananasRoom with soft shadows Game prototypes # Basic examples # https://docs.pmnd.rs/react-three-fiber/getting-started/examples</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/getting-started/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/getting-started/installation/</guid>
+      <description>Installation # npm install three @react-three/fiber Fiber is compatible with React v18.0.0+ and works with ReactDOM and React Native.
+Getting started with React Three Fiber is not nearly as hard as you might have thought, but various frameworks may require particular attention.
+We&amp;rsquo;ve put together guides for getting started with each popular framework:
+Create React App Vite.js Next.js CDN w/o build tools React Native If you just want to give it a try, fork this example on codesandbox!</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/getting-started/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/getting-started/introduction/</guid>
+      <description>Introduction # https://docs.pmnd.rs/react-three-fiber/getting-started/examples
+Build your scene declaratively with re-usable, self-contained components that react to state, are readily interactive and can participate in React&amp;rsquo;s ecosystem.
+npm install three @types/three @react-three/fiber Does it have limitations?
+None. Everything that works in Threejs will work here without exception.
+Is it slower than plain Threejs?
+No. There is no overhead. Components render outside of React. It outperforms Threejs in scale due to Reacts scheduling abilities.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/getting-started/your-first-scene/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/libs-and-fwks/react-three/getting-started/your-first-scene/</guid>
+      <description>Your first scene # This tutorial will assume some React knowledge.
+Setting up the Canvas # We&amp;rsquo;ll start by importing the &amp;lt;Canvas /&amp;gt; component from @react-three/fiber and putting it in our React tree.
+import { createRoot } from &amp;#39;react-dom/client&amp;#39; import { Canvas } from &amp;#39;@react-three/fiber&amp;#39; function App() { return ( &amp;lt;div id=&amp;#34;canvas-container&amp;#34;&amp;gt; &amp;lt;Canvas /&amp;gt; &amp;lt;/div&amp;gt; ) } createRoot(document.getElementById(&amp;#39;root&amp;#39;)).render(&amp;lt;App /&amp;gt;) The Canvas component does some important setup work behind the scenes:</description>
+    </item>
+  </channel>
+</rss>

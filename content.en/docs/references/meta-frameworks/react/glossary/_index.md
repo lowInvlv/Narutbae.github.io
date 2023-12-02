@@ -1,0 +1,4 @@
+---
+title: "Glossary"
+bookCollapseSection: true
+---

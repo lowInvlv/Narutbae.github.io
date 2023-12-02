@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>main-concepts on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/</link>
+    <description>Recent content in main-concepts on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/components-and-props/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/components-and-props/</guid>
+      <description>🌵 Components and Props # Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a detailed component API reference here.
+Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+Function and Class Components # The simplest way to define a component is to write a JavaScript function:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/composition-vs-inheritance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/composition-vs-inheritance/</guid>
+      <description>🍕 Composition vs Inheritance # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+React has a powerful composition model, and we recommend using composition instead of inheritance to reuse code between components.
+In this section, we will consider a few problems where developers new to React often reach for inheritance, and show how we can solve them with composition.
+Containment # Some components don’t know their children ahead of time.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/conditional-rendering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/conditional-rendering/</guid>
+      <description>Conditional Rendering # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React and include live examples:
+Conditional Rendering In React, you can create distinct components that encapsulate behavior you need. Then, you can render only some of them, depending on the state of your application.
+Conditional rendering in React works the same way conditions work in JavaScript.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/forms/</guid>
+      <description>⭐ Forms # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React and include live examples:
+&amp;lt;input&amp;gt; &amp;lt;select&amp;gt; &amp;lt;textarea&amp;gt; HTML form elements work a bit differently from other DOM elements in React, because form elements naturally keep some internal state. For example, this form in plain HTML accepts a single name:
+&amp;lt;form&amp;gt; &amp;lt;label&amp;gt; Name: &amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;name&amp;#34; /&amp;gt; &amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;Submit&amp;#34; /&amp;gt; &amp;lt;/form&amp;gt; This form has the default HTML form behavior of browsing to a new page when the user submits the form.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/handling-events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/handling-events/</guid>
+      <description>⭐ Handling Events # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React and include live examples:
+Responding to Events Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
+React events are named using camelCase, rather than lowercase. With JSX you pass a function as the event handler, rather than a string.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/introducing-jsx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/introducing-jsx/</guid>
+      <description>⭐ Introducing JSX # Consider this variable declaration:
+const element = &amp;lt;h1&amp;gt;Hello, world!&amp;lt;/h1&amp;gt;; This funny tag syntax is neither a string nor HTML.
+It is called JSX, and it is a syntax extension to JavaScript. We recommend using it with React to describe what the UI should look like. JSX may remind you of a template language, but it comes with the full power of JavaScript.
+JSX produces React “elements”.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/lifting-state-up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/lifting-state-up/</guid>
+      <description>🌵 Lifting State Up # Often, several components need to reflect the same changing data. We recommend lifting the shared state up to their closest common ancestor. Let’s see how this works in action.
+In this section, we will create a temperature calculator that calculates whether the water would boil at a given temperature.
+We will start with a component called BoilingVerdict. It accepts the celsius temperature as a prop, and prints whether it is enough to boil the water:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/lists-and-keys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/lists-and-keys/</guid>
+      <description>🌵 Lists and Keys # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React and include live examples:
+Rendering Lists First, let’s review how you transform lists in JavaScript.
+Given the code below, we use the map() function to take an array of numbers and double their values. We assign the new array returned by map() to the variable doubled and log it:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/rendering-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/rendering-elements/</guid>
+      <description>Rendering Elements # Elements are the smallest building blocks of React apps.
+An element describes what you want to see on the screen:
+const element = &amp;lt;h1&amp;gt;Hello, world&amp;lt;/h1&amp;gt;; Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.
+Note:
+One might confuse elements with a more widely known concept of “components”. We will introduce components in the next section.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/state-and-lifecycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/state-and-lifecycle/</guid>
+      <description>🌵 State and Lifecycle # This page introduces the concept of state and lifecycle in a React component. You can find a detailed component API reference here.
+Consider the ticking clock example from one of the previous sections. In Rendering Elements, we have only learned one way to update the UI. We call root.render() to change the rendered output:
+const root = ReactDOM.createRoot(document.getElementById(&amp;#39;root&amp;#39;)); function tick() { const element = ( &amp;lt;div&amp;gt; &amp;lt;h1&amp;gt;Hello, world!</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/thinking-in-react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/main-concepts/thinking-in-react/</guid>
+      <description>⭐ Thinking in React # React can change how you think about the designs you look at and the apps you build. When you build a user interface with React, you will first break it apart into pieces called components. Then, you will describe the different visual states for each of your components. Finally, you will connect your components together so that the data flows through them. In this tutorial, we’ll guide you through the thought process of building a searchable product data table with React.</description>
+    </item>
+  </channel>
+</rss>

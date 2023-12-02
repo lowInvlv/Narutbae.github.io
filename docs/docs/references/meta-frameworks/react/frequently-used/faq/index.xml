@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frequently Asked Questions on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/</link>
+    <description>Recent content in Frequently Asked Questions on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/ajax-and-apis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/ajax-and-apis/</guid>
+      <description>AJAX and APIs # How can I make an AJAX call? # You can use any AJAX library you like with React. Some popular ones are Axios, jQuery AJAX, and the browser built-in window.fetch.
+Where in the component lifecycle should I make an AJAX call? # You should populate data with AJAX calls in the componentDidMount lifecycle method. This is so you can use setState to update your component when the data is retrieved.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/babel-jsx-and-build-steps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/babel-jsx-and-build-steps/</guid>
+      <description>🍕 Babel, JSX, and Build Steps # Do I need to use JSX with React? # No! Check out “React Without JSX” to learn more.
+Do I need to use ES6 (+) with React? # No! Check out “React Without ES6” to learn more.
+How can I write comments in JSX? # &amp;lt;div&amp;gt; {/* Comment goes here */} Hello, {name}! &amp;lt;/div&amp;gt; &amp;lt;div&amp;gt; {/* It also works for multi-line comments. */} Hello, {name}!</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/component-state/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/component-state/</guid>
+      <description>🌵 Component State # What does setState do? # setState() schedules an update to a component’s state object. When state changes, the component responds by re-rendering.
+What is the difference between state and props? # props (short for “properties”) and state are both plain JavaScript objects. While both hold information that influences the output of render, they are different in one important way: props get passed to the component (similar to function parameters) whereas state is managed within the component (similar to variables declared within a function).</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/file-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/file-structure/</guid>
+      <description>⭐ File Structure # Is there a recommended way to structure React projects? # React doesn’t have opinions on how you put files into folders. That said there are a few common approaches popular in the ecosystem you may want to consider.
+Grouping by features or routes
+One common way to structure projects is to locate CSS, JS, and tests together inside folders grouped by feature or route.
+common/ Avatar.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/passing-functions-to-components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/passing-functions-to-components/</guid>
+      <description>🌵 Passing Functions to Components # How do I pass an event handler (like onClick) to a component? # Pass event handlers and other functions as props to child components:
+&amp;lt;button onClick={this.handleClick}&amp;gt; If you need to have access to the parent component in the handler, you also need to bind the function to the component instance (see below).
+How do I bind a function to a component instance? # There are several ways to make sure functions have access to component attributes like this.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/styling-and-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/styling-and-css/</guid>
+      <description>🌵 Styling and CSS # How do I add CSS classes to components? # Pass a string as the className prop:
+render() { return &amp;lt;span className=&amp;#34;menu navigation-menu&amp;#34;&amp;gt;Menu&amp;lt;/span&amp;gt; } It is common for CSS classes to depend on the component props or state:
+render() { let className = &amp;#39;menu&amp;#39;; if (this.props.isActive) { className += &amp;#39; menu-active&amp;#39;; } return &amp;lt;span className={className}&amp;gt;Menu&amp;lt;/span&amp;gt; } Tip
+If you often find yourself writing code like this, classnames package can simplify it.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/versioning-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/versioning-policy/</guid>
+      <description>Versioning Policy # React follows semantic versioning (semver) principles.
+That means that with a version number x.y.z:
+When releasing critical bug fixes, we make a patch release by changing the z number (ex: 15.6.2 to 15.6.3). When releasing new features or non-critical fixes, we make a minor release by changing the y number (ex: 15.6.2 to 15.7.0). When releasing breaking changes, we make a major release by changing the x number (ex: 15.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/virtual-dom-and-internals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/faq/virtual-dom-and-internals/</guid>
+      <description>🍕 Virtual DOM and Internals # What is the Virtual DOM? # The virtual DOM (VDOM) is a programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as ReactDOM. This process is called reconciliation.
+This approach enables the declarative API of React: You tell React what state you want the UI to be in, and it makes sure the DOM matches that state.</description>
+    </item>
+  </channel>
+</rss>

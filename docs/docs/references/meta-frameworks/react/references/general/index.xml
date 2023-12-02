@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/</link>
+    <description>Recent content in General on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/class.contexttype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/class.contexttype/</guid>
+      <description>Class.contextType # Class.contextType # class MyClass extends React.Component { componentDidMount() { let value = this.context; /* perform a side-effect at mount using the value of MyContext */ } componentDidUpdate() { let value = this.context; /* ... */ } componentWillUnmount() { let value = this.context; /* ... */ } render() { let value = this.context; /* render something based on the value of MyContext */ } } MyClass.contextType = MyContext; The contextType property on a class can be assigned a Context object created by React.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/context.consumer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/context.consumer/</guid>
+      <description>Context.Consumer # Context.Consumer # &amp;lt;MyContext.Consumer&amp;gt; {value =&amp;gt; /* render something based on the context value */} &amp;lt;/MyContext.Consumer&amp;gt; A React component that subscribes to context changes. Using this component lets you subscribe to a context within a function component.
+Requires a function as a child. The function receives the current context value and returns a React node. The value argument passed to the function will be equal to the value prop of the closest Provider for this context above in the tree.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/context.displayname/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/context.displayname/</guid>
+      <description> Context.displayName # Context.displayName # Context object accepts a displayName string property. React DevTools uses this string to determine what to display for the context.
+For example, the following component will appear as MyDisplayName in the DevTools:
+const MyContext = React.createContext(/* some value */); MyContext.displayName = &amp;#39;MyDisplayName&amp;#39;; &amp;lt;MyContext.Provider&amp;gt; // &amp;#34;MyDisplayName.Provider&amp;#34; in DevTools &amp;lt;MyContext.Consumer&amp;gt; // &amp;#34;MyDisplayName.Consumer&amp;#34; in DevTools </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/context.provider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/context.provider/</guid>
+      <description>🍕 Context.Provider # Context.Provider # &amp;lt;MyContext.Provider value={/* some value */}&amp;gt; Every Context object comes with a Provider React component that allows consuming components to subscribe to context changes.
+The Provider component accepts a value prop to be passed to consuming components that are descendants of this Provider. One Provider can be connected to many consumers. Providers can be nested to override values deeper within the tree.
+All consumers that are descendants of a Provider will re-render whenever the Provider’s value prop changes.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/createportal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/createportal/</guid>
+      <description>createPortal() # createPortal() # createPortal(child, container) Creates a portal. Portals provide a way to render children into a DOM node that exists outside the hierarchy of the DOM component.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/createroot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/createroot/</guid>
+      <description>createRoot() # createRoot() # createRoot(container[, options]); Create a React root for the supplied container and return the root. The root can be used to render a React element into the DOM with render:
+const root = createRoot(container); root.render(element); createRoot accepts two options:
+onRecoverableError: optional callback called when React automatically recovers from errors. identifierPrefix: optional prefix React uses for ids generated by React.useId. Useful to avoid conflicts when using multiple roots on the same page.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/finddomnode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/finddomnode/</guid>
+      <description>🍕 findDOMNode() # findDOMNode() # Note:
+findDOMNode is an escape hatch used to access the underlying DOM node. In most cases, use of this escape hatch is discouraged because it pierces the component abstraction. It has been deprecated in StrictMode.
+findDOMNode(component) If this component has been mounted into the DOM, this returns the corresponding native browser DOM element. This method is useful for reading values out of the DOM, such as form field values and performing DOM measurements.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/flushsync/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/flushsync/</guid>
+      <description>flushSync() # flushSync() # flushSync(callback) Force React to flush any updates inside the provided callback synchronously. This ensures that the DOM is updated immediately.
+// Force this state update to be synchronous. flushSync(() =&amp;gt; { setCount(count + 1); }); // By this point, DOM is updated. Note:
+flushSync can significantly hurt performance. Use sparingly.
+flushSync may force pending Suspense boundaries to show their fallback state.
+flushSync may also run pending effects and synchronously apply any updates they contain before returning.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/hydrate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/hydrate/</guid>
+      <description>hydrate() # hydrate() # hydrate(element, container[, callback]) Note:
+hydrate has been replaced with hydrateRoot in React 18. See hydrateRoot for more info.
+Same as render(), but is used to hydrate a container whose HTML contents were rendered by ReactDOMServer. React will attempt to attach event listeners to the existing markup.
+React expects that the rendered content is identical between the server and the client. It can patch up differences in text content, but you should treat mismatches as bugs and fix them.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/hydrateroot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/hydrateroot/</guid>
+      <description>⭐ hydrateRoot() # hydrateRoot() # hydrateRoot(container, element[, options]) Same as createRoot(), but is used to hydrate a container whose HTML contents were rendered by ReactDOMServer. React will attempt to attach event listeners to the existing markup.
+hydrateRoot accepts two options:
+onRecoverableError: optional callback called when React automatically recovers from errors. identifierPrefix: optional prefix React uses for ids generated by React.useId. Useful to avoid conflicts when using multiple roots on the same page.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/react.createcontext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/react.createcontext/</guid>
+      <description>React.createContext # React.createContext # const MyContext = React.createContext(defaultValue); Creates a Context object. When React renders a component that subscribes to this Context object it will read the current context value from the closest matching Provider above it in the tree.
+The defaultValue argument is only used when a component does not have a matching Provider above it in the tree. This default value can be helpful for testing components in isolation without wrapping them.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/render/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/render/</guid>
+      <description>🌵 render() # render() # render(element, container[, callback]) Note:
+render has been replaced with createRoot in React 18. See createRoot for more info.
+Render a React element into the DOM in the supplied container and return a reference to the component (or returns null for stateless components).
+If the React element was previously rendered into container, this will perform an update on it and only mutate the DOM as necessary to reflect the latest React element.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertonodestream-deprecated/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertonodestream-deprecated/</guid>
+      <description>renderToNodeStream() (Deprecated) # renderToNodeStream() (Deprecated) # ReactDOMServer.renderToNodeStream(element) Render a React element to its initial HTML. Returns a Node.js Readable stream that outputs an HTML string. The HTML output by this stream is exactly equal to what ReactDOMServer.renderToString would return. You can use this method to generate HTML on the server and send the markup down on the initial request for faster page loads and to allow search engines to crawl your pages for SEO purposes.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertopipeablestream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertopipeablestream/</guid>
+      <description>🍕 renderToPipeableStream() # renderToPipeableStream() # ReactDOMServer.renderToPipeableStream(element, options) Render a React element to its initial HTML. Returns a stream with a pipe(res) method to pipe the output and abort() to abort the request. Fully supports Suspense and streaming of HTML with “delayed” content blocks “popping in” via inline &amp;lt;script&amp;gt; tags later. Read more
+If you call ReactDOM.hydrateRoot() on a node that already has this server-rendered markup, React will preserve it and only attach event handlers, allowing you to have a very performant first-load experience.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertoreadablestream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertoreadablestream/</guid>
+      <description>🍕 renderToReadableStream() # renderToReadableStream() # ReactDOMServer.renderToReadableStream(element, options); Streams a React element to its initial HTML. Returns a Promise that resolves to a Readable Stream. Fully supports Suspense and streaming of HTML. Read more
+If you call ReactDOM.hydrateRoot() on a node that already has this server-rendered markup, React will preserve it and only attach event handlers, allowing you to have a very performant first-load experience.
+let controller = new AbortController(); let didError = false; try { let stream = await renderToReadableStream( &amp;lt;html&amp;gt; &amp;lt;body&amp;gt;Success&amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;, { signal: controller.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertostaticmarkup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertostaticmarkup/</guid>
+      <description>renderToStaticMarkup() # renderToStaticMarkup() # ReactDOMServer.renderToStaticMarkup(element) Similar to renderToString, except this doesn’t create extra DOM attributes that React uses internally, such as data-reactroot. This is useful if you want to use React as a simple static page generator, as stripping away the extra attributes can save some bytes.
+If you plan to use React on the client to make the markup interactive, do not use this method. Instead, use renderToString on the server and ReactDOM.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertostaticnodestream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertostaticnodestream/</guid>
+      <description>🍕 renderToStaticNodeStream() # renderToStaticNodeStream() # ReactDOMServer.renderToStaticNodeStream(element) Similar to renderToNodeStream, except this doesn’t create extra DOM attributes that React uses internally, such as data-reactroot. This is useful if you want to use React as a simple static page generator, as stripping away the extra attributes can save some bytes.
+The HTML output by this stream is exactly equal to what ReactDOMServer.renderToStaticMarkup would return.
+If you plan to use React on the client to make the markup interactive, do not use this method.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertostring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/rendertostring/</guid>
+      <description>🌵 renderToString() # renderToString() # ReactDOMServer.renderToString(element) Render a React element to its initial HTML. React will return an HTML string. You can use this method to generate HTML on the server and send the markup down on the initial request for faster page loads and to allow search engines to crawl your pages for SEO purposes.
+If you call ReactDOM.hydrateRoot() on a node that already has this server-rendered markup, React will preserve it and only attach event handlers, allowing you to have a very performant first-load experience.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/requestanimationframe-throttling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/requestanimationframe-throttling/</guid>
+      <description>🍕 requestAnimationFrame throttling # requestAnimationFrame throttling
+requestAnimationFrame is a way of queuing a function to be executed in the browser at the optimal time for rendering performance. A function that is queued with requestAnimationFrame will fire in the next frame. The browser will work hard to ensure that there are 60 frames per second (60 fps). However, if the browser is unable to it will naturally limit the amount of frames in a second.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.children/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.children/</guid>
+      <description>testInstance.children # testInstance.children # testInstance.children The children test instances of this test instance.
+Ideas # You can pass createNodeMock function to TestRenderer.create as the option, which allows for custom mock refs. createNodeMock accepts the current element and should return a mock ref object. This is useful when you test a component that relies on refs.
+import TestRenderer from &amp;#39;react-test-renderer&amp;#39;; class MyComponent extends React.Component { constructor(props) { super(props); this.input = null; } componentDidMount() { this.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.find/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.find/</guid>
+      <description>testInstance.find() # testInstance.find() # testInstance.find(test) Find a single descendant test instance for which test(testInstance) returns true. If test(testInstance) does not return true for exactly one test instance, it will throw an error.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.findall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.findall/</guid>
+      <description>testInstance.findAll() # testInstance.findAll() # testInstance.findAll(test) Find all descendant test instances for which test(testInstance) returns true.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.findallbyprops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.findallbyprops/</guid>
+      <description>testInstance.findAllByProps() # testInstance.findAllByProps() # testInstance.findAllByProps(props) Find all descendant test instances with the provided props.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.findallbytype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.findallbytype/</guid>
+      <description>testInstance.findAllByType() # testInstance.findAllByType() # testInstance.findAllByType(type) Find all descendant test instances with the provided type.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.findbyprops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.findbyprops/</guid>
+      <description>testInstance.findByProps() # testInstance.findByProps() # testInstance.findByProps(props) Find a single descendant test instance with the provided props. If there is not exactly one test instance with the provided props, it will throw an error.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.findbytype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.findbytype/</guid>
+      <description>testInstance.findByType() # testInstance.findByType() # testInstance.findByType(type) Find a single descendant test instance with the provided type. If there is not exactly one test instance with the provided type, it will throw an error.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.instance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.instance/</guid>
+      <description>testInstance.instance # testInstance.instance # testInstance.instance The component instance corresponding to this test instance. It is only available for class components, as function components don’t have instances. It matches the this value inside the given component.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.parent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.parent/</guid>
+      <description>testInstance.parent # testInstance.parent # testInstance.parent The parent test instance of this test instance.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.props/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.props/</guid>
+      <description>testInstance.props # testInstance.props # testInstance.props The props corresponding to this test instance. For example, a &amp;lt;Button size=&amp;quot;small&amp;quot; /&amp;gt; component has {size: &#39;small&#39;} as props.
+\</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testinstance.type/</guid>
+      <description>testInstance.type # testInstance.type # testInstance.type The component type corresponding to this test instance. For example, a &amp;lt;Button /&amp;gt; component has a type of Button.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.act/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.act/</guid>
+      <description>TestRenderer.act() # TestRenderer.act() # TestRenderer.act(callback); Similar to the act() helper from react-dom/test-utils, TestRenderer.act prepares a component for assertions. Use this version of act() to wrap calls to TestRenderer.create and testRenderer.update.
+import {create, act} from &amp;#39;react-test-renderer&amp;#39;; import App from &amp;#39;./app.js&amp;#39;; // The component being tested // render the component let root; act(() =&amp;gt; { root = create(&amp;lt;App value={1}/&amp;gt;) }); // make assertions on root expect(root.toJSON()).toMatchSnapshot(); // update with some different props act(() =&amp;gt; { root.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.create/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.create/</guid>
+      <description>TestRenderer.create() # TestRenderer.create() # TestRenderer.create(element, options); Create a TestRenderer instance with the passed React element. It doesn’t use the real DOM, but it still fully renders the component tree into memory so you can make assertions about it. Returns a TestRenderer instance.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.getinstance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.getinstance/</guid>
+      <description>testRenderer.getInstance() # testRenderer.getInstance() # testRenderer.getInstance() Return the instance corresponding to the root element, if available. This will not work if the root element is a function component because they don’t have instances.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.root/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.root/</guid>
+      <description>testRenderer.root # testRenderer.root # testRenderer.root Returns the root “test instance” object that is useful for making assertions about specific nodes in the tree. You can use it to find other “test instances” deeper below.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.tojson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.tojson/</guid>
+      <description>testRenderer.toJSON() # testRenderer.toJSON() # testRenderer.toJSON() Return an object representing the rendered tree. This tree only contains the platform-specific nodes like &amp;lt;div&amp;gt; or &amp;lt;View&amp;gt; and their props, but doesn’t contain any user-written components. This is handy for snapshot testing.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.totree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.totree/</guid>
+      <description>testRenderer.toTree() # testRenderer.toTree() # testRenderer.toTree() Return an object representing the rendered tree. The representation is more detailed than the one provided by toJSON(), and includes the user-written components. You probably don’t need this method unless you’re writing your own assertion library on top of the test renderer.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.unmount/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.unmount/</guid>
+      <description>testRenderer.unmount() # testRenderer.unmount() # testRenderer.unmount() Unmount the in-memory tree, triggering the appropriate lifecycle events.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/testrenderer.update/</guid>
+      <description>testRenderer.update() # testRenderer.update() # testRenderer.update(element) Re-render the in-memory tree with a new root element. This simulates a React update at the root. If the new element has the same type and key as the previous element, the tree will be updated; otherwise, it will re-mount a new tree.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/unmountcomponentatnode-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/unmountcomponentatnode-1/</guid>
+      <description>unmountComponentAtNode() # unmountComponentAtNode() # unmountComponentAtNode(container) Note:
+unmountComponentAtNode has been replaced with root.unmount() in React 18. See createRoot for more info.
+Remove a mounted React component from the DOM and clean up its event handlers and state. If no component was mounted in the container, calling this function does nothing. Returns true if a component was unmounted and false if there was no component to unmount.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/unmountcomponentatnode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/references/general/unmountcomponentatnode/</guid>
+      <description>unmountComponentAtNode() # unmountComponentAtNode() # unmountComponentAtNode(container) Note:
+unmountComponentAtNode has been replaced with root.unmount() in React 18. See createRoot for more info.
+Remove a mounted React component from the DOM and clean up its event handlers and state. If no component was mounted in the container, calling this function does nothing. Returns true if a component was unmounted and false if there was no component to unmount.</description>
+    </item>
+  </channel>
+</rss>

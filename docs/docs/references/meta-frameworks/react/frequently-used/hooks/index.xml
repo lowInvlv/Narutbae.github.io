@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hooks on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/</link>
+    <description>Recent content in Hooks on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/building-your-own-hooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/building-your-own-hooks/</guid>
+      <description>💘 Building Your Own Hooks # Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+Building your own Hooks lets you extract component logic into reusable functions.
+When we were learning about using the Effect Hook, we saw this component from a chat application that displays a message indicating whether a friend is online or offline:
+import React, { useState, useEffect } from &amp;#39;react&amp;#39;; function FriendStatus(props) { const [isOnline, setIsOnline] = useState(null); useEffect(() =&amp;gt; { function handleStatusChange(status) { setIsOnline(status.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-api-reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-api-reference/</guid>
+      <description>Hooks API Reference # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+These new documentation pages teach modern React:
+react: Hooks Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+This page describes the APIs for the built-in Hooks in React.
+If you’re new to Hooks, you might want to check out the overview first.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-at-a-glance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-at-a-glance/</guid>
+      <description>Hooks at a Glance # Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+Hooks are backwards-compatible. This page provides an overview of Hooks for experienced React users. This is a fast-paced overview. If you get confused, look for a yellow box like this:
+Detailed Explanation
+Read the Motivation to learn why we’re introducing Hooks to React.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/hooks-faq/</guid>
+      <description>🌵 Hooks FAQ # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+The new documentation pages teaches React with Hooks.
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+This page answers some of the frequently asked questions about Hooks.
+Adoption Strategy Which versions of React include Hooks? Do I need to rewrite all my class components?</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/introducing-hooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/introducing-hooks/</guid>
+      <description>Introducing Hooks # Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+import React, { useState } from &amp;#39;react&amp;#39;; function Example() { // Declare a new state variable, which we&amp;#39;ll call &amp;#34;count&amp;#34; const [count, setCount] = useState(0); return ( &amp;lt;div&amp;gt; &amp;lt;p&amp;gt;You clicked {count} times&amp;lt;/p&amp;gt; &amp;lt;button onClick={() =&amp;gt; setCount(count + 1)}&amp;gt; Click me &amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; ); } This new function useState is the first “Hook” we’ll learn about, but this example is just a teaser.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/rules-of-hooks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/rules-of-hooks/</guid>
+      <description>🌵 Rules of Hooks # Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+Hooks are JavaScript functions, but you need to follow two rules when using them. We provide a linter plugin to enforce these rules automatically:
+Only Call Hooks at the Top Level # Don’t call Hooks inside loops, conditions, or nested functions. Instead, always use Hooks at the top level of your React function, before any early returns.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usecallback/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usecallback/</guid>
+      <description>🍕 Usecallback # useCallback # const memoizedCallback = useCallback( () =&amp;gt; { doSomething(a, b); }, [a, b], ); Returns a memoized callback.
+Pass an inline callback and an array of dependencies. useCallback will return a memoized version of the callback that only changes if one of the dependencies has changed. This is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders (e.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usecontext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usecontext/</guid>
+      <description>useContext # useContext # const value = useContext(MyContext); Accepts a context object (the value returned from React.createContext) and returns the current context value for that context. The current context value is determined by the value prop of the nearest &amp;lt;MyContext.Provider&amp;gt; above the calling component in the tree.
+When the nearest &amp;lt;MyContext.Provider&amp;gt; above the component updates, this Hook will trigger a rerender with the latest context value passed to that MyContext provider.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usedebugvalue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usedebugvalue/</guid>
+      <description>useDebugValue # useDebugValue # useDebugValue(value) useDebugValue can be used to display a label for custom hooks in React DevTools.
+For example, consider the useFriendStatus custom Hook described in “Building Your Own Hooks”:
+function useFriendStatus(friendID) { const [isOnline, setIsOnline] = useState(null); // ... // Show a label in DevTools next to this Hook // e.g. &amp;#34;FriendStatus: Online&amp;#34; useDebugValue(isOnline ? &amp;#39;Online&amp;#39; : &amp;#39;Offline&amp;#39;); return isOnline; } Tip
+We don’t recommend adding debug values to every custom Hook.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usedeferredvalue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usedeferredvalue/</guid>
+      <description>useDeferredValue # useDeferredValue # const deferredValue = useDeferredValue(value); useDeferredValue accepts a value and returns a new copy of the value that will defer to more urgent updates. If the current render is the result of an urgent update, like user input, React will return the previous value and then render the new value after the urgent render has completed.
+This hook is similar to user-space hooks which use debouncing or throttling to defer updates.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/useeffect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/useeffect/</guid>
+      <description>🌵 useEffect # useEffect # useEffect(didUpdate); Accepts a function that contains imperative, possibly effectful code.
+Mutations, subscriptions, timers, logging, and other side effects are not allowed inside the main body of a function component (referred to as React’s render phase). Doing so will lead to confusing bugs and inconsistencies in the UI.
+Instead, use useEffect. The function passed to useEffect will run after the render is committed to the screen.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/useid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/useid/</guid>
+      <description>useId # useId # const id = useId(); useId is a hook for generating unique IDs that are stable across the server and client, while avoiding hydration mismatches.
+Note
+useId is not for generating keys in a list. Keys should be generated from your data.
+For a basic example, pass the id directly to the elements that need it:
+function Checkbox() { const id = useId(); return ( &amp;lt;&amp;gt; &amp;lt;label htmlFor={id}&amp;gt;Do you like React?</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/useimperativehandle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/useimperativehandle/</guid>
+      <description>useImperativeHandle # useImperativeHandle # useImperativeHandle(ref, createHandle, [deps]) useImperativeHandle customizes the instance value that is exposed to parent components when using ref. As always, imperative code using refs should be avoided in most cases. useImperativeHandle should be used with forwardRef:
+function FancyInput(props, ref) { const inputRef = useRef(); useImperativeHandle(ref, () =&amp;gt; ({ focus: () =&amp;gt; { inputRef.current.focus(); } })); return &amp;lt;input ref={inputRef} ... /&amp;gt;; } FancyInput = forwardRef(FancyInput); In this example, a parent component that renders &amp;lt;FancyInput ref={inputRef} /&amp;gt; would be able to call inputRef.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/useinsertioneffect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/useinsertioneffect/</guid>
+      <description>useInsertionEffect # useInsertionEffect # useInsertionEffect(didUpdate); The signature is identical to useEffect, but it fires synchronously before all DOM mutations. Use this to inject styles into the DOM before reading layout in useLayoutEffect. Since this hook is limited in scope, this hook does not have access to refs and cannot schedule updates.
+Note:
+useInsertionEffect should be limited to css-in-js library authors. Prefer useEffect or useLayoutEffect instead.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/uselayouteffect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/uselayouteffect/</guid>
+      <description>useLayoutEffect # useLayoutEffect # The signature is identical to useEffect, but it fires synchronously after all DOM mutations. Use this to read layout from the DOM and synchronously re-render. Updates scheduled inside useLayoutEffect will be flushed synchronously, before the browser has a chance to paint.
+Prefer the standard useEffect when possible to avoid blocking visual updates.
+Tip
+If you’re migrating code from a class component, note useLayoutEffect fires in the same phase as componentDidMount and componentDidUpdate.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usememo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usememo/</guid>
+      <description>🍕 useMemo # useMemo # const memoizedValue = useMemo(() =&amp;gt; computeExpensiveValue(a, b), [a, b]); Returns a memoized value.
+Pass a “create” function and an array of dependencies. useMemo will only recompute the memoized value when one of the dependencies has changed. This optimization helps to avoid expensive calculations on every render.
+Remember that the function passed to useMemo runs during rendering. Don’t do anything there that you wouldn’t normally do while rendering.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usereducer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usereducer/</guid>
+      <description>useReducer # useReducer # const [state, dispatch] = useReducer(reducer, initialArg, init); An alternative to useState. Accepts a reducer of type (state, action) =&amp;gt; newState, and returns the current state paired with a dispatch method. (If you’re familiar with Redux, you already know how this works.)
+useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/useref/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/useref/</guid>
+      <description>🍕 useRef # useRef # const refContainer = useRef(initialValue); useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
+A common use case is to access a child imperatively:
+function TextInputWithFocusButton() { const inputEl = useRef(null); const onButtonClick = () =&amp;gt; { // `current` points to the mounted text input element inputEl.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usestate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usestate/</guid>
+      <description>🌵 useState # useState # const [state, setState] = useState(initialState); Returns a stateful value, and a function to update it.
+During the initial render, the returned state (state) is the same as the value passed as the first argument (initialState).
+The setState function is used to update the state. It accepts a new state value and enqueues a re-render of the component.
+setState(newState); During subsequent re-renders, the first value returned by useState will always be the most recent state after applying updates.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usesyncexternalstore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usesyncexternalstore/</guid>
+      <description>useSyncExternalStore # useSyncExternalStore # const state = useSyncExternalStore(subscribe, getSnapshot[, getServerSnapshot]); useSyncExternalStore is a hook recommended for reading and subscribing from external data sources in a way that’s compatible with concurrent rendering features like selective hydration and time slicing.
+This method returns the value of the store and accepts three arguments:
+subscribe: function to register a callback that is called whenever the store changes. getSnapshot: function that returns the current value of the store.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usetransition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/usetransition/</guid>
+      <description> useTransition # useTransition # const [isPending, startTransition] = useTransition(); Returns a stateful value for the pending state of the transition, and a function to start it.
+startTransition lets you mark updates in the provided callback as transitions:
+startTransition(() =&amp;gt; { setCount(count + 1); }) isPending indicates when a transition is active to show a pending state:
+function App() { const [isPending, startTransition] = useTransition(); const [count, setCount] = useState(0); function handleClick() { startTransition(() =&amp;gt; { setCount(c =&amp;gt; c + 1); }) } return ( &amp;lt;div&amp;gt; {isPending &amp;amp;&amp;amp; &amp;lt;Spinner /&amp;gt;} &amp;lt;button onClick={handleClick}&amp;gt;{count}&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; ); } </description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/using-the-effect-hook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/using-the-effect-hook/</guid>
+      <description>🌵 Using the Effect Hook # Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+The Effect Hook lets you perform side effects in function components:
+import React, { useState, useEffect } from &amp;#39;react&amp;#39;; function Example() { const [count, setCount] = useState(0); // Similar to componentDidMount and componentDidUpdate: useEffect(() =&amp;gt; { // Update the document title using the browser API document.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/using-the-state-hook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/frequently-used/hooks/using-the-state-hook/</guid>
+      <description>🌵 Using the State Hook # Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+The introduction page used this example to get familiar with Hooks:
+import React, { useState } from &amp;#39;react&amp;#39;; function Example() { // Declare a new state variable, which we&amp;#39;ll call &amp;#34;count&amp;#34; const [count, setCount] = useState(0); return ( &amp;lt;div&amp;gt; &amp;lt;p&amp;gt;You clicked {count} times&amp;lt;/p&amp;gt; &amp;lt;button onClick={() =&amp;gt; setCount(count + 1)}&amp;gt; Click me &amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; ); } We’ll start learning about Hooks by comparing this code to an equivalent class example.</description>
+    </item>
+  </channel>
+</rss>

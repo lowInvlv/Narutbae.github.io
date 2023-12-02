@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Declration Files on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/</link>
+    <description>Recent content in Declration Files on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/by-example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/by-example/</guid>
+      <description>Declaration Reference # The purpose of this guide is to teach you how to write a high-quality definition file. This guide is structured by showing documentation for some API, along with sample usage of that API, and explaining how to write the corresponding declaration.
+These examples are ordered in approximately increasing order of complexity.
+Objects with Properties # Documentation
+The global variable myLib has a function makeGreeting for creating greetings, and a property numberOfGreetings indicating the number of greetings made so far.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/consumption/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/consumption/</guid>
+      <description>Consumption # Downloading # Getting type declarations requires no tools apart from npm.
+As an example, getting the declarations for a library like lodash takes nothing more than the following command
+npm install --save-dev @types/lodash It is worth noting that if the npm package already includes its declaration file as described in Publishing, downloading the corresponding @types package is not needed.
+Consuming # From there you&amp;rsquo;ll be able to use lodash in your TypeScript code with no fuss.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/deep-dive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/deep-dive/</guid>
+      <description>Deep Dive # Declaration File Theory: A Deep Dive # Structuring modules to give the exact API shape you want can be tricky. For example, we might want a module that can be invoked with or without new to produce different types, has a variety of named types exposed in a hierarchy, and has some properties on the module object as well.
+By reading this guide, you&amp;rsquo;ll have the tools to write complex declaration files that expose a friendly API surface.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/do-s-and-don-ts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/do-s-and-don-ts/</guid>
+      <description>Do&#39;s and Don&#39;ts # General Types # Number, String, Boolean, Symbol and Object # ❌ Don&amp;rsquo;t ever use the types Number, String, Boolean, Symbol, or Object These types refer to non-primitive boxed objects that are almost never used appropriately in JavaScript code.
+/* WRONG */ function reverse(s: String): String; ✅ Do use the types number, string, boolean, and symbol.
+/* OK */ function reverse(s: string): string; Instead of Object, use the non-primitive object type ( added in TypeScript 2.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/dts-from-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/dts-from-js/</guid>
+      <description>Creating .d.ts Files from .js files # With TypeScript 3.7, TypeScript added support for generating .d.ts files from JavaScript using JSDoc syntax.
+This set up means you can own the editor experience of TypeScript-powered editors without porting your project to TypeScript, or having to maintain .d.ts files in your codebase. TypeScript supports most JSDoc tags, you can find the reference here.
+Setting up your Project to emit .d.ts files # To add creation of .</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/introduction/</guid>
+      <description>Introduction # The Declaration Files section is designed to teach you how to write a high-quality TypeScript Declaration File. We need to assume basic familiarity with the TypeScript language in order to get started.
+If you haven&amp;rsquo;t already, you should read the TypeScript Handbook to familiarize yourself with basic concepts, especially types and modules.
+The most common case for learning how .d.ts files work is that you&amp;rsquo;re typing an npm package with no types.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/library-structures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/library-structures/</guid>
+      <description>Library Structures # Broadly speaking, the way you structure your declaration file depends on how the library is consumed. There are many ways of offering a library for consumption in JavaScript, and you&amp;rsquo;ll need to write your declaration file to match it. This guide covers how to identify common library patterns, and how to write declaration files which correspond to that pattern.
+Each type of major library structuring pattern has a corresponding file in the Templates section.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/publishing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/publishing/</guid>
+      <description>Publishing # Now that you have authored a declaration file following the steps of this guide, it is time to publish it to npm. There are two main ways you can publish your declaration files to npm:
+bundling with your npm package publishing to the @types organization on npm. If your types are generated by your source code, publish the types with your source code. Both TypeScript and JavaScript projects can generate types via declaration.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/languages/typescript/declaration-files/templates/</guid>
+      <description>Templates # global-modifying-module.d.ts
+global-plugin.d.ts global.d.ts module-class.d.ts module-function.d.ts module-plugin.d.ts module.d.ts ::: _attribution © 2012-2023 Microsoft
+Licensed under the Apache License, Version 2.0.
+https://www.typescriptlang.org/docs/handbook/declaration-files/templates.html{._attribution-link} :::</description>
+    </item>
+  </channel>
+</rss>

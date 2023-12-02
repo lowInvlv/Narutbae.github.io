@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on My Ship Logs</title>
+    <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/</link>
+    <description>Recent content in Installation on My Ship Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/add-react-to-a-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/add-react-to-a-website/</guid>
+      <description>Add React to a Website # If you want to add some interactivity to your existing project, you don’t have to rewrite it in React. Add React to your existing stack, and render interactive React components anywhere.
+Note # You need to install Node.js for local development. Although you can try React online or with a simple HTML page, realistically most JavaScript tooling you’ll want to use for development requires Node.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/cdn-links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/cdn-links/</guid>
+      <description>CDN Links # Both React and ReactDOM are available over a CDN.
+&amp;lt;script crossorigin src=&amp;#34;https://unpkg.com/react@18/umd/react.development.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script crossorigin src=&amp;#34;https://unpkg.com/react-dom@18/umd/react-dom.development.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; The versions above are only meant for development, and are not suitable for production. Minified and optimized production versions of React are available at:
+&amp;lt;script crossorigin src=&amp;#34;https://unpkg.com/react@18/umd/react.production.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script crossorigin src=&amp;#34;https://unpkg.com/react-dom@18/umd/react-dom.production.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; To load a specific version of react and react-dom, replace 18 with the version number.
+Why the crossorigin Attribute? # If you serve React from a CDN, we recommend to keep the crossorigin attribute set:</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/create-a-new-react-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/create-a-new-react-app/</guid>
+      <description>Create a New React App # If you want to build a new app or a new website fully with React, we recommend picking one of the React-powered frameworks popular in the community. Frameworks provide features that most apps and sites eventually need, including routing, data fetching, and generating HTML.
+Note # You need to install Node.js for local development. You can also choose to use Node.js in production, but you don’t have to.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/getting-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/getting-started/</guid>
+      <description>Getting Started # These docs are old and won’t be updated. Go to react.dev for the new React docs.
+The new Quick Start teaches modern React and includes live examples.
+This page is an overview of the React documentation and related resources.
+React is a JavaScript library for building user interfaces. Learn what React is all about on our homepage or in the tutorial.
+Try React Learn React Staying Informed Versioned Documentation Something Missing?</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/release-channels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://Narutabe.github.io/docs/references/meta-frameworks/react/basics/installation/release-channels/</guid>
+      <description>Release Channels # All stable builds of React go through a high level of testing and follow semantic versioning (semver). React also offers unstable release channels to encourage early feedback on experimental features. This page describes what you can expect from React releases.
+Stable releases # Stable React releases (also known as “Latest” release channel) follow semantic versioning (semver) principles.
+That means that with a version number x.y.z:
+When releasing critical bug fixes, we make a patch release by changing the z number (ex: 15.</description>
+    </item>
+  </channel>
+</rss>
